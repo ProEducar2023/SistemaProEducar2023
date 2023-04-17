@@ -1,0 +1,102 @@
+﻿using System;
+
+namespace Entidades
+{
+    public class contratoCabeceraTo
+    {
+        public string COD_SUCURSAL { get; set; }
+        public string NRO_DOC { get; set; }
+        public string COD_PER { get; set; }
+        public string COD_CLASE { get; set; }
+        public string FE_AÑO { get; set; }
+        public string FE_MES { get; set; }
+        public DateTime FECHA_DOC { get; set; }
+        public string NRO_PRESUPUESTO { get; set; }
+        public DateTime FECHA_PRE { get; set; }
+        public string COD_MONEDA { get; set; }
+        public decimal TIPO_CAMBIO { get; set; }
+        public string FORMA_PAGO { get; set; }
+        public string STATUS_PV { get; set; }
+        public int NRO_DIAS { get; set; }
+        public string COD_PER_ELAB { get; set; }
+        public string COD_PER_APROB { get; set; }
+        public string STATUS_APROB { get; set; }
+        public string STATUS_ANUL { get; set; }
+        public string STATUS_CIERRE { get; set; }
+        public string COD_VENDEDOR { get; set; }
+        public string CONDICION_VENTA { get; set; }
+        public string COD_CONTACTO { get; set; }
+        public DateTime? FECHA_APROB { get; set; }
+        public string TIPO_PRECIO { get; set; }
+        public string OBSERVACION { get; set; }
+        public string COD_MOV { get; set; }
+        public string NRO_REPORTE { get; set; }
+        public DateTime FEC_REPORTE { get; set; }
+        public string COD_PROGRAMA { get; set; }
+        public string PERIODO { get; set; }
+        public string NRO_SEMANA { get; set; }
+        public string TIPO_OPERACION { get; set; }
+        public string TIPO_PLANILLA { get; set; }
+        public string COD_ALMACEN { get; set; }
+        public string COD_NIVEL1 { get; set; }
+        public string COD_NIVEL2 { get; set; }
+        public string COD_NIVEL3 { get; set; }
+        public decimal SUELDO_NETO { get; set; }
+        public decimal PRESTAMOS { get; set; }
+        public decimal OTROS_DSCTOS { get; set; }
+        public decimal JUDICIALES { get; set; }
+        public decimal NETO_COBRAR { get; set; }
+        public decimal TOTAL_CONTRATO { get; set; }
+        public int NRO_CUOTAS { get; set; }
+        public decimal IMP_CUOTA_INICIAL { get; set; }
+        public decimal IMP_CUOTA_MES { get; set; }
+        public DateTime? FEC_PRIMER_VENC { get; set; }
+        public string NOMBRE_PC { get; set; }
+        public string TIPO_USU { get; set; }
+        public string COD_USU { get; set; }
+        public int NRO_DIAS_VENC { get; set; }
+        public DateTime FEC_CUO_MEN { get; set; }
+        public string STATUS_FAC { get; set; }
+        public string TIPO_PEDIDO { get; set; }
+        public string STATUS_GUIA { get; set; }
+        public string COD_REF { get; set; }
+        public string NRO_REF { get; set; }
+        public string SERIE { get; set; }
+        public string COD_SUB_PTO_VEN { get; set; }
+        public string COD_CANAL_DSCTO { get; set; }
+        public string COD_PTO_COB { get; set; }
+        public string COD_TIPO_VENTA { get; set; }
+        public string COD_MODALIDAD_VTA { get; set; }
+        public string COD_LUG_VTA { get; set; }
+        public string NRO_FAC_PRE_UNI { get; set; }
+        public DateTime? FECHA_FAC_PRE_UNI { get; set; }
+        public string STATUS_NC { get; set; }
+        public string TIPO_ORIGEN { get; set; }
+        public string STATUS_COMISION { get; set; }
+        public string COD_INSTITUCION { get; set; }
+        public decimal IMPORTE_PROTECCION { get; set; }
+        public string STATUS_PRE_APROB { get; set; }
+        public string COD_KIT { get; set; }
+        public decimal DSCTO_TOTAL { get; set; }
+        public string AÑO_DOC { get; set; }
+        public string MES_DOC { get; set; }
+        //PARA REPORTE
+        public string NroOrden { get; set; }
+        public string DESC_PTO_COB { get; set; }
+        public string DESC_PTO_VEN { get; set; }
+        public string NOM_CLI { get; set; }
+        public string NOM_VEN { get; set; }
+        public string DESC_LUG_VTA { get; set; }
+        public int CANT_CONTRATOS { get; set; }
+        public decimal SUM_TOTAL_CONTRATO { get; set; }
+        public decimal SUM_IMP_CUOTA_INICIAL { get; set; }
+        public decimal SUM_IMP_CUOTA_MES { get; set; }
+        public decimal PRE_VTA { get; set; }
+        public decimal PRE_REF { get; set; }
+        public string DNI_RUC { get; set; }
+        public string NRO_DOC_INV { get; set; }
+        public string DES_IDENTIDAD { get; set; }
+        public string DES_PROCESO { get; set; }
+        public string COD_NIVEL_INSTITUCION { get; set; }
+    }
+}

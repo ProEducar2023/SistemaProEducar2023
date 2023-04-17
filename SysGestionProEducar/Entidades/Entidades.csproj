@@ -1,0 +1,202 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F56BEBE1-018D-4DEB-9567-F82F2DBB6264}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Entidades</RootNamespace>
+    <AssemblyName>Entidades</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="aCostosTo.cs" />
+    <Compile Include="agenciaTo.cs" />
+    <Compile Include="almacenTo.cs" />
+    <Compile Include="articuloClaseTo.cs" />
+    <Compile Include="articuloContenidoTo.cs" />
+    <Compile Include="articulosTo.cs" />
+    <Compile Include="articuloUbicacionTo.cs" />
+    <Compile Include="articuloContenidoMovimientoTo.cs" />
+    <Compile Include="bancosTo.cs" />
+    <Compile Include="calendarioTo.cs" />
+    <Compile Include="cambioPuntoCobranzaTo.cs" />
+    <Compile Include="cambioTipoPllaHistoricoTo.cs" />
+    <Compile Include="canjeICtasxCobrarTo.cs" />
+    <Compile Include="canjePCtasxCobrarTo.cs" />
+    <Compile Include="canjeTCtasxCobrarTo.cs" />
+    <Compile Include="cargosAbonosComisionesTo.cs" />
+    <Compile Include="claseTo.cs" />
+    <Compile Include="canalDescuentoTo.cs" />
+    <Compile Include="cargosVentaTo.cs" />
+    <Compile Include="ClientesXInstitucion.cs" />
+    <Compile Include="cobranzaDirectaTo.cs" />
+    <Compile Include="ComisionAdelantoTo.cs" />
+    <Compile Include="ComisionConfigTo.cs" />
+    <Compile Include="ComisionContrato.cs" />
+    <Compile Include="comisionesDetalleTo.cs" />
+    <Compile Include="comisionesTo.cs" />
+    <Compile Include="ComisionLiquidacionDetTo.cs" />
+    <Compile Include="ComisionTo.cs" />
+    <Compile Include="ConstClass.cs" />
+    <Compile Include="contratoCabeceraTo.cs" />
+    <Compile Include="contratoComisionTo.cs" />
+    <Compile Include="contratoDetalleTo.cs" />
+    <Compile Include="contratosSuspendidosTo.cs" />
+    <Compile Include="cuentaBancariaTo.cs" />
+    <Compile Include="cuotasTo.cs" />
+    <Compile Include="DescuentoCuotaVigenciaTo.cs" />
+    <Compile Include="descuentoDirectaSeguimientoTo.cs" />
+    <Compile Include="descuentoDirectaTo.cs" />
+    <Compile Include="devPCtasCobrarTo.cs" />
+    <Compile Include="devTCtasCobrarTo.cs" />
+    <Compile Include="directorioTo.cs" />
+    <Compile Include="directorNacTo.cs" />
+    <Compile Include="directorTo.cs" />
+    <Compile Include="empresaTo.cs" />
+    <Compile Include="EnumClass.cs" />
+    <Compile Include="eq_vta_nivel_progTo.cs" />
+    <Compile Include="facturacionElectronicaCabeceraTo.cs" />
+    <Compile Include="facturacionVtaCabeceraTo.cs" />
+    <Compile Include="facturacionVtaDetalleTo.cs" />
+    <Compile Include="grupoTo.cs" />
+    <Compile Include="HelpersTo.cs" />
+    <Compile Include="iCostosTo.cs" />
+    <Compile Include="institucionesNivelesTo.cs" />
+    <Compile Include="institucionesTo.cs" />
+    <Compile Include="inventariosTo.cs" />
+    <Compile Include="DevolucionComisionITo.cs" />
+    <Compile Include="kitDetalleTo.cs" />
+    <Compile Include="kitTo.cs" />
+    <Compile Include="LiquidacionTo.cs" />
+    <Compile Include="lugarVentaTo.cs" />
+    <Compile Include="mArticuloTo.cs" />
+    <Compile Include="motivoLlamadasDescCobDirTo.cs" />
+    <Compile Include="motivos_Otros_Dev_DsctosTo.cs" />
+    <Compile Include="MovimientosNivelVentaTo.cs" />
+    <Compile Include="numeroReporteAutomaticoTo.cs" />
+    <Compile Include="otrosCargosComisionesTo.cs" />
+    <Compile Include="pAdelantoTo.cs" />
+    <Compile Include="pDevolucionTo.cs" />
+    <Compile Include="PersonaEnvioTo.cs" />
+    <Compile Include="personaIndebidaTo.cs" />
+    <Compile Include="planillaCabeceraOtrasDevDsctosTo.cs" />
+    <Compile Include="planillaDetalleOtrasDevDsctosTo.cs" />
+    <Compile Include="planillaDirectaVariosDetalleTo.cs" />
+    <Compile Include="planillaDirectaVariosTo.cs" />
+    <Compile Include="pLiqAdelantoTo.cs" />
+    <Compile Include="pLiqDevolucionTo.cs" />
+    <Compile Include="pLiquidacionTo.cs" />
+    <Compile Include="lugarEntregaTo.cs" />
+    <Compile Include="mCostosTo.cs" />
+    <Compile Include="metasTo.cs" />
+    <Compile Include="modalidadVentaTo.cs" />
+    <Compile Include="motivoTrasladoTo.cs" />
+    <Compile Include="movimientoSerieTo.cs" />
+    <Compile Include="movimientosTo.cs" />
+    <Compile Include="multiUsoTo.cs" />
+    <Compile Include="nivelTo.cs" />
+    <Compile Include="numeracionComprobanteTo.cs" />
+    <Compile Include="pComisionTo.cs" />
+    <Compile Include="pedidosTo.cs" />
+    <Compile Include="periodoTo.cs" />
+    <Compile Include="personaBeneficiarioTo.cs" />
+    <Compile Include="personaClaseTo.cs" />
+    <Compile Include="personaContactoTo.cs" />
+    <Compile Include="personaDireccionTo.cs" />
+    <Compile Include="personaFonoTo.cs" />
+    <Compile Include="personaMaestroTo.cs" />
+    <Compile Include="personaSustitutoTo.cs" />
+    <Compile Include="personaTo.cs" />
+    <Compile Include="planillaCabeceraTo.cs" />
+    <Compile Include="planillaDetalleTo.cs" />
+    <Compile Include="planillaDirectaSeguimientoTo.cs" />
+    <Compile Include="planillaDirectaTo.cs" />
+    <Compile Include="precontratoCabeceraTo.cs" />
+    <Compile Include="precontratoDetalleTo.cs" />
+    <Compile Include="pResumenComisionTo.cs" />
+    <Compile Include="preventaTo.cs" />
+    <Compile Include="progNivelRelacionTo.cs" />
+    <Compile Include="progNivelTo.cs" />
+    <Compile Include="programaTo.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="puntoCobranzaTo.cs" />
+    <Compile Include="puntoVentaTo.cs" />
+    <Compile Include="RComisionAdelantoTo.cs" />
+    <Compile Include="reporteTelefonicoDetalleTo.cs" />
+    <Compile Include="reporteTelefonicoTo.cs" />
+    <Compile Include="resumenPlanillaDevolucionTo.cs" />
+    <Compile Include="resumenPlanillaTo.cs" />
+    <Compile Include="resumenTPlanillaDevolucionTo.cs" />
+    <Compile Include="resumenTPlanillaTo.cs" />
+    <Compile Include="RptAll.cs" />
+    <Compile Include="SeguimientoPlanillaTo.cs" />
+    <Compile Include="semanaContratoTo.cs" />
+    <Compile Include="serieDocumentosTo.cs" />
+    <Compile Include="situacionTo.cs" />
+    <Compile Include="subGrupoTo.cs" />
+    <Compile Include="sucursalTo.cs" />
+    <Compile Include="supervisorTo.cs" />
+    <Compile Include="tAdelantoTo.cs" />
+    <Compile Include="tarjetasTo.cs" />
+    <Compile Include="tComisionTo.cs" />
+    <Compile Include="tCostosTo.cs" />
+    <Compile Include="tDevolucionTo.cs" />
+    <Compile Include="temporal_Nro_ReporteTo.cs" />
+    <Compile Include="tipoCambioTo.cs" />
+    <Compile Include="TipoComisionTo.cs" />
+    <Compile Include="tipoDocInvTo.cs" />
+    <Compile Include="tipoPlanillaCreacionTo.cs" />
+    <Compile Include="tipoVehiculoTo.cs" />
+    <Compile Include="tipoVentaTo.cs" />
+    <Compile Include="TipoVigenciaComision.cs" />
+    <Compile Include="tLiquidacionTo.cs" />
+    <Compile Include="transportistaTo.cs" />
+    <Compile Include="transportista_conductorTo.cs" />
+    <Compile Include="transportista_vehiculoTo.cs" />
+    <Compile Include="DevolucionComisionTTo.cs" />
+    <Compile Include="unidadMedidaTo.cs" />
+    <Compile Include="usuariosTo.cs" />
+    <Compile Include="usuarioWebTo.cs" />
+    <Compile Include="vendedorTo.cs" />
+    <Compile Include="zonasEmpresaTo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

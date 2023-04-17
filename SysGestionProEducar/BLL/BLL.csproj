@@ -1,0 +1,234 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0C1FA1C3-8492-4590-88C0-BA072F6EB73A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BLL</RootNamespace>
+    <AssemblyName>BLL</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="aCostosBLL.cs" />
+    <Compile Include="agenciaBLL.cs" />
+    <Compile Include="almacenesBLL.cs" />
+    <Compile Include="articuloClaseBLL.cs" />
+    <Compile Include="articuloContenidoBLL.cs" />
+    <Compile Include="articuloContenidoMovimientoBLL.cs" />
+    <Compile Include="articulosBLL.cs" />
+    <Compile Include="articuloUbicacionBLL.cs" />
+    <Compile Include="AutoCompleClass.cs" />
+    <Compile Include="calendarioBLL.cs" />
+    <Compile Include="cambioPuntoCobranzaBLL.cs" />
+    <Compile Include="cambioTipoPllaHistoricoBLL.cs" />
+    <Compile Include="canjeICtasxCobrarBLL.cs" />
+    <Compile Include="canjePCtasxCobrarBLL.cs" />
+    <Compile Include="canjeTCtasxCobrarBLL.cs" />
+    <Compile Include="cargosAbonosComisionesBLL.cs" />
+    <Compile Include="ChequeBLL.cs" />
+    <Compile Include="claseBLL.cs" />
+    <Compile Include="canalDescuentoBLL.cs" />
+    <Compile Include="cargosVentaBLL.cs" />
+    <Compile Include="cobranzaDirectaBLL.cs" />
+    <Compile Include="comboItemsBLL.cs" />
+    <Compile Include="comisionesBLL.cs" />
+    <Compile Include="comisionesDetalleBLL.cs" />
+    <Compile Include="conductorBLL.cs" />
+    <Compile Include="contratoCabeceraBLL.cs" />
+    <Compile Include="contratoComisionBLL.cs" />
+    <Compile Include="contratoDetalleBLL.cs" />
+    <Compile Include="contratosSuspendidosBLL.cs" />
+    <Compile Include="cuentaBancariaBLL.cs" />
+    <Compile Include="cuotasBLL.cs" />
+    <Compile Include="DepartamentoBLL.cs" />
+    <Compile Include="descuentoDirectaSeguimientoBLL.cs" />
+    <Compile Include="descuentoDirectoBLL.cs" />
+    <Compile Include="devPCtasCobrarBLL.cs" />
+    <Compile Include="devTCtasCobrarBLL.cs" />
+    <Compile Include="directorBLL.cs" />
+    <Compile Include="directorioBLL.cs" />
+    <Compile Include="directorNacBLL.cs" />
+    <Compile Include="empresaBLL.cs" />
+    <Compile Include="enumeraciones.cs" />
+    <Compile Include="eq_vta_nivel_progBLL.cs" />
+    <Compile Include="facturacionElectronicaCabeceraBLL.cs" />
+    <Compile Include="facturacionVtaCabeceraBLL.cs" />
+    <Compile Include="facturacionVtaDetalleBLL.cs" />
+    <Compile Include="grupoBLL.cs" />
+    <Compile Include="HelpersBLL.cs" />
+    <Compile Include="iCostosBLL.cs" />
+    <Compile Include="institucionesBLL.cs" />
+    <Compile Include="institucionesNivelesBLL.cs" />
+    <Compile Include="inventariosBLL.cs" />
+    <Compile Include="kitBLL.cs" />
+    <Compile Include="kitDetalleBLL.cs" />
+    <Compile Include="lugarVentaBLL.cs" />
+    <Compile Include="MaestroBancoBLL.cs" />
+    <Compile Include="MaestroConceptoBLL.cs" />
+    <Compile Include="mArticuloBLL.cs" />
+    <Compile Include="motivoLlamadasDescCobDirBLL.cs" />
+    <Compile Include="motivos_Otros_Dev_DsctosBLL.cs" />
+    <Compile Include="numeroReporteAutomaticoBLL.cs" />
+    <Compile Include="otrosCargosComisionesBLL.cs" />
+    <Compile Include="pAdelantoBLL.cs" />
+    <Compile Include="pDevolucionBLL.cs" />
+    <Compile Include="personaIndebidaBLL.cs" />
+    <Compile Include="planillaCabeceraOtrasDevDsctosBLL.cs" />
+    <Compile Include="planillaDetalleOtrasDevDsctosBLL.cs" />
+    <Compile Include="planillaDirectaVariosBLL.cs" />
+    <Compile Include="planillaDirectaVariosDetalleBLL.cs" />
+    <Compile Include="pLiqAdelantoBLL.cs" />
+    <Compile Include="pLiqDevolucionBLL.cs" />
+    <Compile Include="pLiquidacionBLL.cs" />
+    <Compile Include="lugarEntregaBLL.cs" />
+    <Compile Include="mCostosBLL.cs" />
+    <Compile Include="metasBLL.cs" />
+    <Compile Include="modalidadVentaBLL.cs" />
+    <Compile Include="motivoTrasladoBLL.cs" />
+    <Compile Include="movimientosBLL.cs" />
+    <Compile Include="movimientoSerieBLL.cs" />
+    <Compile Include="multiUsoBLL.cs" />
+    <Compile Include="nivelBLL.cs" />
+    <Compile Include="numeracionComprobanteBLL.cs" />
+    <Compile Include="pComisionBLL.cs" />
+    <Compile Include="periodoBLL.cs" />
+    <Compile Include="personaBeneficiarioBLL.cs" />
+    <Compile Include="personaBLL.cs" />
+    <Compile Include="personaClaseBLL.cs" />
+    <Compile Include="personaContactoBLL.cs" />
+    <Compile Include="personaDireccionBLL.cs" />
+    <Compile Include="personaFonoBLL.cs" />
+    <Compile Include="personalBLL.cs" />
+    <Compile Include="personaMaestroBLL.cs" />
+    <Compile Include="personaSustitutoBLL.cs" />
+    <Compile Include="planillaCabeceraBLL.cs" />
+    <Compile Include="planillaDetalleBLL.cs" />
+    <Compile Include="planillaDirectaBLL.cs" />
+    <Compile Include="planillaDirectaSeguimientoBLL.cs" />
+    <Compile Include="precontratoDetalleBLL.cs" />
+    <Compile Include="precontratoCabeceraBLL.cs" />
+    <Compile Include="pResumenComisionBLL.cs" />
+    <Compile Include="progNivelBLL.cs" />
+    <Compile Include="progNivelRelacionBLL.cs" />
+    <Compile Include="programaBLL.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="puntoCobranzaBLL.cs" />
+    <Compile Include="puntoVentaBLL.cs" />
+    <Compile Include="ReportesBLL.cs" />
+    <Compile Include="reporteTelefonicoBLL.cs" />
+    <Compile Include="reporteTelefonicoDetalleBLL.cs" />
+    <Compile Include="resumenPlanillaBLL.cs" />
+    <Compile Include="resumenPlanillaDevolucionBLL.cs" />
+    <Compile Include="resumenTPlanillaBLL.cs" />
+    <Compile Include="resumenTPlanillaDevolucionBLL.cs" />
+    <Compile Include="SeguimientoPlanillasBLL.cs" />
+    <Compile Include="semanaContratoBLL.cs" />
+    <Compile Include="serieDocumentoBLL.cs" />
+    <Compile Include="situacionBLL.cs" />
+    <Compile Include="subGrupoBLL.cs" />
+    <Compile Include="sucursalBLL.cs" />
+    <Compile Include="supervisorBLL.cs" />
+    <Compile Include="tAdelantoBLL.cs" />
+    <Compile Include="tarjetasBLL.cs" />
+    <Compile Include="tComisionBLL.cs" />
+    <Compile Include="tCostosBLL.cs" />
+    <Compile Include="tDevolucionBLL.cs" />
+    <Compile Include="temporal_Nro_ReporteBLL.cs" />
+    <Compile Include="tipoCambioBLL.cs" />
+    <Compile Include="tipoDocInvBLL.cs" />
+    <Compile Include="TipoDocumentoBLL.cs" />
+    <Compile Include="TipoMonedaBLL.cs" />
+    <Compile Include="tipoPlanillaCreacionBLL.cs" />
+    <Compile Include="tipoVehiculoBLL.cs" />
+    <Compile Include="tipoVentaBLL.cs" />
+    <Compile Include="tLiquidacionBLL.cs" />
+    <Compile Include="transportistaBLL.cs" />
+    <Compile Include="unidadMedidaBLL.cs" />
+    <Compile Include="usuariosBLL.cs" />
+    <Compile Include="UsuarioWebBLL.cs" />
+    <Compile Include="vehiculoBLL.cs" />
+    <Compile Include="vendedorBLL.cs" />
+    <Compile Include="zonasEmpresaBLL.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DAL\DAL.csproj">
+      <Project>{c50b467e-8f76-4430-8b10-198463f6b8fc}</Project>
+      <Name>DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Entidades\Entidades.csproj">
+      <Project>{f56bebe1-018d-4deb-9567-f82f2dbb6264}</Project>
+      <Name>Entidades</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>7</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
