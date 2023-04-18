@@ -138,6 +138,7 @@
             this.tlt_kardex_cliente = new System.Windows.Forms.ToolTip(this.components);
             this.btn_periodos_suspendidos = new System.Windows.Forms.Button();
             this.btnHistorial = new System.Windows.Forms.Button();
+            this.label36 = new System.Windows.Forms.Label();
             this.gb_oc.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DGW_DET)).BeginInit();
             this.Panel_PER.SuspendLayout();
@@ -148,6 +149,7 @@
             // 
             this.gb_oc.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.gb_oc.Controls.Add(this.label36);
             this.gb_oc.Controls.Add(this.txt_fe_apr);
             this.gb_oc.Controls.Add(this.label26);
             this.gb_oc.Controls.Add(this.label24);
@@ -1219,6 +1221,16 @@
             this.btnHistorial.UseVisualStyleBackColor = true;
             this.btnHistorial.Click += new System.EventHandler(this.btnHistorial_Click);
             // 
+            // label36
+            // 
+            this.label36.AutoSize = true;
+            this.label36.ForeColor = System.Drawing.Color.Red;
+            this.label36.Location = new System.Drawing.Point(176, 136);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(51, 13);
+            this.label36.TabIndex = 61;
+            this.label36.Text = "PRUEBA";
+            // 
             // CONSULTA_ESTADO_CUENTA_KARDEX_CLIENTE
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1385,5 +1397,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn DESC_TIPO;
         private System.Windows.Forms.DataGridViewTextBoxColumn COD_D_H;
         internal System.Windows.Forms.Button btnHistorial;
+        internal System.Windows.Forms.Label label36;
     }
 }
