@@ -225,15 +225,9 @@ namespace Presentacion.MOD_COMISIONES.Reportes.Formulario
                 Task<DataTable> task1 = Task.Run(() => BLComision.RPTHISTORICOCOMISIONESAPROBADAS(fechaAprobIni, fechaAprobFin, codVendedor, tipobusfecha, fechaActper, fechaActmes));
                 
                 DataTable tblData = await task1;
-
-
-
                 //DataTable dt = await ObtenerDevolucionDetalle();
                 const string data_set_name = "DataSet1";
                 string reporte = ObtenerRutaReporteTareaje("rptHistoricoComisiones11", Modulo.MOD_COMISIONES);
-                
-
-
                 string periodoText = string.Concat("Fecha " + (rbFecAprob.Checked ? "Aprobación" : "Registro") + " : ", fechaAprobIni.ToString("dd/MM/yyyy"), " - ", fechaAprobFin.ToString("dd/MM/yyyy"));
                 string titulo = string.Concat("REPORTE HISTORICO DE COMISIONES - APROBADAS", "\n", periodoText + "\n" + "Actualizado al : " + dtFechaActualizado.Value.ToString("dd/MM/yyyy"));
 

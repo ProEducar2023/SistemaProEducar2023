@@ -23,7 +23,7 @@ namespace DAL
             get { return @"server=TEACHER04; Database=BD_GENERAL_COI; Integrated Security=Yes"; }//servidor AES
             //get { return ConfigurationManager.ConnectionStrings["Presentacion.Properties.Settings.BD_GENERAL_COIConnectionString"].ConnectionString; }
         }
-        //ESTO ES UN COMENTARIO
+        ////ESTO ES UN COMENTARIO
         //public static string con2
         //{
         //    get

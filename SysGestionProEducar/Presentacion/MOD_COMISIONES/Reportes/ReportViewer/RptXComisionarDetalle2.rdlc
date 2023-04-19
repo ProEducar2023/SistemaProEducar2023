@@ -787,7 +787,35 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>Ult. Motivo No Descontado en Plla. de Descuento</Value>
+                                  <Value>Motivo No Descontado en </Value>
+                                  <Style>
+                                    <FontSize>7pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>Plla Dscto. ó </Value>
+                                  <Style>
+                                    <FontSize>7pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>No Cobrado en Directa</Value>
                                   <Style>
                                     <FontSize>7pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
@@ -3948,7 +3976,7 @@
             </Style>
           </Tablix>
         </ReportItems>
-        <Height>3.05486in</Height>
+        <Height>2.03771in</Height>
         <Style />
       </Body>
       <Width>15.89183in</Width>
@@ -4154,7 +4182,7 @@
       <Prompt>ReportParameter1</Prompt>
     </ReportParameter>
   </ReportParameters>
- 
+  
   <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
   <rd:ReportUnitType>Cm</rd:ReportUnitType>
   <rd:ReportID>acfb6747-4770-4d5b-880f-94e30aea0416</rd:ReportID>
