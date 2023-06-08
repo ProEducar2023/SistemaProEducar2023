@@ -2821,6 +2821,7 @@ namespace DAL
                         _ = cmd.Parameters.AddWithValue("@FE_MES", row["FE_MES_REF"]);
                         _ = cmd.Parameters.AddWithValue("@TIPO_PLLA_COBRANZA", row["TIPO_PLANILLA_DOC"]);
                         _ = cmd.Parameters.AddWithValue("@IMP_DOC", row["IMP_DOC"]);
+                        _ = cmd.Parameters.AddWithValue("@NRO_PLANILLA", row["NRO_PLANILLA_DOC"]);
 
                         result = cmd.ExecuteNonQuery();
                         if (result == 0 || result > 1)
