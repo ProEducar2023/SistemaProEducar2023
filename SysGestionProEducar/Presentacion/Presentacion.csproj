@@ -2859,6 +2859,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MOD_COMISIONES\Reportes\ReportViewer\rptHistoricoComisiones.rdlc" />
     <EmbeddedResource Include="MOD_COMISIONES\Reportes\ReportViewer\rptHistoricoComisiones11.rdlc" />
+    <EmbeddedResource Include="MOD_COMISIONES\Reportes\ReportViewer\RptPorComisionarDetalle.rdlc" />
     <EmbeddedResource Include="MOD_COMISIONES\Reportes\ReportViewer\subRepXComisionarDetalle2.rdlc" />
     <EmbeddedResource Include="MOD_COMISIONES\Reportes\ReportViewer\subRepXComisionarDetalle.rdlc" />
     <EmbeddedResource Include="MOD_COMISIONES\Reportes\ReportViewer\RptXComisionarDetalle2.rdlc" />

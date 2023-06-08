@@ -1252,7 +1252,8 @@ namespace Presentacion.MOD_COMISIONES.Reportes.Formulario
         {
             switch (cboNivelVenta5.SelectedValue?.ToString())
             {
-                case COD_NIVEL_VENDEDOR: return ObtenerRutaReporteTareaje("RptXComisionarDetalle", Modulo.MOD_COMISIONES);
+                //case COD_NIVEL_VENDEDOR: return ObtenerRutaReporteTareaje("RptXComisionarDetalle", Modulo.MOD_COMISIONES);
+                case COD_NIVEL_VENDEDOR: return ObtenerRutaReporteTareaje("RptPorComisionarDetalle", Modulo.MOD_COMISIONES);
                 default: return ObtenerRutaReporteTareaje("RptXComisionarDetalle2", Modulo.MOD_COMISIONES);
             }
         }
