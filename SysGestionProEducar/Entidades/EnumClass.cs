@@ -73,7 +73,8 @@
     {
         COMISION = 0,
         DEVOLUCION_COMISION = 1,
-        RETORNAR_ETAPA_PROCESO = 2
+        RETORNAR_ETAPA_PROCESO = 2,
+        OTROS = 3
     }
 
     public enum ESTADO_REGISTRO

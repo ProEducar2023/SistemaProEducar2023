@@ -126,15 +126,15 @@ namespace Presentacion.MOD_CXC.Reportes.Formulario
             {
                 string codPtoCob = chkPCobranza.Checked ? cboPCobranza.SelectedValue.ToString() : string.Empty;
                 string codDepartamento = chkDepartamento.Checked ? cboDetartamento.SelectedValue.ToString() : string.Empty;
-                DataTable dt;
+                DataTable dt=null;
                 const string dataSetName = "DataSet1";
                 string p1 = chkPCobranza.Checked ? "PUNTO DE COBRANZA" : chkDepartamento.Checked ? "DEPARTAMENTO" : "INSTITUCIÓN";
-                string titulo;
+                string titulo="";
                 string programa = cboPrograma.Text.ToString();
                 string nameFil = chkPCobranza.Checked ? "Punto Cobranaza : " + cboPCobranza.Text : chkDepartamento.Checked ? "Departamento : " + cboDetartamento.Text : "Institución : " + cboInstitucion.Text;
                 string periodo = dtFechaInicio.Text + " - " + dtFechaFin.Text;
                 int acces = chkPCobranza.Checked ? 1 : chkDepartamento.Checked ? 2 : 3;
-                string reportSource;
+                string reportSource = ""; ;
                 string codPais = EmpresaSistema.CodPais;
                 if (rdbOp1.Checked)
                 {
@@ -146,6 +146,7 @@ namespace Presentacion.MOD_CXC.Reportes.Formulario
                         : chkDepartamento.Checked 
                         ? ObtenerRutaReporteTareaje_MOD_CXC("RptEfeComparativaDepartamento") 
                         : ObtenerRutaReporteTareaje_MOD_CXC("RptEfeComparativaInstitucion");
+                    LanzarReporte(reportSource, dataSetName, dt, titulo, programa, nameFil, periodo, acces);
                 }
                 else if (rdbOp2.Checked)
                 {
@@ -157,6 +158,7 @@ namespace Presentacion.MOD_CXC.Reportes.Formulario
                         : chkDepartamento.Checked 
                         ? ObtenerRutaReporteTareaje_MOD_CXC("RptEfeComparativaEnvGenDepartamento") 
                         : ObtenerRutaReporteTareaje_MOD_CXC("RptEfeComparativaPllaEnvGenInstitucion");
+                    LanzarReporte(reportSource, dataSetName, dt, titulo, programa, nameFil, periodo, acces);
                 }
                 else if (rdbOp3.Checked)
                 {
@@ -168,11 +170,23 @@ namespace Presentacion.MOD_CXC.Reportes.Formulario
                         : chkDepartamento.Checked 
                         ? ObtenerRutaReporteTareaje_MOD_CXC("RptEfeComparativaPllaEnvGen2Departamento") 
                         : ObtenerRutaReporteTareaje_MOD_CXC("RptEfeComparativaPllaEnvGen2Institucion");
+                    LanzarReporte(reportSource, dataSetName, dt, titulo, programa, nameFil, periodo, acces);
                 }
                 else
-                    throw new ArgumentNullException();
+                    MessageBox.Show("POR DESARROLLAR !!!","Mensaje",MessageBoxButtons.OK,MessageBoxIcon.Information);
 
-                Form frm = CreateReportForm
+                //throw new ArgumentNullException();
+
+
+            }
+            catch (Exception ex)
+            {
+                ex.PrintException();
+            }
+        }
+        private void LanzarReporte(string reportSource, string dataSetName, DataTable dt, string titulo, string programa, string nameFil, string periodo, int acces)
+        {
+            Form frm = CreateReportForm
                     (
                         reportSource,
                         dataSetName,
@@ -183,14 +197,8 @@ namespace Presentacion.MOD_CXC.Reportes.Formulario
                         periodo,
                         acces
                     );
-                frm.Show();
-            }
-            catch (Exception ex)
-            {
-                ex.PrintException();
-            }
+            frm.Show();
         }
-
         private void CboPCobranza_TextChanged(object sender, EventArgs e)
         {
             //if (dtPuntoCobranza != null)

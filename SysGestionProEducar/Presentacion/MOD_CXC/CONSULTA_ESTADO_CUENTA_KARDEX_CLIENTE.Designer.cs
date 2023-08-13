@@ -190,7 +190,7 @@
             this.gb_oc.Location = new System.Drawing.Point(5, 4);
             this.gb_oc.Margin = new System.Windows.Forms.Padding(0);
             this.gb_oc.Name = "gb_oc";
-            this.gb_oc.Size = new System.Drawing.Size(1111, 171);
+            this.gb_oc.Size = new System.Drawing.Size(1015, 171);
             this.gb_oc.TabIndex = 1;
             this.gb_oc.TabStop = false;
             // 
@@ -607,7 +607,7 @@
             this.DGW_DET.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.White;
             this.DGW_DET.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.Blue;
             this.DGW_DET.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DGW_DET.Size = new System.Drawing.Size(1111, 286);
+            this.DGW_DET.Size = new System.Drawing.Size(1015, 286);
             this.DGW_DET.TabIndex = 37;
             this.DGW_DET.TabStop = false;
             this.DGW_DET.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DGW_DET_CellContentClick);
@@ -1223,7 +1223,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1124, 611);
+            this.ClientSize = new System.Drawing.Size(1028, 611);
             this.Controls.Add(this.btn_periodos_suspendidos);
             this.Controls.Add(this.btn_ve_exc_suspendido);
             this.Controls.Add(this.Panel_PER);

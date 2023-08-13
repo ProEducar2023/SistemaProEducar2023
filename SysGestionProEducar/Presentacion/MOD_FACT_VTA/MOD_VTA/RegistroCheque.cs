@@ -234,12 +234,12 @@ namespace Presentacion.MOD_FACT_VTA.MOD_VTA
 
                 if (Pas == 1 || tipoMovimientoCheque == 0)
                 {
-                    btnActualizar1.Visible = false;
-                    btnActualizar2.Visible = false;
-                    btnActualizarTran.Visible = false;
-                    btnAprobarDep1.Visible = false;
-                    btnAprobarDep2.Visible = false;
-                    btnAprobarTrans.Visible = false;
+                    btnActualizar1.Visible = Pas == 1;
+                    btnActualizar2.Visible = Pas == 1;
+                    btnActualizarTran.Visible = Pas == 1;
+                    btnAprobarDep1.Visible = Pas == 1;
+                    btnAprobarDep2.Visible = Pas == 1;
+                    btnAprobarTrans.Visible = Pas == 1;
                 }
             }
             catch (Exception ex)
@@ -902,13 +902,18 @@ namespace Presentacion.MOD_FACT_VTA.MOD_VTA
             {
                 if (ValidarDatosTrans())
                 {
-                    if (DialogResult.Yes == MessageBox.Show("¿Esta seguro de actualizar esta transferencia?", "MESSAGE", MessageBoxButtons.YesNo, MessageBoxIcon.Warning))
+                    if (Pas == 1)
                     {
-                        ChequesPlanillaTo cheque = ObtenerDatosTransferencia();
-                        _ = BLCheque.ActualizarTransferenciaCheque(cheque)
-                            ? MessageBox.Show("Transferencia actualizado correctamente", "MESSAGE", MessageBoxButtons.OK, MessageBoxIcon.Information)
-                            : MessageBox.Show("Ocurrió un error al actualizar", "MESSAGE", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                        MostrarDatosTransferencia();
+                        HELPERS.Forms.FrmConfirmar frmConfirmar = new HELPERS.Forms.FrmConfirmar(TIPO_CONFIRMAR.OTROS)
+                        {
+                            StartPosition = FormStartPosition.CenterParent
+                        };
+                        frmConfirmar.EventClick += FrmConfirmar3_EventClick;
+                        frmConfirmar.ShowDialog();
+                    }
+                    else
+                    {
+                        FrmConfirmar3_EventClick(sender, e);
                     }
                 }
             }
@@ -918,26 +923,55 @@ namespace Presentacion.MOD_FACT_VTA.MOD_VTA
             }
         }
 
+        private void FrmConfirmar3_EventClick(object sender, EventArgs e)
+        {
+            if (DialogResult.Yes == MessageBox.Show("¿Esta seguro de actualizar esta transferencia?", "MESSAGE", MessageBoxButtons.YesNo, MessageBoxIcon.Warning))
+            {
+                ChequesPlanillaTo cheque = ObtenerDatosTransferencia();
+                _ = BLCheque.ActualizarTransferenciaCheque(cheque)
+                    ? MessageBox.Show("Transferencia actualizado correctamente", "MESSAGE", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                    : MessageBox.Show("Ocurrió un error al actualizar", "MESSAGE", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MostrarDatosTransferencia();
+            }
+        }
+
         private void BtnActualizar2_Click(object sender, EventArgs e)
         {
             try
             {
                 if (ValidarDatosEnvioRecepDepos())
                 {
-                    if (DialogResult.Yes == MessageBox.Show("¿Esta seguro de actualizar este cheque?", "MESSAGE", MessageBoxButtons.YesNo, MessageBoxIcon.Warning))
+                    if (Pas == 1)
                     {
-                        ChequesPlanillaTo cheque = ObtenerDatosGrabar();
-                        _ = BLCheque.ActualizarChequeTransporteCourier(cheque)
-                            ? MessageBox.Show("Cheque actualizado correctamente", "MESSAGE", MessageBoxButtons.OK, MessageBoxIcon.Information)
-                            : MessageBox.Show("Ocurrió un error al actualizar", "MESSAGE", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                        MostrarDatosEnvioRecepcion();
-                        MostrarDatosDeposito();
+                        HELPERS.Forms.FrmConfirmar frmConfirmar = new HELPERS.Forms.FrmConfirmar(TIPO_CONFIRMAR.OTROS)
+                        {
+                            StartPosition = FormStartPosition.CenterParent
+                        };
+                        frmConfirmar.EventClick += FrmConfirmar2_EventClick;
+                        frmConfirmar.ShowDialog();
+                    }
+                    else
+                    {
+                        FrmConfirmar2_EventClick(sender, e);
                     }
                 }
             }
             catch (Exception ex)
             {
                 _ = MessageBox.Show(ex.Message + "\n" + ex.StackTrace, "MESSAGE", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void FrmConfirmar2_EventClick(object sender, EventArgs e)
+        {
+            if (DialogResult.Yes == MessageBox.Show("¿Esta seguro de actualizar este cheque?", "MESSAGE", MessageBoxButtons.YesNo, MessageBoxIcon.Warning))
+            {
+                ChequesPlanillaTo cheque = ObtenerDatosGrabar();
+                _ = BLCheque.ActualizarChequeTransporteCourier(cheque)
+                    ? MessageBox.Show("Cheque actualizado correctamente", "MESSAGE", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                    : MessageBox.Show("Ocurrió un error al actualizar", "MESSAGE", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MostrarDatosEnvioRecepcion();
+                MostrarDatosDeposito();
             }
         }
 
@@ -1042,19 +1076,36 @@ namespace Presentacion.MOD_FACT_VTA.MOD_VTA
             {
                 if (ValidarDatosGrabar(btnActualizar1))
                 {
-                    if (DialogResult.Yes == MessageBox.Show("¿Esta seguro de actualizar este cheque?", "MESSAGE", MessageBoxButtons.YesNo, MessageBoxIcon.Warning))
+                    if(Pas == 1)
                     {
-                        ChequesPlanillaTo cheque = ObtenerDatosGrabar();
-                        _ = BLCheque.ActualizarChequeDeposito(cheque)
-                            ? MessageBox.Show("Cheque actualizado correctamente", "MESSAGE", MessageBoxButtons.OK, MessageBoxIcon.Information)
-                            : MessageBox.Show("Ocurrió un error al actualizar", "MESSAGE", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                        MostrarDatosDeposito();
+                        HELPERS.Forms.FrmConfirmar frmConfirmar = new HELPERS.Forms.FrmConfirmar(TIPO_CONFIRMAR.OTROS)
+                        {
+                            StartPosition = FormStartPosition.CenterParent
+                        };
+                        frmConfirmar.EventClick += FrmConfirmar_EventClick;
+                        frmConfirmar.ShowDialog();
+                    }
+                    else
+                    {
+                        FrmConfirmar_EventClick(sender, e);
                     }
                 }
             }
             catch (Exception ex)
             {
                 _ = MessageBox.Show(ex.Message + "\n" + ex.StackTrace, "MESSAGE", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void FrmConfirmar_EventClick(object sender, EventArgs e)
+        {
+            if (DialogResult.Yes == MessageBox.Show("¿Esta seguro de actualizar este cheque?", "MESSAGE", MessageBoxButtons.YesNo, MessageBoxIcon.Warning))
+            {
+                ChequesPlanillaTo cheque = ObtenerDatosGrabar();
+                _ = BLCheque.ActualizarChequeDeposito(cheque)
+                    ? MessageBox.Show("Cheque actualizado correctamente", "MESSAGE", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                    : MessageBox.Show("Ocurrió un error al actualizar", "MESSAGE", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MostrarDatosDeposito();
             }
         }
 

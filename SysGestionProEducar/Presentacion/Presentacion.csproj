@@ -139,6 +139,12 @@
     <Compile Include="HELPERS\ConstMessages.cs" />
     <Compile Include="HELPERS\ErrorPrint.cs" />
     <Compile Include="HELPERS\FormatDataGridViewColumns.cs" />
+    <Compile Include="HELPERS\Forms\FrmConfimar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HELPERS\Forms\FrmConfimar.Designer.cs">
+      <DependentUpon>FrmConfimar.cs</DependentUpon>
+    </Compile>
     <Compile Include="HELPERS\Forms\FrmLoading.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -2498,6 +2504,9 @@
     <EmbeddedResource Include="DIALOGOS\frmIngresoPersona.resx">
       <DependentUpon>frmIngresoPersona.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="HELPERS\Forms\FrmConfimar.resx">
+      <DependentUpon>FrmConfimar.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="HELPERS\Forms\FrmLoading.resx">
       <DependentUpon>FrmLoading.cs</DependentUpon>
     </EmbeddedResource>
@@ -2859,6 +2868,8 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MOD_COMISIONES\Reportes\ReportViewer\rptHistoricoComisiones.rdlc" />
     <EmbeddedResource Include="MOD_COMISIONES\Reportes\ReportViewer\rptHistoricoComisiones11.rdlc" />
+    <EmbeddedResource Include="MOD_COMISIONES\Reportes\ReportViewer\RptPorComisionarDetalle.rdlc" />
+    <EmbeddedResource Include="MOD_COMISIONES\Reportes\ReportViewer\RptPorComisionarDetalle2.rdlc" />
     <EmbeddedResource Include="MOD_COMISIONES\Reportes\ReportViewer\subRepXComisionarDetalle2.rdlc" />
     <EmbeddedResource Include="MOD_COMISIONES\Reportes\ReportViewer\subRepXComisionarDetalle.rdlc" />
     <EmbeddedResource Include="MOD_COMISIONES\Reportes\ReportViewer\RptXComisionarDetalle2.rdlc" />

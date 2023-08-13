@@ -16,7 +16,7 @@ namespace DAL
         //    //get { return ConfigurationManager.ConnectionStrings["Presentacion.Properties.Settings.BD_GCO03ConnectionString"].ConnectionString; }
         //}
         //public static string con2
-        //{             
+        //{
         //    //get { return @"server=WIND8; Database=BD_GENERAL_COI; User Id=miguel; Password=main"; }
         //    //get { return @"server=TOSHIBA-PC; Database=BD_GENERAL_COI; User Id=miguel; Password=main"; }//el servidor de laptop
         //    //get { return @"server=SERVER-MG; Database=BD_GENERAL_COI; User Id=miguel; Password=main"; }//el servidor

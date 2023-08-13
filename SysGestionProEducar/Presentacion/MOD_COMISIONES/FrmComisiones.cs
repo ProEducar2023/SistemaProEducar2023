@@ -26,6 +26,7 @@ namespace Presentacion.MOD_COMISIONES
         public FrmComisiones()
         {
             InitializeComponent();
+            Accesos();
         }
 
         private delegate void DelCargarDataGridView(DataView dv);
@@ -53,6 +54,7 @@ namespace Presentacion.MOD_COMISIONES
         private string valorInicial;
         private decimal importe;
         private int tipoModificacion;
+        private bool access = false;
 
         private void FrmComisiones_Load(object sender, EventArgs e)
         {
@@ -82,6 +84,37 @@ namespace Presentacion.MOD_COMISIONES
                 DataGridViewSelectionMode.CellSelect);
             dgvComisionConfInstitu.Style5(false, false, false, false, false, DataGridViewTriState.True, DataGridViewColumnHeadersHeightSizeMode.AutoSize, DataGridViewTriState.True, DataGridViewAutoSizeRowsMode.AllCells,
                 DataGridViewSelectionMode.CellSelect);
+        }
+
+        private void Accesos()
+        {
+            StatusAccessOptions(false);
+
+            DialogResult dr = MessageBox.Show("¿Si desea modificar o agregar, marca Aceptar de lo contrario Cancelar?", "MESSAG", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
+            if (dr == DialogResult.OK)
+            {
+                FrmConfirmar frmConfirmar = new FrmConfirmar(TIPO_CONFIRMAR.OTROS)
+                {
+                    StartPosition = FormStartPosition.CenterScreen
+                };
+                frmConfirmar.EventClick += FrmConfirmar_EventClick;
+                _ = frmConfirmar.ShowDialog();
+            }
+        }
+
+        private void FrmConfirmar_EventClick(object sender, EventArgs e)
+        {
+            access = true;
+            StatusAccessOptions(true);
+        }
+
+        private void StatusAccessOptions(bool access)
+        {
+            btnNuevaComision.Enabled = access;
+            btnConfigurarComision.Enabled = access;
+            btnEliminar.Enabled = access;
+            btnConfigurarComision2.Enabled = access;
+            btnEliminar2.Enabled = access;
         }
 
         private void CargarNivel()
@@ -607,6 +640,10 @@ namespace Presentacion.MOD_COMISIONES
 
         private void DgvComision_CellBeginEdit(object sender, DataGridViewCellCancelEventArgs e)
         {
+            if (!access)
+            {
+                e.Cancel = true;
+            }
             if (DateTime.TryParse(dgvComision.Columns[e.ColumnIndex].Name, out _))
             {
                 valorInicial = dgvComision[e.ColumnIndex, e.RowIndex].Value.ToString().Trim();
@@ -805,6 +842,8 @@ namespace Presentacion.MOD_COMISIONES
 
         private void DgvComision_KeyDown(object sender, KeyEventArgs e)
         {
+            if (!access)
+                return;
             if (e.KeyCode == Keys.Delete)
             {
                 try
@@ -827,6 +866,9 @@ namespace Presentacion.MOD_COMISIONES
 
         private void DgvComision_ColumnHeaderMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
+            if (!access)
+                return;
+
             if (e.Button == MouseButtons.Right)
             {
                 if (dgvComision.Columns[e.ColumnIndex].Name == COL_NAME_NRO_CUOTA)
@@ -1174,6 +1216,10 @@ namespace Presentacion.MOD_COMISIONES
 
         private void DgvComisionConf_CellBeginEdit(object sender, DataGridViewCellCancelEventArgs e)
         {
+            if (!access)
+            {
+                e.Cancel = true;
+            }
             if (dgvComisionConfNivelVenta.Columns[e.ColumnIndex].Name == NAME_COLUMN1)
                 importe = dgvComisionConfNivelVenta[e.ColumnIndex, e.RowIndex].Value.ToDecimal();
         }
@@ -1407,6 +1453,10 @@ namespace Presentacion.MOD_COMISIONES
 
         private void DgvComisionConfInstitu_CellBeginEdit(object sender, DataGridViewCellCancelEventArgs e)
         {
+            if (!access)
+            {
+                e.Cancel = true;
+            }
             if (dgvComisionConfInstitu.Columns[e.ColumnIndex].Name == NAME_COLUMN1)
                 importe = dgvComisionConfInstitu[e.ColumnIndex, e.RowIndex].Value.ToDecimal();
         }
@@ -1508,7 +1558,8 @@ namespace Presentacion.MOD_COMISIONES
             if (tipoComision == ID_TIPO_COMISION_PORCENTAJE)
             {
                 _importe = tipoModificacion == MODIFICO_PORCENTAJE || tipoModificacion == MODIFICO_BASE_IMPONIBLE ? baseImponible * porcentaje / 100 : importe;
-                _porcentaje = tipoModificacion == MODIFICO_IMPORTE ? (importe * 100 / baseImponible) : porcentaje;
+                if (baseImponible > 0)
+                    _porcentaje = tipoModificacion == MODIFICO_IMPORTE ? (importe * 100 / baseImponible) : porcentaje;
             }
             else
             {

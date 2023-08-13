@@ -1,12 +1,11 @@
 ﻿using BLL;
+using Entidades;
 using System;
 using System.Data;
 using System.Linq;
 using System.Windows.Forms;
-using static Presentacion.HELPERS.ErrorPrint;
-using Entidades;
 
-namespace Presentacion.MOD_COMISIONES
+namespace Presentacion.HELPERS.Forms
 {
     public partial class FrmConfirmar : Form
     {
@@ -26,9 +25,7 @@ namespace Presentacion.MOD_COMISIONES
         {
             switch (access)
             {
-                case TIPO_CONFIRMAR.COMISION: Validar1(sender, e); break;
-                case TIPO_CONFIRMAR.DEVOLUCION_COMISION: Validar1(sender, e); break;
-                case TIPO_CONFIRMAR.OTROS: Validar2(sender, e); break;
+                case TIPO_CONFIRMAR.OTROS: Validar1(sender, e); break;
             }
         }
 
@@ -67,23 +64,6 @@ namespace Presentacion.MOD_COMISIONES
                 ex.PrintException();
             }
             return esValido;
-        }
-
-        private void Validar2(object sender, EventArgs e)
-        {
-            const string contraseña = "sistema#";
-            bool esValido = txtContraseña.Text.Trim().ToLower() == contraseña;
-            if (esValido)
-            {
-                EventClick(sender, e);
-                Close();
-            }
-            else
-            {
-                _ = MessageBox.Show("La contraseña ingresada es incorrecta.", "MESSAGE", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                txtContraseña.Clear();
-                _ = txtContraseña.Focus();
-            }
         }
     }
 }

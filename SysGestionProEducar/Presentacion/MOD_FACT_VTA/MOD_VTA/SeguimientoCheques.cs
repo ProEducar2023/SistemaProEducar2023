@@ -449,6 +449,12 @@ namespace Presentacion.MOD_FACT_VTA.MOD_VTA
             });
             _ = dgvCheques.Columns.Add(new DataGridViewTextBoxColumn
             {
+                Name = "BANCO",
+                HeaderText = "Banco",
+                Width = 150
+            });
+            _ = dgvCheques.Columns.Add(new DataGridViewTextBoxColumn
+            {
                 Name = "TIPO_OPERACION",
                 HeaderText = "Tipo.Oper",
                 Width = 70
@@ -563,6 +569,7 @@ namespace Presentacion.MOD_FACT_VTA.MOD_VTA
             dgvCheques.Columns["SALDO_PAGO"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
 
             HeaderTextColumnDataGridView(dgvCheques);
+            dgvCheques.Style1();
         }
 
         private void HeaderTextColumnDataGridView(DataGridView dataGridView)
@@ -635,6 +642,12 @@ namespace Presentacion.MOD_FACT_VTA.MOD_VTA
                     return;
                 }
 
+                //if (BLSeguimiento.VerificarSiPlanillaTienePagosRegistrados(Convert.ToInt32(gridView.CurrentRow.Cells["ID_SEGUIMIENTO"].Value)).Rows.Count > 0)
+                //{
+                //    _ = MessageBox.Show("Esta planilla tiene aún llamadas programadas pendientes", "MESSAGE", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                //    return;
+                //}
+
                 int idSeguimiento = Convert.ToInt32(gridView.CurrentRow.Cells["ID_SEGUIMIENTO"].Value);
                 int id = Convert.ToInt32(dgvCheques.CurrentRow.Cells["ID"].Value);
                 string codPtoCob = gridView.CurrentRow.Cells["COD_PTO_COB_CONSOLIDADO"].Value.ToString();
@@ -660,22 +673,28 @@ namespace Presentacion.MOD_FACT_VTA.MOD_VTA
                 _ = cheques.ShowDialog();
                 ActualizarRegistroActualPtoCobranza();
                 ActualizarRegistroActualPlanilla();
-                ObtenerCheques(dgv1);
+                ObtenerCheques(tbPrincipal.SelectedTab == tabPage1 ? dgv1 : dgv2);
             }
         }
 
         private DataGridView ObtenerDataGridView(ToolStripButton button)
         {
-            switch (button.Name)
-            {
-                case "btnNuevoCheque":
-                case "btnRegistrarSegui":
-                    return dgv1;
-                case "btnRegistrarCheque2":
-                    return dgv2;
-                default:
-                    return null;
-            }
+            //switch (button.Name)
+            //{
+            //    case "btnNuevoCheque":
+            //    case "btnRegistrarSegui":
+            //        return dgv1;
+            //    case "btnRegistrarCheque2":
+            //        return dgv2;
+            //    default:
+            //        return null;
+            //}
+            if ((button.Name == "btnNuevoCheque" || button.Name == "btnRegistrarSegui") && tbPrincipal.SelectedTab == tabPage1)
+                return dgv1;
+
+            if (button.Name == "btnRegistrarSegui" && tbPrincipal.SelectedTab == tabPage2)
+                return dgv2;
+            return null;
         }
 
         private void TbPrincipal_SelectedIndexChanged(object sender, EventArgs e)
@@ -687,14 +706,16 @@ namespace Presentacion.MOD_FACT_VTA.MOD_VTA
                 btnRegistrarSegui.Visible = true;
                 sp1.Visible = true;
                 sp2.Visible = true;
+                btnAplicacionExcOtrasPllas.Visible = true;
             }
             else if (tbPrincipal.SelectedIndex == (int)EtapaSeguiChequeGrid.Planillas_Cerradas)
             {
                 btnEliminar.Visible = false;
                 btnNuevoCheque.Visible = false;
-                btnRegistrarSegui.Visible = false;
+                btnRegistrarSegui.Visible = true;
                 sp1.Visible = false;
                 sp2.Visible = false;
+                btnAplicacionExcOtrasPllas.Visible = false;
             }
             ObtenerPlanillasXPuntoCobranza();
             ListarLlamadasPendientes(ObtenerEstadoXTabPage());
@@ -876,6 +897,7 @@ namespace Presentacion.MOD_FACT_VTA.MOD_VTA
                             row["ID"],
                             row["TIPO"],
                             row["FL_GEN_APL"],
+                            row["BANCO"],
                             row["TIPO_OPER"],
                             row["NRO_OPERACION"],
                             row["NRO_DOCUMENTO"],
@@ -1181,7 +1203,7 @@ namespace Presentacion.MOD_FACT_VTA.MOD_VTA
                         ActualizarRegistroActualPtoCobranza();
                         MostarTotalesCheque();
                     }
-                  
+
                     //DialogResult dr = MessageBox.Show("¿Esta seguro de eliminar esta operación?", "MESSAGE", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
                     //if (dr == DialogResult.Yes)
                     //{
@@ -1233,7 +1255,7 @@ namespace Presentacion.MOD_FACT_VTA.MOD_VTA
             };
         }
 
-        
+
 
         private bool ValidarEliminarPago()
         {

@@ -265,7 +265,7 @@
             // 
             this.toolStripLabel9.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.toolStripLabel9.Name = "toolStripLabel9";
-            this.toolStripLabel9.Size = new System.Drawing.Size(104, 22);
+            this.toolStripLabel9.Size = new System.Drawing.Size(105, 22);
             this.toolStripLabel9.Tag = "0";
             this.toolStripLabel9.Text = "Total Planillas : 0";
             // 
@@ -468,7 +468,7 @@
             // 
             this.toolStripLabel1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.toolStripLabel1.Name = "toolStripLabel1";
-            this.toolStripLabel1.Size = new System.Drawing.Size(104, 22);
+            this.toolStripLabel1.Size = new System.Drawing.Size(105, 22);
             this.toolStripLabel1.Tag = "0";
             this.toolStripLabel1.Text = "Total Planillas : 0";
             // 
@@ -540,7 +540,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(1221, 147);
+            this.tabPage1.Size = new System.Drawing.Size(1212, 147);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Envío         ";
             // 
@@ -557,7 +557,7 @@
             this.dgvConfirmEnvio.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.White;
             this.dgvConfirmEnvio.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.Blue;
             this.dgvConfirmEnvio.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvConfirmEnvio.Size = new System.Drawing.Size(1215, 116);
+            this.dgvConfirmEnvio.Size = new System.Drawing.Size(1206, 116);
             this.dgvConfirmEnvio.TabIndex = 8;
             this.dgvConfirmEnvio.DataSourceChanged += new System.EventHandler(this.DgvConfirmRecep_DataSourceChanged);
             this.dgvConfirmEnvio.CurrentCellDirtyStateChanged += new System.EventHandler(this.DgvConfirmEnvio_CurrentCellDirtyStateChanged);
@@ -582,7 +582,7 @@
             this.btnRefresh});
             this.toolStrip1.Location = new System.Drawing.Point(3, 119);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(1215, 25);
+            this.toolStrip1.Size = new System.Drawing.Size(1206, 25);
             this.toolStrip1.TabIndex = 7;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -610,7 +610,7 @@
             // 
             this.lblTotalPla.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTotalPla.Name = "lblTotalPla";
-            this.lblTotalPla.Size = new System.Drawing.Size(104, 22);
+            this.lblTotalPla.Size = new System.Drawing.Size(105, 22);
             this.lblTotalPla.Tag = "0";
             this.lblTotalPla.Text = "Total Planillas : 0";
             // 
@@ -649,7 +649,7 @@
             this.btnRetirarPorPla.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnRetirarPorPla.Name = "btnRetirarPorPla";
             this.btnRetirarPorPla.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.btnRetirarPorPla.Size = new System.Drawing.Size(171, 22);
+            this.btnRetirarPorPla.Size = new System.Drawing.Size(172, 22);
             this.btnRetirarPorPla.Text = "Eliminar Planillas Transferidas";
             this.btnRetirarPorPla.ToolTipText = "Confirmar Envío";
             this.btnRetirarPorPla.Click += new System.EventHandler(this.BtnRetirarPorPla_Click);
@@ -691,7 +691,7 @@
             this.tbPrincipal.Name = "tbPrincipal";
             this.tbPrincipal.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.tbPrincipal.SelectedIndex = 0;
-            this.tbPrincipal.Size = new System.Drawing.Size(1229, 173);
+            this.tbPrincipal.Size = new System.Drawing.Size(1220, 173);
             this.tbPrincipal.TabIndex = 10;
             this.tbPrincipal.DrawItem += new System.Windows.Forms.DrawItemEventHandler(this.TbPrincipal_DrawItem);
             this.tbPrincipal.Selected += new System.Windows.Forms.TabControlEventHandler(this.TbPrincipal_Selected);
@@ -773,7 +773,7 @@
             // 
             this.toolStripLabel3.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.toolStripLabel3.Name = "toolStripLabel3";
-            this.toolStripLabel3.Size = new System.Drawing.Size(104, 22);
+            this.toolStripLabel3.Size = new System.Drawing.Size(105, 22);
             this.toolStripLabel3.Tag = "0";
             this.toolStripLabel3.Text = "Total Planillas : 0";
             // 
@@ -907,7 +907,7 @@
             // 
             this.toolStripLabel12.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.toolStripLabel12.Name = "toolStripLabel12";
-            this.toolStripLabel12.Size = new System.Drawing.Size(104, 22);
+            this.toolStripLabel12.Size = new System.Drawing.Size(105, 22);
             this.toolStripLabel12.Tag = "0";
             this.toolStripLabel12.Text = "Total Planillas : 0";
             // 
@@ -1036,7 +1036,7 @@
             // 
             this.toolStripLabel18.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.toolStripLabel18.Name = "toolStripLabel18";
-            this.toolStripLabel18.Size = new System.Drawing.Size(104, 22);
+            this.toolStripLabel18.Size = new System.Drawing.Size(105, 22);
             this.toolStripLabel18.Tag = "0";
             this.toolStripLabel18.Text = "Total Planillas : 0";
             // 
@@ -1212,7 +1212,7 @@
             // 
             this.toolStripLabel15.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.toolStripLabel15.Name = "toolStripLabel15";
-            this.toolStripLabel15.Size = new System.Drawing.Size(104, 22);
+            this.toolStripLabel15.Size = new System.Drawing.Size(105, 22);
             this.toolStripLabel15.Tag = "0";
             this.toolStripLabel15.Text = "Total Planillas : 0";
             // 
@@ -1558,7 +1558,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1285, 585);
+            this.ClientSize = new System.Drawing.Size(1276, 585);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.dgvHistorialLlamadas);

@@ -285,7 +285,7 @@ namespace Presentacion.MOD_COMISIONES.Reportes.Formulario
 
 
                 string periodoText = string.Concat("Fecha Registro : ", fechaAprobIni.ToString("MMMM - yyyy"), " al ", fechaAprobFin.ToString("MMMM - yyyy"));
-                string titulo = string.Concat("REPORTE DE COMISIONES POR GENERAR POR ", cboNivelVenta5.Text, "\n", periodoText + "\n");
+                string titulo = string.Concat("REPORTE DE CONTRATOS POR COMISIONAR - POR ", cboNivelVenta5.Text, "\n", periodoText + "\n");
 
                 
                 //string titulo = string.Concat("REPORTE DE COMISIONES POR GENERAR POR ");
@@ -1252,8 +1252,10 @@ namespace Presentacion.MOD_COMISIONES.Reportes.Formulario
         {
             switch (cboNivelVenta5.SelectedValue?.ToString())
             {
-                case COD_NIVEL_VENDEDOR: return ObtenerRutaReporteTareaje("RptXComisionarDetalle", Modulo.MOD_COMISIONES);
-                default: return ObtenerRutaReporteTareaje("RptXComisionarDetalle2", Modulo.MOD_COMISIONES);
+                //case COD_NIVEL_VENDEDOR: return ObtenerRutaReporteTareaje("RptXComisionarDetalle", Modulo.MOD_COMISIONES);
+                case COD_NIVEL_VENDEDOR: return ObtenerRutaReporteTareaje("RptPorComisionarDetalle", Modulo.MOD_COMISIONES);
+                //default: return ObtenerRutaReporteTareaje("RptXComisionarDetalle2", Modulo.MOD_COMISIONES);
+                default: return ObtenerRutaReporteTareaje("RptPorComisionarDetalle2", Modulo.MOD_COMISIONES);
             }
         }
 
