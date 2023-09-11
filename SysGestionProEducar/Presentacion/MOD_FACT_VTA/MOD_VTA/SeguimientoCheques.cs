@@ -642,11 +642,17 @@ namespace Presentacion.MOD_FACT_VTA.MOD_VTA
                     return;
                 }
 
-                //if (BLSeguimiento.VerificarSiPlanillaTienePagosRegistrados(Convert.ToInt32(gridView.CurrentRow.Cells["ID_SEGUIMIENTO"].Value)).Rows.Count > 0)
-                //{
-                //    _ = MessageBox.Show("Esta planilla tiene aún llamadas programadas pendientes", "MESSAGE", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                //    return;
-                //}
+                if (BLCheque.VerificarSiDepositoRegistradoTesoreria(idExCheque))
+                {
+                    _ = MessageBox.Show("Este depósito ya fue registrado en tesorería, no se puede modificar", "MESSAGE", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+
+                if (BLCheque.VerificarSiTransferenciaRegistradoTesoreria(idExCheque))
+                {
+                    _ = MessageBox.Show("Esta transferencia ya fue registrado en tesorería, no se puede modificar", "MESSAGE", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
 
                 int idSeguimiento = Convert.ToInt32(gridView.CurrentRow.Cells["ID_SEGUIMIENTO"].Value);
                 int id = Convert.ToInt32(dgvCheques.CurrentRow.Cells["ID"].Value);

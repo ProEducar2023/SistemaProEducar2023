@@ -2428,7 +2428,13 @@ namespace SysSeguimiento
             int idSeguimiento = DataGridViewActual.CurrentRow.Cells["ID_SEGUIMIENTO"].Value.ToInt32();
             if (BLSeguimiento.VerificarSiPlanillaTienePagosRegistrados(idSeguimiento))
             {
-                _ = MessageBox.Show("Esta planilla ya tiene cobros registrados(cheques/depositos/Transferencias)", "MESSAGE", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                _ = MessageBox.Show("Esta planilla ya tiene cobros registrados(cheques/depositos/Transferencias) en seguimiento cheques", "MESSAGE", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return false;
+            }
+
+            if (BLSeguimiento.VerificarPlanillaTienePagosRegistradosTesoreria(idSeguimiento))
+            {
+                _ = MessageBox.Show("Esta planilla ya tiene cobros registrados(cheques/depositos/Transferencias) en tesorería", "MESSAGE", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return false;
             }
             return true;

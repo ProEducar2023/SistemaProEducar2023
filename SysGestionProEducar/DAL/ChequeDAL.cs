@@ -3169,7 +3169,7 @@ namespace DAL
                 {
                     cmd.CommandType = CommandType.Text;
 
-                    cmd.Parameters.Add("@ID_DEPOSITO", SqlDbType.Decimal).Value = idDeposito;
+                    cmd.Parameters.Add("@ID_DEPOSITO", SqlDbType.Int).Value = idDeposito;
                     conn.Open();
                     using (SqlDataReader dr = cmd.ExecuteReader())
                     {
@@ -3187,6 +3187,37 @@ namespace DAL
             }
         }
 
+        /// <summary>
+        /// Verificamos si el depósito se encuentra ya registrdo en tesoreria. 
+        /// </summary>
+        /// <param name="idTransferencia"></param>
+        /// <returns>Retorna true si esta reistrado, de lo contratio false</returns>
+        public bool VerificarSiTransferenciaRegistradoTesoreria(int idTransferencia)
+        {
+            try
+            {
+                const string sentence = "SELECT '' FROM MOVIMIENTOS_CHEQUE WHERE ID_TRANSFERENCIA = @ID_TRANSFERENCIA";
+                using (SqlCommand cmd = new SqlCommand(sentence, conn))
+                {
+                    cmd.CommandType = CommandType.Text;
+
+                    cmd.Parameters.Add("@ID_TRANSFERENCIA", SqlDbType.Int).Value = idTransferencia;
+                    conn.Open();
+                    using (SqlDataReader dr = cmd.ExecuteReader())
+                    {
+                        return dr.Read();
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                conn.Close();
+            }
+        }
 
         public string VerificarSiVerificarDevoluciones(int ID_SEGUIMIENTO, int ID_PAGO, string TIPO_PAGO)
         {

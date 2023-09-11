@@ -335,5 +335,10 @@ namespace BLL
         {
             return DALSeguimiento.VerificarSiPlanillaTienePagosRegistrados(idSeguimiento);
         }
+
+        public bool VerificarPlanillaTienePagosRegistradosTesoreria(int idSeguimiento)
+        {
+            return DALSeguimiento.VerificarPlanillaTienePagosRegistradosTesoreria(idSeguimiento);
+        }
     }
 }

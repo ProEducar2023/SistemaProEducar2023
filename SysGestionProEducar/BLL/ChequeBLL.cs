@@ -660,6 +660,16 @@ namespace BLL
             return DALCheque.VerificarSiDepositoRegistradoTesoreria(idDeposito);
         }
 
+        /// <summary>
+        /// Verificamos si el depósito se encuentra ya registrdo en tesoreria. 
+        /// </summary>
+        /// <param name="idTransferencia"></param>
+        /// <returns>Retorna true si esta reistrado, de lo contratio false</returns>
+        public bool VerificarSiTransferenciaRegistradoTesoreria(int idTransferencia)
+        {
+            return DALCheque.VerificarSiTransferenciaRegistradoTesoreria(idTransferencia);
+        }
+
         public string VerificarDevoluciones(int ID_SEGUIMIENTO, int ID_PAGO, string TIPO_PAGO)
         {
             return DALCheque.VerificarSiVerificarDevoluciones(ID_SEGUIMIENTO, ID_PAGO, TIPO_PAGO);

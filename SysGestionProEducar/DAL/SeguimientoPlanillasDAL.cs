@@ -3508,5 +3508,38 @@ namespace DAL
                 conn.Close();
             }
         }
+
+        /// <summary>
+        /// Retorna true si esta reistrado, de lo contratio false
+        /// Verificamos si la planilla tiene Cheques/Depósitos/Transferencias registrdos en tesoreria. 
+        /// </summary>
+        /// <param name="idSeguimiento"></param>
+        /// <returns></returns>
+        public bool VerificarPlanillaTienePagosRegistradosTesoreria(int idSeguimiento)
+        {
+            try
+            {
+                const string sentence = "SELECT '' FROM MOVIMIENTOS_CHEQUE WHERE ID_SEGUIMIENTO = @ID_SEGUIMIENTO";
+                using (SqlCommand cmd = new SqlCommand(sentence, conn))
+                {
+                    cmd.CommandType = CommandType.Text;
+
+                    cmd.Parameters.Add("@ID_SEGUIMIENTO", SqlDbType.Int).Value = idSeguimiento;
+                    conn.Open();
+                    using (SqlDataReader dr = cmd.ExecuteReader())
+                    {
+                        return dr.Read();
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                conn.Close();
+            }
+        }
     }
 }

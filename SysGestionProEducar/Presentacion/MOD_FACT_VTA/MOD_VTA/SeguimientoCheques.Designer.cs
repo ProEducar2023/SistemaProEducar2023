@@ -136,7 +136,7 @@ namespace Presentacion.MOD_FACT_VTA.MOD_VTA
             this.tbPrincipal.Name = "tbPrincipal";
             this.tbPrincipal.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.tbPrincipal.SelectedIndex = 0;
-            this.tbPrincipal.Size = new System.Drawing.Size(972, 235);
+            this.tbPrincipal.Size = new System.Drawing.Size(1226, 235);
             this.tbPrincipal.TabIndex = 17;
             this.tbPrincipal.DrawItem += new System.Windows.Forms.DrawItemEventHandler(this.TbPrincipal_DrawItem);
             this.tbPrincipal.SelectedIndexChanged += new System.EventHandler(this.TbPrincipal_SelectedIndexChanged);
@@ -149,7 +149,7 @@ namespace Presentacion.MOD_FACT_VTA.MOD_VTA
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(964, 209);
+            this.tabPage1.Size = new System.Drawing.Size(1218, 209);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Planillas            ";
             // 
@@ -192,7 +192,7 @@ namespace Presentacion.MOD_FACT_VTA.MOD_VTA
             this.dgv1.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.White;
             this.dgv1.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.Blue;
             this.dgv1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv1.Size = new System.Drawing.Size(958, 178);
+            this.dgv1.Size = new System.Drawing.Size(1212, 178);
             this.dgv1.TabIndex = 8;
             this.dgv1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv1_CellContentClick);
             this.dgv1.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Dgv1_CellDoubleClick);
@@ -216,7 +216,7 @@ namespace Presentacion.MOD_FACT_VTA.MOD_VTA
             this.btnRefresh});
             this.toolStrip1.Location = new System.Drawing.Point(3, 181);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(958, 25);
+            this.toolStrip1.Size = new System.Drawing.Size(1212, 25);
             this.toolStrip1.TabIndex = 7;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -245,7 +245,7 @@ namespace Presentacion.MOD_FACT_VTA.MOD_VTA
             this.lblTotalPla.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTotalPla.ForeColor = System.Drawing.Color.White;
             this.lblTotalPla.Name = "lblTotalPla";
-            this.lblTotalPla.Size = new System.Drawing.Size(105, 22);
+            this.lblTotalPla.Size = new System.Drawing.Size(104, 22);
             this.lblTotalPla.Tag = "0";
             this.lblTotalPla.Text = "Total Planillas : 0";
             // 
@@ -292,7 +292,7 @@ namespace Presentacion.MOD_FACT_VTA.MOD_VTA
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(1221, 209);
+            this.tabPage2.Size = new System.Drawing.Size(964, 209);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Planillas Cerradas                ";
             // 
@@ -310,7 +310,7 @@ namespace Presentacion.MOD_FACT_VTA.MOD_VTA
             this.dgv2.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.White;
             this.dgv2.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.Blue;
             this.dgv2.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv2.Size = new System.Drawing.Size(1215, 178);
+            this.dgv2.Size = new System.Drawing.Size(958, 178);
             this.dgv2.TabIndex = 38;
             this.dgv2.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Dgv1_CellDoubleClick);
             this.dgv2.SelectionChanged += new System.EventHandler(this.DgvConfirmCobrado_SelectionChanged);
@@ -348,7 +348,7 @@ namespace Presentacion.MOD_FACT_VTA.MOD_VTA
             this.toolStrip2.Location = new System.Drawing.Point(3, 181);
             this.toolStrip2.Name = "toolStrip2";
             this.toolStrip2.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
-            this.toolStrip2.Size = new System.Drawing.Size(1215, 25);
+            this.toolStrip2.Size = new System.Drawing.Size(958, 25);
             this.toolStrip2.TabIndex = 25;
             this.toolStrip2.Text = "toolStrip2";
             // 
@@ -361,7 +361,7 @@ namespace Presentacion.MOD_FACT_VTA.MOD_VTA
             this.btnVerCobranza.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.btnVerCobranza.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnVerCobranza.Name = "btnVerCobranza";
-            this.btnVerCobranza.Size = new System.Drawing.Size(164, 22);
+            this.btnVerCobranza.Size = new System.Drawing.Size(163, 22);
             this.btnVerCobranza.Text = "Ver Cobranza Registrado";
             this.btnVerCobranza.ToolTipText = "Cancelar";
             this.btnVerCobranza.Click += new System.EventHandler(this.BtnVerCobranza_Click);
@@ -377,7 +377,7 @@ namespace Presentacion.MOD_FACT_VTA.MOD_VTA
             this.toolStripLabel1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.toolStripLabel1.ForeColor = System.Drawing.Color.White;
             this.toolStripLabel1.Name = "toolStripLabel1";
-            this.toolStripLabel1.Size = new System.Drawing.Size(105, 22);
+            this.toolStripLabel1.Size = new System.Drawing.Size(104, 22);
             this.toolStripLabel1.Tag = "0";
             this.toolStripLabel1.Text = "Total Planillas : 0";
             // 
@@ -837,7 +837,7 @@ namespace Presentacion.MOD_FACT_VTA.MOD_VTA
             this.lblTotCobCheque.ForeColor = System.Drawing.Color.White;
             this.lblTotCobCheque.Name = "lblTotCobCheque";
             this.lblTotCobCheque.Overflow = System.Windows.Forms.ToolStripItemOverflow.Never;
-            this.lblTotCobCheque.Size = new System.Drawing.Size(100, 22);
+            this.lblTotCobCheque.Size = new System.Drawing.Size(99, 22);
             this.lblTotCobCheque.Text = "Total Importe : 0";
             // 
             // dgvCheques
@@ -864,7 +864,7 @@ namespace Presentacion.MOD_FACT_VTA.MOD_VTA
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1028, 626);
+            this.ClientSize = new System.Drawing.Size(1282, 626);
             this.Controls.Add(this.dgvPuntoCobranza);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
