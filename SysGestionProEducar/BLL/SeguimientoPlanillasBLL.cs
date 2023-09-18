@@ -105,6 +105,13 @@ namespace BLL
             return DALSeguimiento.ListarLlamadasPendientes();
         }
 
+        /// <summary>
+        /// Retorna una planilla a la etapa especificada
+        /// </summary>
+        /// <param name="idSeguimiento">Id seguimiento de la planilla</param>
+        /// <param name="idEstado">Id de estado actual de la planilla</param>
+        /// <param name="idEstadoAnterior">Id de estado a la cual se desea retornar</param>
+        /// <returns></returns>
         public bool RegresarEstadoAnterior(int idSeguimiento, int idEstado, int idEstadoAnterior)
         {
             return DALSeguimiento.RegresarEstadoAnterior(idSeguimiento, idEstado, idEstadoAnterior);
@@ -339,6 +346,11 @@ namespace BLL
         public bool VerificarPlanillaTienePagosRegistradosTesoreria(int idSeguimiento)
         {
             return DALSeguimiento.VerificarPlanillaTienePagosRegistradosTesoreria(idSeguimiento);
+        }
+
+        public DataTable ListarEtapasPlanillaParaRetroceso(int idEstado)
+        {
+            return DALSeguimiento.ListarEtapasPlanillaParaRetroceso(idEstado);
         }
     }
 }

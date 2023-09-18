@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SeguimientoPlanilla));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.dgvConfirmPro = new System.Windows.Forms.DataGridView();
             this.toolStrip3 = new System.Windows.Forms.ToolStrip();
@@ -151,6 +151,8 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator30 = new System.Windows.Forms.ToolStripSeparator();
             this.tabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvConfirmPro)).BeginInit();
             this.toolStrip3.SuspendLayout();
@@ -192,7 +194,7 @@
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(1221, 147);
+            this.tabPage3.Size = new System.Drawing.Size(1212, 147);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Proceso               ";
             // 
@@ -210,7 +212,7 @@
             this.dgvConfirmPro.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.White;
             this.dgvConfirmPro.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.Blue;
             this.dgvConfirmPro.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvConfirmPro.Size = new System.Drawing.Size(1215, 116);
+            this.dgvConfirmPro.Size = new System.Drawing.Size(1206, 116);
             this.dgvConfirmPro.TabIndex = 27;
             this.dgvConfirmPro.DataSourceChanged += new System.EventHandler(this.DgvConfirmRecep_DataSourceChanged);
             this.dgvConfirmPro.SelectionChanged += new System.EventHandler(this.DgvConfirmRecep_SelectionChanged);
@@ -232,12 +234,14 @@
             this.toolStripButton5,
             this.toolStripSeparator18,
             this.toolStripButton4,
+            this.toolStripSeparator30,
+            this.toolStripButton1,
             this.toolStripSeparator15,
             this.toolStripButton7});
             this.toolStrip3.Location = new System.Drawing.Point(3, 119);
             this.toolStrip3.Name = "toolStrip3";
             this.toolStrip3.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
-            this.toolStrip3.Size = new System.Drawing.Size(1215, 25);
+            this.toolStrip3.Size = new System.Drawing.Size(1206, 25);
             this.toolStrip3.TabIndex = 26;
             this.toolStrip3.Text = "toolStrip3";
             // 
@@ -265,7 +269,7 @@
             // 
             this.toolStripLabel9.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.toolStripLabel9.Name = "toolStripLabel9";
-            this.toolStripLabel9.Size = new System.Drawing.Size(105, 22);
+            this.toolStripLabel9.Size = new System.Drawing.Size(104, 22);
             this.toolStripLabel9.Tag = "0";
             this.toolStripLabel9.Text = "Total Planillas : 0";
             // 
@@ -359,7 +363,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(1221, 147);
+            this.tabPage2.Size = new System.Drawing.Size(1212, 147);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Recepción            ";
             // 
@@ -377,7 +381,7 @@
             this.dgvConfirmRecep.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.White;
             this.dgvConfirmRecep.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.Blue;
             this.dgvConfirmRecep.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvConfirmRecep.Size = new System.Drawing.Size(1215, 116);
+            this.dgvConfirmRecep.Size = new System.Drawing.Size(1206, 116);
             this.dgvConfirmRecep.TabIndex = 38;
             this.dgvConfirmRecep.DataSourceChanged += new System.EventHandler(this.DgvConfirmRecep_DataSourceChanged);
             this.dgvConfirmRecep.CurrentCellDirtyStateChanged += new System.EventHandler(this.DgvConfirmRecep_CurrentCellDirtyStateChanged);
@@ -420,7 +424,7 @@
             this.toolStrip2.Location = new System.Drawing.Point(3, 119);
             this.toolStrip2.Name = "toolStrip2";
             this.toolStrip2.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
-            this.toolStrip2.Size = new System.Drawing.Size(1215, 25);
+            this.toolStrip2.Size = new System.Drawing.Size(1206, 25);
             this.toolStrip2.TabIndex = 25;
             this.toolStrip2.Text = "toolStrip2";
             // 
@@ -454,9 +458,9 @@
             this.btnRegresar.Image = ((System.Drawing.Image)(resources.GetObject("btnRegresar.Image")));
             this.btnRegresar.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnRegresar.Name = "btnRegresar";
-            this.btnRegresar.Size = new System.Drawing.Size(164, 22);
-            this.btnRegresar.Text = "Regresar a la etapa anterior";
-            this.btnRegresar.Click += new System.EventHandler(this.BtnRegresar_Click);
+            this.btnRegresar.Size = new System.Drawing.Size(95, 22);
+            this.btnRegresar.Text = "Regresar etapa";
+            this.btnRegresar.Click += new System.EventHandler(this.BtnRetornarEtapa_Click);
             // 
             // toolStripSeparator9
             // 
@@ -468,7 +472,7 @@
             // 
             this.toolStripLabel1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.toolStripLabel1.Name = "toolStripLabel1";
-            this.toolStripLabel1.Size = new System.Drawing.Size(105, 22);
+            this.toolStripLabel1.Size = new System.Drawing.Size(104, 22);
             this.toolStripLabel1.Tag = "0";
             this.toolStripLabel1.Text = "Total Planillas : 0";
             // 
@@ -610,7 +614,7 @@
             // 
             this.lblTotalPla.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTotalPla.Name = "lblTotalPla";
-            this.lblTotalPla.Size = new System.Drawing.Size(105, 22);
+            this.lblTotalPla.Size = new System.Drawing.Size(104, 22);
             this.lblTotalPla.Tag = "0";
             this.lblTotalPla.Text = "Total Planillas : 0";
             // 
@@ -649,7 +653,7 @@
             this.btnRetirarPorPla.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnRetirarPorPla.Name = "btnRetirarPorPla";
             this.btnRetirarPorPla.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.btnRetirarPorPla.Size = new System.Drawing.Size(172, 22);
+            this.btnRetirarPorPla.Size = new System.Drawing.Size(171, 22);
             this.btnRetirarPorPla.Text = "Eliminar Planillas Transferidas";
             this.btnRetirarPorPla.ToolTipText = "Confirmar Envío";
             this.btnRetirarPorPla.Click += new System.EventHandler(this.BtnRetirarPorPla_Click);
@@ -705,7 +709,7 @@
             this.tabPage5.Name = "tabPage5";
             this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage5.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.tabPage5.Size = new System.Drawing.Size(1221, 147);
+            this.tabPage5.Size = new System.Drawing.Size(1212, 147);
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "Lista         ";
             // 
@@ -723,7 +727,7 @@
             this.dgvLista.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.White;
             this.dgvLista.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.Blue;
             this.dgvLista.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvLista.Size = new System.Drawing.Size(1215, 116);
+            this.dgvLista.Size = new System.Drawing.Size(1206, 116);
             this.dgvLista.TabIndex = 9;
             this.dgvLista.DataSourceChanged += new System.EventHandler(this.DgvConfirmRecep_DataSourceChanged);
             this.dgvLista.SelectionChanged += new System.EventHandler(this.DgvConfirmRecep_SelectionChanged);
@@ -745,7 +749,7 @@
             this.toolStripButton8});
             this.toolStrip6.Location = new System.Drawing.Point(3, 119);
             this.toolStrip6.Name = "toolStrip6";
-            this.toolStrip6.Size = new System.Drawing.Size(1215, 25);
+            this.toolStrip6.Size = new System.Drawing.Size(1206, 25);
             this.toolStrip6.TabIndex = 8;
             this.toolStrip6.Text = "toolStrip6";
             // 
@@ -758,8 +762,8 @@
             this.btnRetornarEtapa.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnRetornarEtapa.Name = "btnRetornarEtapa";
             this.btnRetornarEtapa.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.btnRetornarEtapa.Size = new System.Drawing.Size(155, 22);
-            this.btnRetornarEtapa.Text = "Retornar etapa proceso";
+            this.btnRetornarEtapa.Size = new System.Drawing.Size(103, 22);
+            this.btnRetornarEtapa.Text = "Retornar etapa";
             this.btnRetornarEtapa.ToolTipText = "Retornar a la etapa proceso";
             this.btnRetornarEtapa.Click += new System.EventHandler(this.BtnRetornarEtapa_Click);
             // 
@@ -773,7 +777,7 @@
             // 
             this.toolStripLabel3.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.toolStripLabel3.Name = "toolStripLabel3";
-            this.toolStripLabel3.Size = new System.Drawing.Size(105, 22);
+            this.toolStripLabel3.Size = new System.Drawing.Size(104, 22);
             this.toolStripLabel3.Tag = "0";
             this.toolStripLabel3.Text = "Total Planillas : 0";
             // 
@@ -823,7 +827,7 @@
             this.tabPage4.Controls.Add(this.toolStrip4);
             this.tabPage4.Location = new System.Drawing.Point(4, 22);
             this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Size = new System.Drawing.Size(1221, 147);
+            this.tabPage4.Size = new System.Drawing.Size(1212, 147);
             this.tabPage4.TabIndex = 7;
             this.tabPage4.Text = "Ejecución       ";
             this.tabPage4.UseVisualStyleBackColor = true;
@@ -842,7 +846,7 @@
             this.dgvNoEjecutados.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.White;
             this.dgvNoEjecutados.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.Blue;
             this.dgvNoEjecutados.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
-            this.dgvNoEjecutados.Size = new System.Drawing.Size(1221, 122);
+            this.dgvNoEjecutados.Size = new System.Drawing.Size(1212, 122);
             this.dgvNoEjecutados.TabIndex = 10;
             this.dgvNoEjecutados.SelectionChanged += new System.EventHandler(this.DgvConfirmEnvio_SelectionChanged);
             // 
@@ -865,7 +869,7 @@
             this.toolStripButton11});
             this.toolStrip4.Location = new System.Drawing.Point(0, 122);
             this.toolStrip4.Name = "toolStrip4";
-            this.toolStrip4.Size = new System.Drawing.Size(1221, 25);
+            this.toolStrip4.Size = new System.Drawing.Size(1212, 25);
             this.toolStrip4.TabIndex = 9;
             this.toolStrip4.Text = "toolStrip4";
             // 
@@ -898,8 +902,8 @@
             this.btnRetornarEtapa2.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnRetornarEtapa2.Name = "btnRetornarEtapa2";
             this.btnRetornarEtapa2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.btnRetornarEtapa2.Size = new System.Drawing.Size(155, 22);
-            this.btnRetornarEtapa2.Text = "Retornar etapa proceso";
+            this.btnRetornarEtapa2.Size = new System.Drawing.Size(103, 22);
+            this.btnRetornarEtapa2.Text = "Retornar etapa";
             this.btnRetornarEtapa2.ToolTipText = "Retornar a la etapa proceso";
             this.btnRetornarEtapa2.Click += new System.EventHandler(this.BtnRetornarEtapa_Click);
             // 
@@ -907,7 +911,7 @@
             // 
             this.toolStripLabel12.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.toolStripLabel12.Name = "toolStripLabel12";
-            this.toolStripLabel12.Size = new System.Drawing.Size(105, 22);
+            this.toolStripLabel12.Size = new System.Drawing.Size(104, 22);
             this.toolStripLabel12.Tag = "0";
             this.toolStripLabel12.Text = "Total Planillas : 0";
             // 
@@ -965,7 +969,7 @@
             this.tabPage7.Location = new System.Drawing.Point(4, 22);
             this.tabPage7.Name = "tabPage7";
             this.tabPage7.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage7.Size = new System.Drawing.Size(1221, 147);
+            this.tabPage7.Size = new System.Drawing.Size(1212, 147);
             this.tabPage7.TabIndex = 6;
             this.tabPage7.Text = "Si Descontado              ";
             // 
@@ -983,7 +987,7 @@
             this.dgvDesctoConfirmado.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.White;
             this.dgvDesctoConfirmado.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.Blue;
             this.dgvDesctoConfirmado.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvDesctoConfirmado.Size = new System.Drawing.Size(1215, 116);
+            this.dgvDesctoConfirmado.Size = new System.Drawing.Size(1206, 116);
             this.dgvDesctoConfirmado.TabIndex = 10;
             this.dgvDesctoConfirmado.DataSourceChanged += new System.EventHandler(this.DgvConfirmRecep_DataSourceChanged);
             this.dgvDesctoConfirmado.SelectionChanged += new System.EventHandler(this.DgvConfirmRecep_SelectionChanged);
@@ -1007,7 +1011,7 @@
             this.toolStripButton9});
             this.toolStrip8.Location = new System.Drawing.Point(3, 119);
             this.toolStrip8.Name = "toolStrip8";
-            this.toolStrip8.Size = new System.Drawing.Size(1215, 25);
+            this.toolStrip8.Size = new System.Drawing.Size(1206, 25);
             this.toolStrip8.TabIndex = 9;
             this.toolStrip8.Text = "toolStrip8";
             // 
@@ -1020,11 +1024,11 @@
             this.btnBack.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnBack.Name = "btnBack";
             this.btnBack.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.btnBack.Size = new System.Drawing.Size(182, 22);
-            this.btnBack.Text = "Regresar a la etapa anterior";
+            this.btnBack.Size = new System.Drawing.Size(103, 22);
+            this.btnBack.Text = "Retornar etapa";
             this.btnBack.ToolTipText = "Confirmar Envío";
             this.btnBack.Visible = false;
-            this.btnBack.Click += new System.EventHandler(this.BtnBack_Click);
+            this.btnBack.Click += new System.EventHandler(this.BtnRetornarEtapa_Click);
             // 
             // toolStripSeparator21
             // 
@@ -1036,7 +1040,7 @@
             // 
             this.toolStripLabel18.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.toolStripLabel18.Name = "toolStripLabel18";
-            this.toolStripLabel18.Size = new System.Drawing.Size(105, 22);
+            this.toolStripLabel18.Size = new System.Drawing.Size(104, 22);
             this.toolStripLabel18.Tag = "0";
             this.toolStripLabel18.Text = "Total Planillas : 0";
             // 
@@ -1108,7 +1112,7 @@
             this.tabPage6.Location = new System.Drawing.Point(4, 22);
             this.tabPage6.Name = "tabPage6";
             this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage6.Size = new System.Drawing.Size(1221, 147);
+            this.tabPage6.Size = new System.Drawing.Size(1212, 147);
             this.tabPage6.TabIndex = 5;
             this.tabPage6.Text = "No Descontado            ";
             // 
@@ -1126,7 +1130,7 @@
             this.dgvNoDescontado.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.White;
             this.dgvNoDescontado.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.Blue;
             this.dgvNoDescontado.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvNoDescontado.Size = new System.Drawing.Size(1215, 116);
+            this.dgvNoDescontado.Size = new System.Drawing.Size(1206, 116);
             this.dgvNoDescontado.TabIndex = 10;
             this.dgvNoDescontado.DataSourceChanged += new System.EventHandler(this.DgvConfirmRecep_DataSourceChanged);
             this.dgvNoDescontado.SelectionChanged += new System.EventHandler(this.DgvConfirmRecep_SelectionChanged);
@@ -1138,9 +1142,9 @@
             this.btnBack2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.btnBack2.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.btnBack2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.btnRetornarEtapa4,
             this.toolStripButton3,
             this.toolStripSeparator17,
-            this.btnRetornarEtapa4,
             this.toolStripSeparator29,
             this.toolStripButton6,
             this.toolStripLabel15,
@@ -1150,7 +1154,7 @@
             this.toolStripLabel17});
             this.btnBack2.Location = new System.Drawing.Point(3, 119);
             this.btnBack2.Name = "btnBack2";
-            this.btnBack2.Size = new System.Drawing.Size(1215, 25);
+            this.btnBack2.Size = new System.Drawing.Size(1206, 25);
             this.btnBack2.TabIndex = 9;
             // 
             // toolStripButton3
@@ -1183,8 +1187,8 @@
             this.btnRetornarEtapa4.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnRetornarEtapa4.Name = "btnRetornarEtapa4";
             this.btnRetornarEtapa4.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.btnRetornarEtapa4.Size = new System.Drawing.Size(155, 22);
-            this.btnRetornarEtapa4.Text = "Retornar etapa proceso";
+            this.btnRetornarEtapa4.Size = new System.Drawing.Size(103, 22);
+            this.btnRetornarEtapa4.Text = "Retornar etapa";
             this.btnRetornarEtapa4.ToolTipText = "Retornar a la etapa proceso";
             this.btnRetornarEtapa4.Click += new System.EventHandler(this.BtnRetornarEtapa_Click);
             // 
@@ -1212,7 +1216,7 @@
             // 
             this.toolStripLabel15.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.toolStripLabel15.Name = "toolStripLabel15";
-            this.toolStripLabel15.Size = new System.Drawing.Size(105, 22);
+            this.toolStripLabel15.Size = new System.Drawing.Size(104, 22);
             this.toolStripLabel15.Tag = "0";
             this.toolStripLabel15.Text = "Total Planillas : 0";
             // 
@@ -1279,14 +1283,14 @@
             this.dgvPuntoCobranza.AllowUserToDeleteRows = false;
             this.dgvPuntoCobranza.BackgroundColor = System.Drawing.Color.White;
             this.dgvPuntoCobranza.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.Transparent;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvPuntoCobranza.DefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle13.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle13.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle13.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.Color.Transparent;
+            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvPuntoCobranza.DefaultCellStyle = dataGridViewCellStyle13;
             this.dgvPuntoCobranza.Location = new System.Drawing.Point(4, 34);
             this.dgvPuntoCobranza.Name = "dgvPuntoCobranza";
             this.dgvPuntoCobranza.ReadOnly = true;
@@ -1371,8 +1375,8 @@
             // 
             this.dgvLlamadas.AllowUserToAddRows = false;
             this.dgvLlamadas.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dgvLlamadas.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle14.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dgvLlamadas.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle14;
             this.dgvLlamadas.BackgroundColor = System.Drawing.Color.White;
             this.dgvLlamadas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvLlamadas.Location = new System.Drawing.Point(8, 12);
@@ -1391,14 +1395,14 @@
             this.dgvHistorialLlamadas.AllowUserToDeleteRows = false;
             this.dgvHistorialLlamadas.BackgroundColor = System.Drawing.Color.White;
             this.dgvHistorialLlamadas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvHistorialLlamadas.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle15.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle15.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle15.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvHistorialLlamadas.DefaultCellStyle = dataGridViewCellStyle15;
             this.dgvHistorialLlamadas.Location = new System.Drawing.Point(44, 422);
             this.dgvHistorialLlamadas.Name = "dgvHistorialLlamadas";
             this.dgvHistorialLlamadas.ReadOnly = true;
@@ -1552,6 +1556,26 @@
             this.label2.Size = new System.Drawing.Size(16, 15);
             this.label2.TabIndex = 0;
             this.label2.Text = "P";
+            // 
+            // toolStripButton1
+            // 
+            this.toolStripButton1.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.toolStripButton1.BackColor = System.Drawing.Color.Teal;
+            this.toolStripButton1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.toolStripButton1.ForeColor = System.Drawing.Color.White;
+            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton1.Name = "toolStripButton1";
+            this.toolStripButton1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.toolStripButton1.Size = new System.Drawing.Size(103, 22);
+            this.toolStripButton1.Text = "Retornar etapa";
+            this.toolStripButton1.ToolTipText = "Retornar a la etapa proceso";
+            this.toolStripButton1.Click += new System.EventHandler(this.BtnRetornarEtapa_Click);
+            // 
+            // toolStripSeparator30
+            // 
+            this.toolStripSeparator30.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.toolStripSeparator30.Name = "toolStripSeparator30";
+            this.toolStripSeparator30.Size = new System.Drawing.Size(6, 25);
             // 
             // SeguimientoPlanilla
             // 
@@ -1738,6 +1762,8 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator28;
         protected System.Windows.Forms.ToolStripButton btnRetornarEtapa4;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator29;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator30;
+        protected System.Windows.Forms.ToolStripButton toolStripButton1;
     }
 }
 

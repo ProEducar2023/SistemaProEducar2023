@@ -1490,6 +1490,12 @@
     <Compile Include="MOD_FACT_VTA\MOD_VTA\FrmPagoDepositoPlla.Designer.cs">
       <DependentUpon>FrmPagoDepositoPlla.cs</DependentUpon>
     </Compile>
+    <Compile Include="MOD_FACT_VTA\MOD_VTA\FrmRetornarPlanillasEtapa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MOD_FACT_VTA\MOD_VTA\FrmRetornarPlanillasEtapa.Designer.cs">
+      <DependentUpon>FrmRetornarPlanillasEtapa.cs</DependentUpon>
+    </Compile>
     <Compile Include="MOD_FACT_VTA\MOD_VTA\FrmVistaReembolso.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -3328,6 +3334,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MOD_FACT_VTA\MOD_VTA\FrmPagoDepositoPlla.resx">
       <DependentUpon>FrmPagoDepositoPlla.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MOD_FACT_VTA\MOD_VTA\FrmRetornarPlanillasEtapa.resx">
+      <DependentUpon>FrmRetornarPlanillasEtapa.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MOD_FACT_VTA\MOD_VTA\FrmVistaReembolso.resx">
       <DependentUpon>FrmVistaReembolso.cs</DependentUpon>

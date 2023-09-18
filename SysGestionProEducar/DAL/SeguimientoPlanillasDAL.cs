@@ -1587,6 +1587,13 @@ namespace DAL
             }
         }
 
+        /// <summary>
+        /// Retorna una planilla a la etapa especificada
+        /// </summary>
+        /// <param name="idSeguimiento">Id seguimiento de la planilla</param>
+        /// <param name="idEstado">Id de estado actual de la planilla</param>
+        /// <param name="idEstadoAnterior">Id de estado a la cual se desea retornar</param>
+        /// <returns></returns>
         public bool RegresarEstadoAnterior(int idSeguimiento, int idEstado, int idEstadoAnterior)
         {
             const string procedure = "usp_RegresarEstadoAnterior";
@@ -3529,6 +3536,40 @@ namespace DAL
                     using (SqlDataReader dr = cmd.ExecuteReader())
                     {
                         return dr.Read();
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                conn.Close();
+            }
+        }
+
+        /// <summary>
+        /// Lista las etapas de las planillas a las cuales se puede retroceder (cambiar de etapa)
+        /// </summary>
+        /// <param name="idEstado">Id de estado actual de la planilla a retroceder</param>
+        /// <returns></returns>
+        public DataTable ListarEtapasPlanillaParaRetroceso(int idEstado)
+        {
+            try
+            {
+                const string sentence = "SELECT * FROM ESTADO_SEGUIMIENTO_PLANILLA WHERE ID_ESTADO IN (1, 2, 4, 8) AND ID_ESTADO < @ID_ESTADO";
+                using (SqlCommand cmd = new SqlCommand(sentence, conn))
+                {
+                    cmd.CommandType = CommandType.Text;
+
+                    cmd.Parameters.Add("@ID_ESTADO", SqlDbType.Int).Value = idEstado;
+                    conn.Open();
+                    using (SqlDataReader dr = cmd.ExecuteReader())
+                    {
+                        DataTable dt = new DataTable();
+                        dt.Load(dr, LoadOption.PreserveChanges);
+                        return dt;
                     }
                 }
             }

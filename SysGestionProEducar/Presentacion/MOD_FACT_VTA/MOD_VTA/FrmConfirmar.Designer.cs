@@ -86,7 +86,7 @@ namespace Presentacion.MOD_FACT_VTA.MOD_VTA
             this.Controls.Add(this.groupBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "FrmConfirmar";
-            this.Text = "FrmConfirmar";
+            this.Text = "Confirmar";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);

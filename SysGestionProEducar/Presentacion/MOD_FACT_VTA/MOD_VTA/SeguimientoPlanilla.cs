@@ -1764,19 +1764,7 @@ namespace SysSeguimiento
 
         private void BtnBack2_Click(object sender, EventArgs e)
         {
-            DialogResult dr = MessageBox.Show("¿Esta seguro de que desea regresar esta planilla a la etapa anterior?", "MESSAGE", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
-            if (dr == DialogResult.Yes)
-            {
-                int idSeguimiento = Convert.ToInt32(dgvNoDescontado.CurrentRow.Cells["ID_SEGUIMIENTO"].Value);
-                int idEstado = Convert.ToInt32(dgvNoDescontado.CurrentRow.Cells["ID_ESTADO"].Value);
-                _ = BLSeguimiento.RegresarEstadoAnterior(idSeguimiento, idEstado, DESCONTADA_CERRADA)
-                    ? MessageBox.Show("El cambio se a efectuado correctamente", "MESSAGE", MessageBoxButtons.OK, MessageBoxIcon.Information)
-                    : MessageBox.Show("Ocurrió un error inesperado", "MESSAGE", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                ListarPuntoCobranza();
-                ObtenerPlanillasXPuntoCobranza();
-                ObtenerHistorialSeguimiento();
-                BackColorPuntoCobranza();
-            }
+
         }
 
         private void DgvLlamadas_KeyDown(object sender, KeyEventArgs e)
@@ -2394,20 +2382,35 @@ namespace SysSeguimiento
 
         private void BtnRetornarEtapa_Click(object sender, EventArgs e)
         {
+            //if (DataGridViewActual == null)
+            //    return;
+            //if (!ValidarRetornarEtapa())
+            //    return;
+            //DialogResult dr = MessageBox.Show("¿Esta seguro de que desea regresar esta planilla a la etapa de proceso?", "MESSAGE", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            //if (dr == DialogResult.Yes)
+            //{
+            //    FrmConfirmar frmConfirmar = new FrmConfirmar(TIPO_CONFIRMAR.RETORNAR_ETAPA_PROCESO)
+            //    {
+            //        StartPosition = FormStartPosition.CenterScreen
+            //    };
+            //    frmConfirmar.EventClick += FrmConfirmar_EventClick;
+            //    frmConfirmar.ShowDialog();
+            //}
+
             if (DataGridViewActual == null)
                 return;
-            if (!ValidarRetornarEtapa())
-                return;
-            DialogResult dr = MessageBox.Show("¿Esta seguro de que desea regresar esta planilla a la etapa de proceso?", "MESSAGE", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
-            if (dr == DialogResult.Yes)
+
+            int idSeguimiento = Convert.ToInt32(DataGridViewActual.CurrentRow.Cells["ID_SEGUIMIENTO"].Value);
+            int idEstado = Convert.ToInt32(DataGridViewActual.CurrentRow.Cells["ID_ESTADO"].Value);
+            FrmRetornarPlanillasEtapa frmRetornarEtapa = new FrmRetornarPlanillasEtapa(idSeguimiento, idEstado)
             {
-                FrmConfirmar frmConfirmar = new FrmConfirmar(TIPO_CONFIRMAR.RETORNAR_ETAPA_PROCESO)
-                {
-                    StartPosition = FormStartPosition.CenterScreen
-                };
-                frmConfirmar.EventClick += FrmConfirmar_EventClick;
-                frmConfirmar.ShowDialog();
-            }
+                StartPosition = FormStartPosition.CenterParent
+            };
+            frmRetornarEtapa.ShowDialog();
+            ListarPuntoCobranza();
+            ObtenerPlanillasXPuntoCobranza();
+            ObtenerHistorialSeguimiento();
+            BackColorPuntoCobranza();
         }
 
         private void FrmConfirmar_EventClick(object sender, EventArgs e)
