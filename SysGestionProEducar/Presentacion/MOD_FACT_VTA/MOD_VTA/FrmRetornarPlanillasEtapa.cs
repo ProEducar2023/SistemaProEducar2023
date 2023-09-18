@@ -57,6 +57,7 @@ namespace Presentacion.MOD_FACT_VTA.MOD_VTA
                 _ = BLSeguimiento.RegresarEstadoAnterior(idSeguimiento, idEstado, idEstadoAnterior)
                     ? MessageBox.Show("El cambio se a efectuado correctamente", "MESSAGE", MessageBoxButtons.OK, MessageBoxIcon.Information)
                     : MessageBox.Show("Ocurrió un error inesperado", "MESSAGE", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
                 Close();
             }
         }
