@@ -3582,5 +3582,38 @@ namespace DAL
                 conn.Close();
             }
         }
+
+        /// <summary>
+        /// Elimina todos los registros relacionados con el seguimiento y cheques de una planilla
+        /// </summary>
+        /// <param name="idSeguimiento"></param>
+        /// <returns></returns>
+        public int EliminarPlanillaSeguimiento(int idSeguimiento)
+        {
+            const string procedure = "dsp_EliminarPlanilllaSeguimiento";
+            conn.Open();
+            SqlTransaction sqlTran = conn.BeginTransaction();
+            try
+            {
+                SqlCommand cmd = new SqlCommand(procedure, conn, sqlTran)
+                {
+                    CommandType = CommandType.StoredProcedure
+                };
+
+                _ = cmd.Parameters.AddWithValue("@ID_SEGUIMIENTO", idSeguimiento);
+                int result = cmd.ExecuteNonQuery();
+                sqlTran.Commit();
+                return result;
+            }
+            catch (Exception)
+            {
+                sqlTran.Rollback();
+                throw;
+            }
+            finally
+            {
+                conn.Close();
+            }
+        }
     }
 }

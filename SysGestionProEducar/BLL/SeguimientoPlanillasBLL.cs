@@ -352,5 +352,15 @@ namespace BLL
         {
             return DALSeguimiento.ListarEtapasPlanillaParaRetroceso(idEstado);
         }
+
+        /// <summary>
+        /// Elimina todos los registros relacionados con el seguimiento y cheques de una planilla
+        /// </summary>
+        /// <param name="idSeguimiento"></param>
+        /// <returns></returns>
+        public int EliminarPlanillaSeguimiento(int idSeguimiento)
+        {
+            return DALSeguimiento.EliminarPlanillaSeguimiento(idSeguimiento);
+        }
     }
 }

@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SeguimientoPlanilla));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle21 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.dgvConfirmPro = new System.Windows.Forms.DataGridView();
             this.toolStrip3 = new System.Windows.Forms.ToolStrip();
@@ -45,6 +45,8 @@
             this.toolStripButton5 = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator18 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripButton4 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator30 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator15 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripButton7 = new System.Windows.Forms.ToolStripButton();
             this.tabPage2 = new System.Windows.Forms.TabPage();
@@ -118,9 +120,9 @@
             this.tabPage6 = new System.Windows.Forms.TabPage();
             this.dgvNoDescontado = new System.Windows.Forms.DataGridView();
             this.btnBack2 = new System.Windows.Forms.ToolStrip();
-            this.toolStripButton3 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripSeparator17 = new System.Windows.Forms.ToolStripSeparator();
             this.btnRetornarEtapa4 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator17 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripButton3 = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator29 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripButton6 = new System.Windows.Forms.ToolStripButton();
             this.toolStripLabel15 = new System.Windows.Forms.ToolStripLabel();
@@ -128,6 +130,8 @@
             this.toolStripLabel16 = new System.Windows.Forms.ToolStripLabel();
             this.toolStripSeparator20 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripLabel17 = new System.Windows.Forms.ToolStripLabel();
+            this.toolStripSeparator31 = new System.Windows.Forms.ToolStripSeparator();
+            this.btnEliminarPlanilla = new System.Windows.Forms.ToolStripButton();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.txtCodigoPC = new System.Windows.Forms.TextBox();
             this.txtDescPC = new System.Windows.Forms.TextBox();
@@ -151,8 +155,18 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripSeparator30 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripButton10 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator32 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripButton12 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator33 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripButton13 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator34 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripButton14 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator35 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripButton15 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator36 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripButton16 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator37 = new System.Windows.Forms.ToolStripSeparator();
             this.tabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvConfirmPro)).BeginInit();
             this.toolStrip3.SuspendLayout();
@@ -237,6 +251,8 @@
             this.toolStripSeparator30,
             this.toolStripButton1,
             this.toolStripSeparator15,
+            this.toolStripButton14,
+            this.toolStripSeparator35,
             this.toolStripButton7});
             this.toolStrip3.Location = new System.Drawing.Point(3, 119);
             this.toolStrip3.Name = "toolStrip3";
@@ -333,6 +349,26 @@
             this.toolStripButton4.Text = "Actualizar Envío";
             this.toolStripButton4.Click += new System.EventHandler(this.BtnActualizarEnvio_Click);
             // 
+            // toolStripSeparator30
+            // 
+            this.toolStripSeparator30.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.toolStripSeparator30.Name = "toolStripSeparator30";
+            this.toolStripSeparator30.Size = new System.Drawing.Size(6, 25);
+            // 
+            // toolStripButton1
+            // 
+            this.toolStripButton1.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.toolStripButton1.BackColor = System.Drawing.Color.Teal;
+            this.toolStripButton1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.toolStripButton1.ForeColor = System.Drawing.Color.White;
+            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton1.Name = "toolStripButton1";
+            this.toolStripButton1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.toolStripButton1.Size = new System.Drawing.Size(103, 22);
+            this.toolStripButton1.Text = "Retornar etapa";
+            this.toolStripButton1.ToolTipText = "Retornar a la etapa proceso";
+            this.toolStripButton1.Click += new System.EventHandler(this.BtnRetornarEtapa_Click);
+            // 
             // toolStripSeparator15
             // 
             this.toolStripSeparator15.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
@@ -420,6 +456,8 @@
             this.toolStripLabel7,
             this.btnActualizarEnvio,
             this.toolStripSeparator14,
+            this.toolStripButton15,
+            this.toolStripSeparator36,
             this.toolStripButton2});
             this.toolStrip2.Location = new System.Drawing.Point(3, 119);
             this.toolStrip2.Name = "toolStrip2";
@@ -583,6 +621,8 @@
             this.toolStripLabel4,
             this.btnRetirarPorPla,
             this.toolStripSeparator7,
+            this.toolStripButton16,
+            this.toolStripSeparator37,
             this.btnRefresh});
             this.toolStrip1.Location = new System.Drawing.Point(3, 119);
             this.toolStrip1.Name = "toolStrip1";
@@ -746,7 +786,9 @@
             this.toolStripLabel5,
             this.toolStripSeparator11,
             this.toolStripLabel8,
-            this.toolStripButton8});
+            this.toolStripButton8,
+            this.toolStripSeparator34,
+            this.toolStripButton13});
             this.toolStrip6.Location = new System.Drawing.Point(3, 119);
             this.toolStrip6.Name = "toolStrip6";
             this.toolStrip6.Size = new System.Drawing.Size(1206, 25);
@@ -866,6 +908,8 @@
             this.toolStripSeparator26,
             this.toolStripLabel14,
             this.toolStripSeparator27,
+            this.toolStripButton12,
+            this.toolStripSeparator33,
             this.toolStripButton11});
             this.toolStrip4.Location = new System.Drawing.Point(0, 122);
             this.toolStrip4.Name = "toolStrip4";
@@ -1008,6 +1052,8 @@
             this.toolStripLabel20,
             this.btnRetornarEtapa3,
             this.toolStripSeparator28,
+            this.toolStripButton10,
+            this.toolStripSeparator32,
             this.toolStripButton9});
             this.toolStrip8.Location = new System.Drawing.Point(3, 119);
             this.toolStrip8.Name = "toolStrip8";
@@ -1143,19 +1189,41 @@
             this.btnBack2.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.btnBack2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.btnRetornarEtapa4,
-            this.toolStripButton3,
             this.toolStripSeparator17,
+            this.toolStripButton3,
             this.toolStripSeparator29,
             this.toolStripButton6,
             this.toolStripLabel15,
             this.toolStripSeparator19,
             this.toolStripLabel16,
             this.toolStripSeparator20,
-            this.toolStripLabel17});
+            this.toolStripLabel17,
+            this.toolStripSeparator31,
+            this.btnEliminarPlanilla});
             this.btnBack2.Location = new System.Drawing.Point(3, 119);
             this.btnBack2.Name = "btnBack2";
             this.btnBack2.Size = new System.Drawing.Size(1206, 25);
             this.btnBack2.TabIndex = 9;
+            // 
+            // btnRetornarEtapa4
+            // 
+            this.btnRetornarEtapa4.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.btnRetornarEtapa4.BackColor = System.Drawing.Color.Teal;
+            this.btnRetornarEtapa4.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRetornarEtapa4.ForeColor = System.Drawing.Color.White;
+            this.btnRetornarEtapa4.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnRetornarEtapa4.Name = "btnRetornarEtapa4";
+            this.btnRetornarEtapa4.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.btnRetornarEtapa4.Size = new System.Drawing.Size(103, 22);
+            this.btnRetornarEtapa4.Text = "Retornar etapa";
+            this.btnRetornarEtapa4.ToolTipText = "Retornar a la etapa proceso";
+            this.btnRetornarEtapa4.Click += new System.EventHandler(this.BtnRetornarEtapa_Click);
+            // 
+            // toolStripSeparator17
+            // 
+            this.toolStripSeparator17.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.toolStripSeparator17.Name = "toolStripSeparator17";
+            this.toolStripSeparator17.Size = new System.Drawing.Size(6, 25);
             // 
             // toolStripButton3
             // 
@@ -1171,26 +1239,6 @@
             this.toolStripButton3.ToolTipText = "Confirmar Envío";
             this.toolStripButton3.Visible = false;
             this.toolStripButton3.Click += new System.EventHandler(this.BtnBack2_Click);
-            // 
-            // toolStripSeparator17
-            // 
-            this.toolStripSeparator17.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.toolStripSeparator17.Name = "toolStripSeparator17";
-            this.toolStripSeparator17.Size = new System.Drawing.Size(6, 25);
-            // 
-            // btnRetornarEtapa4
-            // 
-            this.btnRetornarEtapa4.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.btnRetornarEtapa4.BackColor = System.Drawing.Color.Teal;
-            this.btnRetornarEtapa4.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRetornarEtapa4.ForeColor = System.Drawing.Color.White;
-            this.btnRetornarEtapa4.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnRetornarEtapa4.Name = "btnRetornarEtapa4";
-            this.btnRetornarEtapa4.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.btnRetornarEtapa4.Size = new System.Drawing.Size(103, 22);
-            this.btnRetornarEtapa4.Text = "Retornar etapa";
-            this.btnRetornarEtapa4.ToolTipText = "Retornar a la etapa proceso";
-            this.btnRetornarEtapa4.Click += new System.EventHandler(this.BtnRetornarEtapa_Click);
             // 
             // toolStripSeparator29
             // 
@@ -1246,6 +1294,26 @@
             this.toolStripLabel17.Tag = "2";
             this.toolStripLabel17.Text = "Llamadas Pendientes : 0";
             // 
+            // toolStripSeparator31
+            // 
+            this.toolStripSeparator31.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.toolStripSeparator31.Name = "toolStripSeparator31";
+            this.toolStripSeparator31.Size = new System.Drawing.Size(6, 25);
+            // 
+            // btnEliminarPlanilla
+            // 
+            this.btnEliminarPlanilla.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.btnEliminarPlanilla.BackColor = System.Drawing.Color.Teal;
+            this.btnEliminarPlanilla.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEliminarPlanilla.ForeColor = System.Drawing.Color.White;
+            this.btnEliminarPlanilla.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnEliminarPlanilla.Name = "btnEliminarPlanilla";
+            this.btnEliminarPlanilla.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.btnEliminarPlanilla.Size = new System.Drawing.Size(113, 22);
+            this.btnEliminarPlanilla.Text = "Eliminar planilla";
+            this.btnEliminarPlanilla.ToolTipText = "Retornar a la etapa proceso";
+            this.btnEliminarPlanilla.Click += new System.EventHandler(this.BtnEliminarPlanilla_Click);
+            // 
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.SystemColors.Control;
@@ -1283,14 +1351,14 @@
             this.dgvPuntoCobranza.AllowUserToDeleteRows = false;
             this.dgvPuntoCobranza.BackgroundColor = System.Drawing.Color.White;
             this.dgvPuntoCobranza.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle13.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle13.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle13.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.Color.Transparent;
-            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvPuntoCobranza.DefaultCellStyle = dataGridViewCellStyle13;
+            dataGridViewCellStyle19.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle19.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle19.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle19.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            dataGridViewCellStyle19.SelectionBackColor = System.Drawing.Color.Transparent;
+            dataGridViewCellStyle19.SelectionForeColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle19.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvPuntoCobranza.DefaultCellStyle = dataGridViewCellStyle19;
             this.dgvPuntoCobranza.Location = new System.Drawing.Point(4, 34);
             this.dgvPuntoCobranza.Name = "dgvPuntoCobranza";
             this.dgvPuntoCobranza.ReadOnly = true;
@@ -1375,8 +1443,8 @@
             // 
             this.dgvLlamadas.AllowUserToAddRows = false;
             this.dgvLlamadas.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle14.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dgvLlamadas.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle14;
+            dataGridViewCellStyle20.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dgvLlamadas.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle20;
             this.dgvLlamadas.BackgroundColor = System.Drawing.Color.White;
             this.dgvLlamadas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvLlamadas.Location = new System.Drawing.Point(8, 12);
@@ -1395,14 +1463,14 @@
             this.dgvHistorialLlamadas.AllowUserToDeleteRows = false;
             this.dgvHistorialLlamadas.BackgroundColor = System.Drawing.Color.White;
             this.dgvHistorialLlamadas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle15.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle15.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle15.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvHistorialLlamadas.DefaultCellStyle = dataGridViewCellStyle15;
+            dataGridViewCellStyle21.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle21.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle21.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle21.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle21.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle21.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle21.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvHistorialLlamadas.DefaultCellStyle = dataGridViewCellStyle21;
             this.dgvHistorialLlamadas.Location = new System.Drawing.Point(44, 422);
             this.dgvHistorialLlamadas.Name = "dgvHistorialLlamadas";
             this.dgvHistorialLlamadas.ReadOnly = true;
@@ -1557,25 +1625,125 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "P";
             // 
-            // toolStripButton1
+            // toolStripButton10
             // 
-            this.toolStripButton1.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.toolStripButton1.BackColor = System.Drawing.Color.Teal;
-            this.toolStripButton1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.toolStripButton1.ForeColor = System.Drawing.Color.White;
-            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton1.Name = "toolStripButton1";
-            this.toolStripButton1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.toolStripButton1.Size = new System.Drawing.Size(103, 22);
-            this.toolStripButton1.Text = "Retornar etapa";
-            this.toolStripButton1.ToolTipText = "Retornar a la etapa proceso";
-            this.toolStripButton1.Click += new System.EventHandler(this.BtnRetornarEtapa_Click);
+            this.toolStripButton10.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.toolStripButton10.BackColor = System.Drawing.Color.Teal;
+            this.toolStripButton10.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.toolStripButton10.ForeColor = System.Drawing.Color.White;
+            this.toolStripButton10.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton10.Name = "toolStripButton10";
+            this.toolStripButton10.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.toolStripButton10.Size = new System.Drawing.Size(113, 22);
+            this.toolStripButton10.Text = "Eliminar planilla";
+            this.toolStripButton10.ToolTipText = "Retornar a la etapa proceso";
+            this.toolStripButton10.Click += new System.EventHandler(this.BtnEliminarPlanilla_Click);
             // 
-            // toolStripSeparator30
+            // toolStripSeparator32
             // 
-            this.toolStripSeparator30.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.toolStripSeparator30.Name = "toolStripSeparator30";
-            this.toolStripSeparator30.Size = new System.Drawing.Size(6, 25);
+            this.toolStripSeparator32.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.toolStripSeparator32.Name = "toolStripSeparator32";
+            this.toolStripSeparator32.Size = new System.Drawing.Size(6, 25);
+            // 
+            // toolStripButton12
+            // 
+            this.toolStripButton12.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.toolStripButton12.BackColor = System.Drawing.Color.Teal;
+            this.toolStripButton12.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.toolStripButton12.ForeColor = System.Drawing.Color.White;
+            this.toolStripButton12.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton12.Name = "toolStripButton12";
+            this.toolStripButton12.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.toolStripButton12.Size = new System.Drawing.Size(113, 22);
+            this.toolStripButton12.Text = "Eliminar planilla";
+            this.toolStripButton12.ToolTipText = "Retornar a la etapa proceso";
+            this.toolStripButton12.Click += new System.EventHandler(this.BtnEliminarPlanilla_Click);
+            // 
+            // toolStripSeparator33
+            // 
+            this.toolStripSeparator33.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.toolStripSeparator33.Name = "toolStripSeparator33";
+            this.toolStripSeparator33.Size = new System.Drawing.Size(6, 25);
+            // 
+            // toolStripButton13
+            // 
+            this.toolStripButton13.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.toolStripButton13.BackColor = System.Drawing.Color.Teal;
+            this.toolStripButton13.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.toolStripButton13.ForeColor = System.Drawing.Color.White;
+            this.toolStripButton13.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton13.Name = "toolStripButton13";
+            this.toolStripButton13.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.toolStripButton13.Size = new System.Drawing.Size(113, 22);
+            this.toolStripButton13.Text = "Eliminar planilla";
+            this.toolStripButton13.ToolTipText = "Retornar a la etapa proceso";
+            this.toolStripButton13.Click += new System.EventHandler(this.BtnEliminarPlanilla_Click);
+            // 
+            // toolStripSeparator34
+            // 
+            this.toolStripSeparator34.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.toolStripSeparator34.Name = "toolStripSeparator34";
+            this.toolStripSeparator34.Size = new System.Drawing.Size(6, 25);
+            // 
+            // toolStripButton14
+            // 
+            this.toolStripButton14.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.toolStripButton14.BackColor = System.Drawing.Color.Teal;
+            this.toolStripButton14.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.toolStripButton14.ForeColor = System.Drawing.Color.White;
+            this.toolStripButton14.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton14.Name = "toolStripButton14";
+            this.toolStripButton14.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.toolStripButton14.Size = new System.Drawing.Size(113, 22);
+            this.toolStripButton14.Text = "Eliminar planilla";
+            this.toolStripButton14.ToolTipText = "Retornar a la etapa proceso";
+            this.toolStripButton14.Click += new System.EventHandler(this.BtnEliminarPlanilla_Click);
+            // 
+            // toolStripSeparator35
+            // 
+            this.toolStripSeparator35.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.toolStripSeparator35.Name = "toolStripSeparator35";
+            this.toolStripSeparator35.Size = new System.Drawing.Size(6, 25);
+            // 
+            // toolStripButton15
+            // 
+            this.toolStripButton15.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.toolStripButton15.BackColor = System.Drawing.Color.Teal;
+            this.toolStripButton15.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.toolStripButton15.ForeColor = System.Drawing.Color.White;
+            this.toolStripButton15.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton15.Name = "toolStripButton15";
+            this.toolStripButton15.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.toolStripButton15.Size = new System.Drawing.Size(113, 22);
+            this.toolStripButton15.Text = "Eliminar planilla";
+            this.toolStripButton15.ToolTipText = "Retornar a la etapa proceso";
+            this.toolStripButton15.Click += new System.EventHandler(this.BtnEliminarPlanilla_Click);
+            // 
+            // toolStripSeparator36
+            // 
+            this.toolStripSeparator36.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.toolStripSeparator36.Name = "toolStripSeparator36";
+            this.toolStripSeparator36.Size = new System.Drawing.Size(6, 25);
+            // 
+            // toolStripButton16
+            // 
+            this.toolStripButton16.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.toolStripButton16.BackColor = System.Drawing.Color.Teal;
+            this.toolStripButton16.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.toolStripButton16.ForeColor = System.Drawing.Color.White;
+            this.toolStripButton16.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton16.Name = "toolStripButton16";
+            this.toolStripButton16.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.toolStripButton16.Size = new System.Drawing.Size(113, 22);
+            this.toolStripButton16.Text = "Eliminar planilla";
+            this.toolStripButton16.ToolTipText = "Retornar a la etapa proceso";
+            this.toolStripButton16.Click += new System.EventHandler(this.BtnEliminarPlanilla_Click);
+            // 
+            // toolStripSeparator37
+            // 
+            this.toolStripSeparator37.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.toolStripSeparator37.Name = "toolStripSeparator37";
+            this.toolStripSeparator37.Size = new System.Drawing.Size(6, 25);
             // 
             // SeguimientoPlanilla
             // 
@@ -1764,6 +1932,20 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator29;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator30;
         protected System.Windows.Forms.ToolStripButton toolStripButton1;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator31;
+        protected System.Windows.Forms.ToolStripButton btnEliminarPlanilla;
+        protected System.Windows.Forms.ToolStripButton toolStripButton10;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator32;
+        protected System.Windows.Forms.ToolStripButton toolStripButton12;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator33;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator34;
+        protected System.Windows.Forms.ToolStripButton toolStripButton13;
+        protected System.Windows.Forms.ToolStripButton toolStripButton14;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator35;
+        protected System.Windows.Forms.ToolStripButton toolStripButton15;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator36;
+        protected System.Windows.Forms.ToolStripButton toolStripButton16;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator37;
     }
 }
 

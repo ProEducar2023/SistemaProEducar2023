@@ -2359,6 +2359,30 @@ namespace SysSeguimiento
             }
         }
 
+        private void BtnEliminarPlanilla_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                DialogResult dr = MessageBox.Show("Esta operación va eliminar todos los registros realizados en el proceso del seguimiento de planillas, " +
+                    "incluyendo los cheques registrados y movimientos en tesorería relacionados a esta planilla. \n" +
+                    "¿Esta seguro de eliminar esta planilla?", "MESSAGE", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                int idSeguimiento = Convert.ToInt32(DataGridViewActual.CurrentRow.Cells["ID_SEGUIMIENTO"].Value);
+                if (dr == DialogResult.Yes)
+                {
+                    _ = BLSeguimiento.EliminarPlanillaSeguimiento(idSeguimiento) > 0
+                        ? MessageBox.Show("Eliminado correctamente", "MESSAGE", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                        : MessageBox.Show("Ocurrió un error al eliminar", "MESSAGE", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    ListarPuntoCobranza();
+                    ObtenerPlanillasXPuntoCobranza();
+                    BackColorPuntoCobranza();
+                }
+            }
+            catch(Exception ex)
+            {
+                ex.PrintException();
+            }
+        }
+
         /// <summary>
         /// Pinta la celda NRO_PLANILLA_COB del dgvNoEjecutados de las planillas ya ejecutadas para poder cerrar esta etapa
         /// </summary>
