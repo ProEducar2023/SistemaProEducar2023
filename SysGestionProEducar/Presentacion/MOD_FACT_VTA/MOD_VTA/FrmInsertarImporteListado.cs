@@ -346,7 +346,6 @@ namespace Presentacion.MOD_FACT_VTA.MOD_VTA
                 {
                     dgvPlanillas[ST_NO_PROCESADO, e.RowIndex].Value = false;
                     dgvPlanillas[IMPORTE_LISTADO, e.RowIndex].ReadOnly = false;
-                    dgvPlanillas[FECHA_LISTADO, e.RowIndex].ReadOnly = false;
                 }
             }
             else if (dgvPlanillas.Columns[e.ColumnIndex].Name == ST_NO_PROCESADO)
@@ -356,8 +355,6 @@ namespace Presentacion.MOD_FACT_VTA.MOD_VTA
                     dgvPlanillas[ST_LISTADO, e.RowIndex].Value = false;
                     dgvPlanillas[IMPORTE_LISTADO, e.RowIndex].Value = 0;
                     dgvPlanillas[IMPORTE_LISTADO, e.RowIndex].ReadOnly = true;
-                    dgvPlanillas[FECHA_LISTADO, e.RowIndex].Value = string.Empty;
-                    dgvPlanillas[FECHA_LISTADO, e.RowIndex].ReadOnly = true;
                 }
             }
         }
