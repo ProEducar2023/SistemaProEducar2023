@@ -2393,7 +2393,7 @@ namespace Presentacion.MOD_FACT_VTA.MOD_VTA
 
         public void DesactivarOpciones()
         {
-            btnRegistrarCobranza.Visible = false;
+            //> btnRegistrarCobranza.Visible = false;
             btnFinalizarCobranza.Visible = false;
             btnAgregarPlanilla.Enabled = false;
             TXT_COD.Enabled = false;

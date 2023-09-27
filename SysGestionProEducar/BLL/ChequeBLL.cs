@@ -124,11 +124,11 @@ namespace BLL
             };
             using (TransactionScope ts = new TransactionScope(TransactionScopeOption.Required, options))
             {
-                if (DALCheque.VerificarPlanillaCerrada(idSeguimiento))
+                /*if (DALCheque.VerificarPlanillaCerrada(idSeguimiento))
                 {
                     errMensaje = "Esta planilla ya fue cerrado por otro usuario";
                     return false;
-                }
+                }*/
 
                 Tipo_APL_SALDO tipo_APL_SALDO = importeExceso > 0 ? Tipo_APL_SALDO.Planilla_Imp_Exceso : Tipo_APL_SALDO.Planilla_Imp_x_cobrar;
 
