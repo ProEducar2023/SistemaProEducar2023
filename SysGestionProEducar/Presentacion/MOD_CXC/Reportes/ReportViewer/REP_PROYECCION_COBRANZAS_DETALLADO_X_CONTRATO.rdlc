@@ -465,6 +465,7 @@
       </rd:DataSetInfo>
     </DataSet>
   </DataSets>
+  
       <Body>
         <ReportItems>
           <Tablix Name="Tablix1">
@@ -496,6 +497,12 @@
                 </TablixColumn>
                 <TablixColumn>
                   <Width>3.29375cm</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>1.76568cm</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>2.5cm</Width>
                 </TablixColumn>
                 <TablixColumn>
                   <Width>1.81209cm</Width>
@@ -890,6 +897,76 @@
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>Textbox24</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <BackgroundColor>Pink</BackgroundColor>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox184">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value />
+                                  <Style>
+                                    <FontFamily>Times New Roman</FontFamily>
+                                    <FontSize>7.5pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox184</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <BackgroundColor>Pink</BackgroundColor>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox207">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value />
+                                  <Style>
+                                    <FontFamily>Times New Roman</FontFamily>
+                                    <FontSize>7.5pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox207</rd:DefaultName>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
@@ -1603,6 +1680,82 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
+                        <Textbox Name="Textbox191">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>Fecha de Ingreso al Area de Gestión</Value>
+                                  <Style>
+                                    <FontFamily>Times New Roman</FontFamily>
+                                    <FontSize>7.5pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox191</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <BackgroundColor>Pink</BackgroundColor>
+                            <VerticalAlign>Middle</VerticalAlign>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox208">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>Área de Trabajo (Origen)</Value>
+                                  <Style>
+                                    <FontFamily>Times New Roman</FontFamily>
+                                    <FontSize>7.5pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox208</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <BackgroundColor>Pink</BackgroundColor>
+                            <VerticalAlign>Middle</VerticalAlign>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
                         <Textbox Name="Textbox37">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
@@ -1800,8 +1953,10 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Mid(MonthName(Month(CDate(Parameters!FechaCadena.Value))),1,3) +
-str(Year(CDate(Parameters!FechaCadena.Value)))</Value>
+                                  <Value>
+                                    =Mid(MonthName(Month(CDate(Parameters!FechaCadena.Value))),1,3) +
+                                    str(Year(CDate(Parameters!FechaCadena.Value)))
+                                  </Value>
                                   <Style>
                                     <FontFamily>Times New Roman</FontFamily>
                                     <FontSize>7.5pt</FontSize>
@@ -1839,8 +1994,10 @@ str(Year(CDate(Parameters!FechaCadena.Value)))</Value>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Mid(MonthName(Month(DateAdd(DateInterval.Month,1,CDate(Parameters!FechaCadena.Value)))),1,3) +
-str(Year(DateAdd(DateInterval.Month,1,CDate(Parameters!FechaCadena.Value))))</Value>
+                                  <Value>
+                                    =Mid(MonthName(Month(DateAdd(DateInterval.Month,1,CDate(Parameters!FechaCadena.Value)))),1,3) +
+                                    str(Year(DateAdd(DateInterval.Month,1,CDate(Parameters!FechaCadena.Value))))
+                                  </Value>
                                   <Style>
                                     <FontFamily>Times New Roman</FontFamily>
                                     <FontSize>7.5pt</FontSize>
@@ -1878,8 +2035,10 @@ str(Year(DateAdd(DateInterval.Month,1,CDate(Parameters!FechaCadena.Value))))</Va
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Mid(MonthName(Month(DateAdd(DateInterval.Month,2,CDate(Parameters!FechaCadena.Value)))),1,3) +
-str(Year(DateAdd(DateInterval.Month,2,CDate(Parameters!FechaCadena.Value))))</Value>
+                                  <Value>
+                                    =Mid(MonthName(Month(DateAdd(DateInterval.Month,2,CDate(Parameters!FechaCadena.Value)))),1,3) +
+                                    str(Year(DateAdd(DateInterval.Month,2,CDate(Parameters!FechaCadena.Value))))
+                                  </Value>
                                   <Style>
                                     <FontFamily>Times New Roman</FontFamily>
                                     <FontSize>7.5pt</FontSize>
@@ -1917,8 +2076,10 @@ str(Year(DateAdd(DateInterval.Month,2,CDate(Parameters!FechaCadena.Value))))</Va
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Mid(MonthName(Month(DateAdd(DateInterval.Month,3,CDate(Parameters!FechaCadena.Value)))),1,3) +
-str(Year(DateAdd(DateInterval.Month,3,CDate(Parameters!FechaCadena.Value))))</Value>
+                                  <Value>
+                                    =Mid(MonthName(Month(DateAdd(DateInterval.Month,3,CDate(Parameters!FechaCadena.Value)))),1,3) +
+                                    str(Year(DateAdd(DateInterval.Month,3,CDate(Parameters!FechaCadena.Value))))
+                                  </Value>
                                   <Style>
                                     <FontFamily>Times New Roman</FontFamily>
                                     <FontSize>7.5pt</FontSize>
@@ -1956,8 +2117,10 @@ str(Year(DateAdd(DateInterval.Month,3,CDate(Parameters!FechaCadena.Value))))</Va
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Mid(MonthName(Month(DateAdd(DateInterval.Month,4,CDate(Parameters!FechaCadena.Value)))),1,3) +
-str(Year(DateAdd(DateInterval.Month,4,CDate(Parameters!FechaCadena.Value))))</Value>
+                                  <Value>
+                                    =Mid(MonthName(Month(DateAdd(DateInterval.Month,4,CDate(Parameters!FechaCadena.Value)))),1,3) +
+                                    str(Year(DateAdd(DateInterval.Month,4,CDate(Parameters!FechaCadena.Value))))
+                                  </Value>
                                   <Style>
                                     <FontFamily>Times New Roman</FontFamily>
                                     <FontSize>7.5pt</FontSize>
@@ -1995,8 +2158,10 @@ str(Year(DateAdd(DateInterval.Month,4,CDate(Parameters!FechaCadena.Value))))</Va
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Mid(MonthName(Month(DateAdd(DateInterval.Month,5,CDate(Parameters!FechaCadena.Value)))),1,3) +
-str(Year(DateAdd(DateInterval.Month,5,CDate(Parameters!FechaCadena.Value))))</Value>
+                                  <Value>
+                                    =Mid(MonthName(Month(DateAdd(DateInterval.Month,5,CDate(Parameters!FechaCadena.Value)))),1,3) +
+                                    str(Year(DateAdd(DateInterval.Month,5,CDate(Parameters!FechaCadena.Value))))
+                                  </Value>
                                   <Style>
                                     <FontFamily>Times New Roman</FontFamily>
                                     <FontSize>7.5pt</FontSize>
@@ -2034,8 +2199,10 @@ str(Year(DateAdd(DateInterval.Month,5,CDate(Parameters!FechaCadena.Value))))</Va
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Mid(MonthName(Month(DateAdd(DateInterval.Month,6,CDate(Parameters!FechaCadena.Value)))),1,3) +
-str(Year(DateAdd(DateInterval.Month,6,CDate(Parameters!FechaCadena.Value))))</Value>
+                                  <Value>
+                                    =Mid(MonthName(Month(DateAdd(DateInterval.Month,6,CDate(Parameters!FechaCadena.Value)))),1,3) +
+                                    str(Year(DateAdd(DateInterval.Month,6,CDate(Parameters!FechaCadena.Value))))
+                                  </Value>
                                   <Style>
                                     <FontFamily>Times New Roman</FontFamily>
                                     <FontSize>7.5pt</FontSize>
@@ -2073,8 +2240,10 @@ str(Year(DateAdd(DateInterval.Month,6,CDate(Parameters!FechaCadena.Value))))</Va
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Mid(MonthName(Month(DateAdd(DateInterval.Month,7,CDate(Parameters!FechaCadena.Value)))),1,3) +
-str(Year(DateAdd(DateInterval.Month,7,CDate(Parameters!FechaCadena.Value))))</Value>
+                                  <Value>
+                                    =Mid(MonthName(Month(DateAdd(DateInterval.Month,7,CDate(Parameters!FechaCadena.Value)))),1,3) +
+                                    str(Year(DateAdd(DateInterval.Month,7,CDate(Parameters!FechaCadena.Value))))
+                                  </Value>
                                   <Style>
                                     <FontFamily>Times New Roman</FontFamily>
                                     <FontSize>7.5pt</FontSize>
@@ -2112,8 +2281,10 @@ str(Year(DateAdd(DateInterval.Month,7,CDate(Parameters!FechaCadena.Value))))</Va
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Mid(MonthName(Month(DateAdd(DateInterval.Month,8,CDate(Parameters!FechaCadena.Value)))),1,3) +
-str(Year(DateAdd(DateInterval.Month,8,CDate(Parameters!FechaCadena.Value))))</Value>
+                                  <Value>
+                                    =Mid(MonthName(Month(DateAdd(DateInterval.Month,8,CDate(Parameters!FechaCadena.Value)))),1,3) +
+                                    str(Year(DateAdd(DateInterval.Month,8,CDate(Parameters!FechaCadena.Value))))
+                                  </Value>
                                   <Style>
                                     <FontFamily>Times New Roman</FontFamily>
                                     <FontSize>7.5pt</FontSize>
@@ -2151,8 +2322,10 @@ str(Year(DateAdd(DateInterval.Month,8,CDate(Parameters!FechaCadena.Value))))</Va
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Mid(MonthName(Month(DateAdd(DateInterval.Month,9,CDate(Parameters!FechaCadena.Value)))),1,3) +
-str(Year(DateAdd(DateInterval.Month,9,CDate(Parameters!FechaCadena.Value))))</Value>
+                                  <Value>
+                                    =Mid(MonthName(Month(DateAdd(DateInterval.Month,9,CDate(Parameters!FechaCadena.Value)))),1,3) +
+                                    str(Year(DateAdd(DateInterval.Month,9,CDate(Parameters!FechaCadena.Value))))
+                                  </Value>
                                   <Style>
                                     <FontFamily>Times New Roman</FontFamily>
                                     <FontSize>7.5pt</FontSize>
@@ -2190,8 +2363,10 @@ str(Year(DateAdd(DateInterval.Month,9,CDate(Parameters!FechaCadena.Value))))</Va
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Mid(MonthName(Month(DateAdd(DateInterval.Month,10,CDate(Parameters!FechaCadena.Value)))),1,3) +
-str(Year(DateAdd(DateInterval.Month,10,CDate(Parameters!FechaCadena.Value))))</Value>
+                                  <Value>
+                                    =Mid(MonthName(Month(DateAdd(DateInterval.Month,10,CDate(Parameters!FechaCadena.Value)))),1,3) +
+                                    str(Year(DateAdd(DateInterval.Month,10,CDate(Parameters!FechaCadena.Value))))
+                                  </Value>
                                   <Style>
                                     <FontFamily>Times New Roman</FontFamily>
                                     <FontSize>7.5pt</FontSize>
@@ -2229,8 +2404,10 @@ str(Year(DateAdd(DateInterval.Month,10,CDate(Parameters!FechaCadena.Value))))</V
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Mid(MonthName(Month(DateAdd(DateInterval.Month,11,CDate(Parameters!FechaCadena.Value)))),1,3) +
-str(Year(DateAdd(DateInterval.Month,11,CDate(Parameters!FechaCadena.Value))))</Value>
+                                  <Value>
+                                    =Mid(MonthName(Month(DateAdd(DateInterval.Month,11,CDate(Parameters!FechaCadena.Value)))),1,3) +
+                                    str(Year(DateAdd(DateInterval.Month,11,CDate(Parameters!FechaCadena.Value))))
+                                  </Value>
                                   <Style>
                                     <FontFamily>Times New Roman</FontFamily>
                                     <FontSize>7.5pt</FontSize>
@@ -2268,8 +2445,10 @@ str(Year(DateAdd(DateInterval.Month,11,CDate(Parameters!FechaCadena.Value))))</V
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Mid(MonthName(Month(DateAdd(DateInterval.Month,12,CDate(Parameters!FechaCadena.Value)))),1,3) +
-str(Year(DateAdd(DateInterval.Month,12,CDate(Parameters!FechaCadena.Value))))</Value>
+                                  <Value>
+                                    =Mid(MonthName(Month(DateAdd(DateInterval.Month,12,CDate(Parameters!FechaCadena.Value)))),1,3) +
+                                    str(Year(DateAdd(DateInterval.Month,12,CDate(Parameters!FechaCadena.Value))))
+                                  </Value>
                                   <Style>
                                     <FontFamily>Times New Roman</FontFamily>
                                     <FontSize>7.5pt</FontSize>
@@ -2307,8 +2486,10 @@ str(Year(DateAdd(DateInterval.Month,12,CDate(Parameters!FechaCadena.Value))))</V
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Mid(MonthName(Month(DateAdd(DateInterval.Month,13,CDate(Parameters!FechaCadena.Value)))),1,3) +
-str(Year(DateAdd(DateInterval.Month,13,CDate(Parameters!FechaCadena.Value))))</Value>
+                                  <Value>
+                                    =Mid(MonthName(Month(DateAdd(DateInterval.Month,13,CDate(Parameters!FechaCadena.Value)))),1,3) +
+                                    str(Year(DateAdd(DateInterval.Month,13,CDate(Parameters!FechaCadena.Value))))
+                                  </Value>
                                   <Style>
                                     <FontFamily>Times New Roman</FontFamily>
                                     <FontSize>7.5pt</FontSize>
@@ -2346,8 +2527,10 @@ str(Year(DateAdd(DateInterval.Month,13,CDate(Parameters!FechaCadena.Value))))</V
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Mid(MonthName(Month(DateAdd(DateInterval.Month,14,CDate(Parameters!FechaCadena.Value)))),1,3) +
-str(Year(DateAdd(DateInterval.Month,14,CDate(Parameters!FechaCadena.Value))))</Value>
+                                  <Value>
+                                    =Mid(MonthName(Month(DateAdd(DateInterval.Month,14,CDate(Parameters!FechaCadena.Value)))),1,3) +
+                                    str(Year(DateAdd(DateInterval.Month,14,CDate(Parameters!FechaCadena.Value))))
+                                  </Value>
                                   <Style>
                                     <FontFamily>Times New Roman</FontFamily>
                                     <FontSize>7.5pt</FontSize>
@@ -2385,8 +2568,10 @@ str(Year(DateAdd(DateInterval.Month,14,CDate(Parameters!FechaCadena.Value))))</V
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Mid(MonthName(Month(DateAdd(DateInterval.Month,15,CDate(Parameters!FechaCadena.Value)))),1,3) +
-str(Year(DateAdd(DateInterval.Month,15,CDate(Parameters!FechaCadena.Value))))</Value>
+                                  <Value>
+                                    =Mid(MonthName(Month(DateAdd(DateInterval.Month,15,CDate(Parameters!FechaCadena.Value)))),1,3) +
+                                    str(Year(DateAdd(DateInterval.Month,15,CDate(Parameters!FechaCadena.Value))))
+                                  </Value>
                                   <Style>
                                     <FontFamily>Times New Roman</FontFamily>
                                     <FontSize>7.5pt</FontSize>
@@ -2424,8 +2609,10 @@ str(Year(DateAdd(DateInterval.Month,15,CDate(Parameters!FechaCadena.Value))))</V
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Mid(MonthName(Month(DateAdd(DateInterval.Month,16,CDate(Parameters!FechaCadena.Value)))),1,3) +
-str(Year(DateAdd(DateInterval.Month,16,CDate(Parameters!FechaCadena.Value))))</Value>
+                                  <Value>
+                                    =Mid(MonthName(Month(DateAdd(DateInterval.Month,16,CDate(Parameters!FechaCadena.Value)))),1,3) +
+                                    str(Year(DateAdd(DateInterval.Month,16,CDate(Parameters!FechaCadena.Value))))
+                                  </Value>
                                   <Style>
                                     <FontFamily>Times New Roman</FontFamily>
                                     <FontSize>7.5pt</FontSize>
@@ -2463,8 +2650,10 @@ str(Year(DateAdd(DateInterval.Month,16,CDate(Parameters!FechaCadena.Value))))</V
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Mid(MonthName(Month(DateAdd(DateInterval.Month,17,CDate(Parameters!FechaCadena.Value)))),1,3) +
-str(Year(DateAdd(DateInterval.Month,17,CDate(Parameters!FechaCadena.Value))))</Value>
+                                  <Value>
+                                    =Mid(MonthName(Month(DateAdd(DateInterval.Month,17,CDate(Parameters!FechaCadena.Value)))),1,3) +
+                                    str(Year(DateAdd(DateInterval.Month,17,CDate(Parameters!FechaCadena.Value))))
+                                  </Value>
                                   <Style>
                                     <FontFamily>Times New Roman</FontFamily>
                                     <FontSize>7.5pt</FontSize>
@@ -2739,6 +2928,7 @@ str(Year(DateAdd(DateInterval.Month,17,CDate(Parameters!FechaCadena.Value))))</V
                                   <Style>
                                     <FontFamily>Times New Roman</FontFamily>
                                     <FontSize>8pt</FontSize>
+                                    <Color>=Iif(FIelds!I04.Value is nothing,"Black","Blue")</Color>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -2772,6 +2962,7 @@ str(Year(DateAdd(DateInterval.Month,17,CDate(Parameters!FechaCadena.Value))))</V
                                   <Style>
                                     <FontFamily>Times New Roman</FontFamily>
                                     <FontSize>8pt</FontSize>
+                                    <Color>=Iif(FIelds!I04.Value is nothing,"Black","Blue")</Color>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -2806,6 +2997,7 @@ str(Year(DateAdd(DateInterval.Month,17,CDate(Parameters!FechaCadena.Value))))</V
                                     <FontFamily>Times New Roman</FontFamily>
                                     <FontSize>8pt</FontSize>
                                     <Format>d</Format>
+                                    <Color>=Iif(FIelds!I04.Value is nothing,"Black","Blue")</Color>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -2840,6 +3032,7 @@ str(Year(DateAdd(DateInterval.Month,17,CDate(Parameters!FechaCadena.Value))))</V
                                     <FontFamily>Times New Roman</FontFamily>
                                     <FontSize>8pt</FontSize>
                                     <Format>d</Format>
+                                    <Color>=Iif(FIelds!I04.Value is nothing,"Black","Blue")</Color>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -2873,6 +3066,7 @@ str(Year(DateAdd(DateInterval.Month,17,CDate(Parameters!FechaCadena.Value))))</V
                                   <Style>
                                     <FontFamily>Times New Roman</FontFamily>
                                     <FontSize>8pt</FontSize>
+                                    <Color>=Iif(FIelds!I04.Value is nothing,"Black","Blue")</Color>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -2907,6 +3101,7 @@ str(Year(DateAdd(DateInterval.Month,17,CDate(Parameters!FechaCadena.Value))))</V
                                     <FontFamily>Times New Roman</FontFamily>
                                     <FontSize>8pt</FontSize>
                                     <Format>#,0.00;(#,0.00)</Format>
+                                    <Color>=Iif(FIelds!I04.Value is nothing,"Black","Blue")</Color>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -2940,6 +3135,7 @@ str(Year(DateAdd(DateInterval.Month,17,CDate(Parameters!FechaCadena.Value))))</V
                                   <Style>
                                     <FontFamily>Times New Roman</FontFamily>
                                     <FontSize>8pt</FontSize>
+                                    <Color>=Iif(FIelds!I04.Value is nothing,"Black","Blue")</Color>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -2974,6 +3170,7 @@ str(Year(DateAdd(DateInterval.Month,17,CDate(Parameters!FechaCadena.Value))))</V
                                     <FontFamily>Times New Roman</FontFamily>
                                     <FontSize>8pt</FontSize>
                                     <Format>d</Format>
+                                    <Color>=Iif(FIelds!I04.Value is nothing,"Black","Blue")</Color>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -3007,6 +3204,7 @@ str(Year(DateAdd(DateInterval.Month,17,CDate(Parameters!FechaCadena.Value))))</V
                                   <Style>
                                     <FontFamily>Times New Roman</FontFamily>
                                     <FontSize>8pt</FontSize>
+                                    <Color>=Iif(FIelds!I04.Value is nothing,"Black","Blue")</Color>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -3014,6 +3212,75 @@ str(Year(DateAdd(DateInterval.Month,17,CDate(Parameters!FechaCadena.Value))))</V
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>K</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="I04">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!I04.Value</Value>
+                                  <Style>
+                                    <FontFamily>Times New Roman</FontFamily>
+                                    <FontSize>8pt</FontSize>
+                                    <Format>dd/MM/yyyy</Format>
+                                    <Color>=Iif(FIelds!I04.Value is nothing,"Black","Blue")</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>I04</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="I05">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!I05.Value</Value>
+                                  <Style>
+                                    <FontFamily>Times New Roman</FontFamily>
+                                    <FontSize>8pt</FontSize>
+                                    <Color>=Iif(FIelds!I04.Value is nothing,"Black","Blue")</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>I05</rd:DefaultName>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
@@ -3041,6 +3308,7 @@ str(Year(DateAdd(DateInterval.Month,17,CDate(Parameters!FechaCadena.Value))))</V
                                     <FontFamily>Times New Roman</FontFamily>
                                     <FontSize>8pt</FontSize>
                                     <Format>#,0.00;(#,0.00)</Format>
+                                    <Color>=Iif(FIelds!I04.Value is nothing,"Black","Blue")</Color>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -3074,6 +3342,7 @@ str(Year(DateAdd(DateInterval.Month,17,CDate(Parameters!FechaCadena.Value))))</V
                                   <Style>
                                     <FontFamily>Times New Roman</FontFamily>
                                     <FontSize>8pt</FontSize>
+                                    <Color>=Iif(FIelds!I04.Value is nothing,"Black","Blue")</Color>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -3108,6 +3377,7 @@ str(Year(DateAdd(DateInterval.Month,17,CDate(Parameters!FechaCadena.Value))))</V
                                     <FontFamily>Times New Roman</FontFamily>
                                     <FontSize>8pt</FontSize>
                                     <Format>d</Format>
+                                    <Color>=Iif(FIelds!I04.Value is nothing,"Black","Blue")</Color>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -3141,6 +3411,7 @@ str(Year(DateAdd(DateInterval.Month,17,CDate(Parameters!FechaCadena.Value))))</V
                                   <Style>
                                     <FontFamily>Times New Roman</FontFamily>
                                     <FontSize>8pt</FontSize>
+                                    <Color>=Iif(FIelds!I04.Value is nothing,"Black","Blue")</Color>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -3175,6 +3446,7 @@ str(Year(DateAdd(DateInterval.Month,17,CDate(Parameters!FechaCadena.Value))))</V
                                     <FontFamily>Times New Roman</FontFamily>
                                     <FontSize>8pt</FontSize>
                                     <Format>d</Format>
+                                    <Color>=Iif(FIelds!I04.Value is nothing,"Black","Blue")</Color>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -3204,12 +3476,15 @@ str(Year(DateAdd(DateInterval.Month,17,CDate(Parameters!FechaCadena.Value))))</V
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Iif((Fields!R.Value - (Fields!S.Value*1))&gt;=0,Fields!S.Value,
-Iif((Fields!R.Value - (Fields!S.Value*0))&gt;=0,(Fields!R.Value - (Fields!S.Value*0)),0))</Value>
+                                  <Value>
+                                    =Iif((Fields!R.Value - (Fields!S.Value*1))&gt;=0,Fields!S.Value,
+                                    Iif((Fields!R.Value - (Fields!S.Value*0))&gt;=0,(Fields!R.Value - (Fields!S.Value*0)),0))
+                                  </Value>
                                   <Style>
                                     <FontFamily>Times New Roman</FontFamily>
                                     <FontSize>8pt</FontSize>
                                     <Format>#,0.00;(#,0.00)</Format>
+                                    <Color>=Iif(FIelds!I04.Value is nothing,"Black","Blue")</Color>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -3239,12 +3514,15 @@ Iif((Fields!R.Value - (Fields!S.Value*0))&gt;=0,(Fields!R.Value - (Fields!S.Valu
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Iif((Fields!R.Value - (Fields!S.Value*2))&gt;=0,Fields!S.Value,
-Iif((Fields!R.Value - (Fields!S.Value*1))&gt;=0,(Fields!R.Value - (Fields!S.Value*1)),0))</Value>
+                                  <Value>
+                                    =Iif((Fields!R.Value - (Fields!S.Value*2))&gt;=0,Fields!S.Value,
+                                    Iif((Fields!R.Value - (Fields!S.Value*1))&gt;=0,(Fields!R.Value - (Fields!S.Value*1)),0))
+                                  </Value>
                                   <Style>
                                     <FontFamily>Times New Roman</FontFamily>
                                     <FontSize>8pt</FontSize>
                                     <Format>#,0.00;(#,0.00)</Format>
+                                    <Color>=Iif(FIelds!I04.Value is nothing,"Black","Blue")</Color>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -3274,12 +3552,15 @@ Iif((Fields!R.Value - (Fields!S.Value*1))&gt;=0,(Fields!R.Value - (Fields!S.Valu
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Iif((Fields!R.Value - (Fields!S.Value*3))&gt;=0,Fields!S.Value,
-Iif((Fields!R.Value - (Fields!S.Value*2))&gt;=0,(Fields!R.Value - (Fields!S.Value*2)),0))</Value>
+                                  <Value>
+                                    =Iif((Fields!R.Value - (Fields!S.Value*3))&gt;=0,Fields!S.Value,
+                                    Iif((Fields!R.Value - (Fields!S.Value*2))&gt;=0,(Fields!R.Value - (Fields!S.Value*2)),0))
+                                  </Value>
                                   <Style>
                                     <FontFamily>Times New Roman</FontFamily>
                                     <FontSize>8pt</FontSize>
                                     <Format>#,0.00;(#,0.00)</Format>
+                                    <Color>=Iif(FIelds!I04.Value is nothing,"Black","Blue")</Color>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -3309,12 +3590,15 @@ Iif((Fields!R.Value - (Fields!S.Value*2))&gt;=0,(Fields!R.Value - (Fields!S.Valu
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Iif((Fields!R.Value - (Fields!S.Value*4))&gt;=0,Fields!S.Value,
-Iif((Fields!R.Value - (Fields!S.Value*3))&gt;=0,(Fields!R.Value - (Fields!S.Value*3)),0))</Value>
+                                  <Value>
+                                    =Iif((Fields!R.Value - (Fields!S.Value*4))&gt;=0,Fields!S.Value,
+                                    Iif((Fields!R.Value - (Fields!S.Value*3))&gt;=0,(Fields!R.Value - (Fields!S.Value*3)),0))
+                                  </Value>
                                   <Style>
                                     <FontFamily>Times New Roman</FontFamily>
                                     <FontSize>8pt</FontSize>
                                     <Format>#,0.00;(#,0.00)</Format>
+                                    <Color>=Iif(FIelds!I04.Value is nothing,"Black","Blue")</Color>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -3344,12 +3628,15 @@ Iif((Fields!R.Value - (Fields!S.Value*3))&gt;=0,(Fields!R.Value - (Fields!S.Valu
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Iif((Fields!R.Value - (Fields!S.Value*5))&gt;=0,Fields!S.Value,
-Iif((Fields!R.Value - (Fields!S.Value*4))&gt;=0,(Fields!R.Value - (Fields!S.Value*4)),0))</Value>
+                                  <Value>
+                                    =Iif((Fields!R.Value - (Fields!S.Value*5))&gt;=0,Fields!S.Value,
+                                    Iif((Fields!R.Value - (Fields!S.Value*4))&gt;=0,(Fields!R.Value - (Fields!S.Value*4)),0))
+                                  </Value>
                                   <Style>
                                     <FontFamily>Times New Roman</FontFamily>
                                     <FontSize>8pt</FontSize>
                                     <Format>#,0.00;(#,0.00)</Format>
+                                    <Color>=Iif(FIelds!I04.Value is nothing,"Black","Blue")</Color>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -3379,12 +3666,15 @@ Iif((Fields!R.Value - (Fields!S.Value*4))&gt;=0,(Fields!R.Value - (Fields!S.Valu
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Iif((Fields!R.Value - (Fields!S.Value*6))&gt;=0,Fields!S.Value,
-Iif((Fields!R.Value - (Fields!S.Value*5))&gt;=0,(Fields!R.Value - (Fields!S.Value*5)),0))</Value>
+                                  <Value>
+                                    =Iif((Fields!R.Value - (Fields!S.Value*6))&gt;=0,Fields!S.Value,
+                                    Iif((Fields!R.Value - (Fields!S.Value*5))&gt;=0,(Fields!R.Value - (Fields!S.Value*5)),0))
+                                  </Value>
                                   <Style>
                                     <FontFamily>Times New Roman</FontFamily>
                                     <FontSize>8pt</FontSize>
                                     <Format>#,0.00;(#,0.00)</Format>
+                                    <Color>=Iif(FIelds!I04.Value is nothing,"Black","Blue")</Color>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -3414,12 +3704,15 @@ Iif((Fields!R.Value - (Fields!S.Value*5))&gt;=0,(Fields!R.Value - (Fields!S.Valu
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Iif((Fields!R.Value - (Fields!S.Value*7))&gt;=0,Fields!S.Value,
-Iif((Fields!R.Value - (Fields!S.Value*6))&gt;=0,(Fields!R.Value - (Fields!S.Value*6)),0))</Value>
+                                  <Value>
+                                    =Iif((Fields!R.Value - (Fields!S.Value*7))&gt;=0,Fields!S.Value,
+                                    Iif((Fields!R.Value - (Fields!S.Value*6))&gt;=0,(Fields!R.Value - (Fields!S.Value*6)),0))
+                                  </Value>
                                   <Style>
                                     <FontFamily>Times New Roman</FontFamily>
                                     <FontSize>8pt</FontSize>
                                     <Format>#,0.00;(#,0.00)</Format>
+                                    <Color>=Iif(FIelds!I04.Value is nothing,"Black","Blue")</Color>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -3449,12 +3742,15 @@ Iif((Fields!R.Value - (Fields!S.Value*6))&gt;=0,(Fields!R.Value - (Fields!S.Valu
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Iif((Fields!R.Value - (Fields!S.Value*8))&gt;=0,Fields!S.Value,
-Iif((Fields!R.Value - (Fields!S.Value*7))&gt;=0,(Fields!R.Value - (Fields!S.Value*7)),0))</Value>
+                                  <Value>
+                                    =Iif((Fields!R.Value - (Fields!S.Value*8))&gt;=0,Fields!S.Value,
+                                    Iif((Fields!R.Value - (Fields!S.Value*7))&gt;=0,(Fields!R.Value - (Fields!S.Value*7)),0))
+                                  </Value>
                                   <Style>
                                     <FontFamily>Times New Roman</FontFamily>
                                     <FontSize>8pt</FontSize>
                                     <Format>#,0.00;(#,0.00)</Format>
+                                    <Color>=Iif(FIelds!I04.Value is nothing,"Black","Blue")</Color>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -3484,12 +3780,15 @@ Iif((Fields!R.Value - (Fields!S.Value*7))&gt;=0,(Fields!R.Value - (Fields!S.Valu
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Iif((Fields!R.Value - (Fields!S.Value*9))&gt;=0,Fields!S.Value,
-Iif((Fields!R.Value - (Fields!S.Value*8))&gt;=0,(Fields!R.Value - (Fields!S.Value*8)),0))</Value>
+                                  <Value>
+                                    =Iif((Fields!R.Value - (Fields!S.Value*9))&gt;=0,Fields!S.Value,
+                                    Iif((Fields!R.Value - (Fields!S.Value*8))&gt;=0,(Fields!R.Value - (Fields!S.Value*8)),0))
+                                  </Value>
                                   <Style>
                                     <FontFamily>Times New Roman</FontFamily>
                                     <FontSize>8pt</FontSize>
                                     <Format>#,0.00;(#,0.00)</Format>
+                                    <Color>=Iif(FIelds!I04.Value is nothing,"Black","Blue")</Color>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -3519,12 +3818,15 @@ Iif((Fields!R.Value - (Fields!S.Value*8))&gt;=0,(Fields!R.Value - (Fields!S.Valu
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Iif((Fields!R.Value - (Fields!S.Value*10))&gt;=0,Fields!S.Value,
-Iif((Fields!R.Value - (Fields!S.Value*9))&gt;=0,(Fields!R.Value - (Fields!S.Value*9)),0))</Value>
+                                  <Value>
+                                    =Iif((Fields!R.Value - (Fields!S.Value*10))&gt;=0,Fields!S.Value,
+                                    Iif((Fields!R.Value - (Fields!S.Value*9))&gt;=0,(Fields!R.Value - (Fields!S.Value*9)),0))
+                                  </Value>
                                   <Style>
                                     <FontFamily>Times New Roman</FontFamily>
                                     <FontSize>8pt</FontSize>
                                     <Format>#,0.00;(#,0.00)</Format>
+                                    <Color>=Iif(FIelds!I04.Value is nothing,"Black","Blue")</Color>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -3554,12 +3856,15 @@ Iif((Fields!R.Value - (Fields!S.Value*9))&gt;=0,(Fields!R.Value - (Fields!S.Valu
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Iif((Fields!R.Value - (Fields!S.Value*11))&gt;=0,Fields!S.Value,
-Iif((Fields!R.Value - (Fields!S.Value*10))&gt;=0,(Fields!R.Value - (Fields!S.Value*10)),0))</Value>
+                                  <Value>
+                                    =Iif((Fields!R.Value - (Fields!S.Value*11))&gt;=0,Fields!S.Value,
+                                    Iif((Fields!R.Value - (Fields!S.Value*10))&gt;=0,(Fields!R.Value - (Fields!S.Value*10)),0))
+                                  </Value>
                                   <Style>
                                     <FontFamily>Times New Roman</FontFamily>
                                     <FontSize>8pt</FontSize>
                                     <Format>#,0.00;(#,0.00)</Format>
+                                    <Color>=Iif(FIelds!I04.Value is nothing,"Black","Blue")</Color>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -3589,12 +3894,15 @@ Iif((Fields!R.Value - (Fields!S.Value*10))&gt;=0,(Fields!R.Value - (Fields!S.Val
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Iif((Fields!R.Value - (Fields!S.Value*12))&gt;=0,Fields!S.Value,
-Iif((Fields!R.Value - (Fields!S.Value*11))&gt;=0,(Fields!R.Value - (Fields!S.Value*11)),0))</Value>
+                                  <Value>
+                                    =Iif((Fields!R.Value - (Fields!S.Value*12))&gt;=0,Fields!S.Value,
+                                    Iif((Fields!R.Value - (Fields!S.Value*11))&gt;=0,(Fields!R.Value - (Fields!S.Value*11)),0))
+                                  </Value>
                                   <Style>
                                     <FontFamily>Times New Roman</FontFamily>
                                     <FontSize>8pt</FontSize>
                                     <Format>#,0.00;(#,0.00)</Format>
+                                    <Color>=Iif(FIelds!I04.Value is nothing,"Black","Blue")</Color>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -3624,12 +3932,15 @@ Iif((Fields!R.Value - (Fields!S.Value*11))&gt;=0,(Fields!R.Value - (Fields!S.Val
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Iif((Fields!R.Value - (Fields!S.Value*13))&gt;=0,Fields!S.Value,
-Iif((Fields!R.Value - (Fields!S.Value*12))&gt;=0,(Fields!R.Value - (Fields!S.Value*12)),0))</Value>
+                                  <Value>
+                                    =Iif((Fields!R.Value - (Fields!S.Value*13))&gt;=0,Fields!S.Value,
+                                    Iif((Fields!R.Value - (Fields!S.Value*12))&gt;=0,(Fields!R.Value - (Fields!S.Value*12)),0))
+                                  </Value>
                                   <Style>
                                     <FontFamily>Times New Roman</FontFamily>
                                     <FontSize>8pt</FontSize>
                                     <Format>#,0.00;(#,0.00)</Format>
+                                    <Color>=Iif(FIelds!I04.Value is nothing,"Black","Blue")</Color>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -3659,12 +3970,15 @@ Iif((Fields!R.Value - (Fields!S.Value*12))&gt;=0,(Fields!R.Value - (Fields!S.Val
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Iif((Fields!R.Value - (Fields!S.Value*14))&gt;=0,Fields!S.Value,
-Iif((Fields!R.Value - (Fields!S.Value*13))&gt;=0,(Fields!R.Value - (Fields!S.Value*13)),0))</Value>
+                                  <Value>
+                                    =Iif((Fields!R.Value - (Fields!S.Value*14))&gt;=0,Fields!S.Value,
+                                    Iif((Fields!R.Value - (Fields!S.Value*13))&gt;=0,(Fields!R.Value - (Fields!S.Value*13)),0))
+                                  </Value>
                                   <Style>
                                     <FontFamily>Times New Roman</FontFamily>
                                     <FontSize>8pt</FontSize>
                                     <Format>#,0.00;(#,0.00)</Format>
+                                    <Color>=Iif(FIelds!I04.Value is nothing,"Black","Blue")</Color>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -3694,12 +4008,15 @@ Iif((Fields!R.Value - (Fields!S.Value*13))&gt;=0,(Fields!R.Value - (Fields!S.Val
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Iif((Fields!R.Value - (Fields!S.Value*15))&gt;=0,Fields!S.Value,
-Iif((Fields!R.Value - (Fields!S.Value*14))&gt;=0,(Fields!R.Value - (Fields!S.Value*14)),0))</Value>
+                                  <Value>
+                                    =Iif((Fields!R.Value - (Fields!S.Value*15))&gt;=0,Fields!S.Value,
+                                    Iif((Fields!R.Value - (Fields!S.Value*14))&gt;=0,(Fields!R.Value - (Fields!S.Value*14)),0))
+                                  </Value>
                                   <Style>
                                     <FontFamily>Times New Roman</FontFamily>
                                     <FontSize>8pt</FontSize>
                                     <Format>#,0.00;(#,0.00)</Format>
+                                    <Color>=Iif(FIelds!I04.Value is nothing,"Black","Blue")</Color>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -3729,12 +4046,15 @@ Iif((Fields!R.Value - (Fields!S.Value*14))&gt;=0,(Fields!R.Value - (Fields!S.Val
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Iif((Fields!R.Value - (Fields!S.Value*16))&gt;=0,Fields!S.Value,
-Iif((Fields!R.Value - (Fields!S.Value*15))&gt;=0,(Fields!R.Value - (Fields!S.Value*15)),0))</Value>
+                                  <Value>
+                                    =Iif((Fields!R.Value - (Fields!S.Value*16))&gt;=0,Fields!S.Value,
+                                    Iif((Fields!R.Value - (Fields!S.Value*15))&gt;=0,(Fields!R.Value - (Fields!S.Value*15)),0))
+                                  </Value>
                                   <Style>
                                     <FontFamily>Times New Roman</FontFamily>
                                     <FontSize>8pt</FontSize>
                                     <Format>#,0.00;(#,0.00)</Format>
+                                    <Color>=Iif(FIelds!I04.Value is nothing,"Black","Blue")</Color>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -3764,12 +4084,15 @@ Iif((Fields!R.Value - (Fields!S.Value*15))&gt;=0,(Fields!R.Value - (Fields!S.Val
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Iif((Fields!R.Value - (Fields!S.Value*17))&gt;=0,Fields!S.Value,
-Iif((Fields!R.Value - (Fields!S.Value*16))&gt;=0,(Fields!R.Value - (Fields!S.Value*16)),0))</Value>
+                                  <Value>
+                                    =Iif((Fields!R.Value - (Fields!S.Value*17))&gt;=0,Fields!S.Value,
+                                    Iif((Fields!R.Value - (Fields!S.Value*16))&gt;=0,(Fields!R.Value - (Fields!S.Value*16)),0))
+                                  </Value>
                                   <Style>
                                     <FontFamily>Times New Roman</FontFamily>
                                     <FontSize>8pt</FontSize>
                                     <Format>#,0.00;(#,0.00)</Format>
+                                    <Color>=Iif(FIelds!I04.Value is nothing,"Black","Blue")</Color>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -3799,12 +4122,15 @@ Iif((Fields!R.Value - (Fields!S.Value*16))&gt;=0,(Fields!R.Value - (Fields!S.Val
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Iif((Fields!R.Value - (Fields!S.Value*18))&gt;=0,Fields!S.Value,
-Iif((Fields!R.Value - (Fields!S.Value*17))&gt;=0,(Fields!R.Value - (Fields!S.Value*17)),0))</Value>
+                                  <Value>
+                                    =Iif((Fields!R.Value - (Fields!S.Value*18))&gt;=0,Fields!S.Value,
+                                    Iif((Fields!R.Value - (Fields!S.Value*17))&gt;=0,(Fields!R.Value - (Fields!S.Value*17)),0))
+                                  </Value>
                                   <Style>
                                     <FontFamily>Times New Roman</FontFamily>
                                     <FontSize>8pt</FontSize>
                                     <Format>#,0.00;(#,0.00)</Format>
+                                    <Color>=Iif(FIelds!I04.Value is nothing,"Black","Blue")</Color>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -3839,6 +4165,7 @@ Iif((Fields!R.Value - (Fields!S.Value*17))&gt;=0,(Fields!R.Value - (Fields!S.Val
                                     <FontFamily>Times New Roman</FontFamily>
                                     <FontSize>8pt</FontSize>
                                     <Format>0.00;(0.00)</Format>
+                                    <Color>=Iif(FIelds!I04.Value is nothing,"Black","Blue")</Color>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -3873,6 +4200,7 @@ Iif((Fields!R.Value - (Fields!S.Value*17))&gt;=0,(Fields!R.Value - (Fields!S.Val
                                     <FontFamily>Times New Roman</FontFamily>
                                     <FontSize>8pt</FontSize>
                                     <Format>#,0.00;(#,0.00)</Format>
+                                    <Color>=Iif(FIelds!I04.Value is nothing,"Black","Blue")</Color>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -3907,6 +4235,7 @@ Iif((Fields!R.Value - (Fields!S.Value*17))&gt;=0,(Fields!R.Value - (Fields!S.Val
                                     <FontFamily>Times New Roman</FontFamily>
                                     <FontSize>8pt</FontSize>
                                     <Format>#,0.00;(#,0.00)</Format>
+                                    <Color>=Iif(FIelds!I04.Value is nothing,"Black","Blue")</Color>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -3940,6 +4269,7 @@ Iif((Fields!R.Value - (Fields!S.Value*17))&gt;=0,(Fields!R.Value - (Fields!S.Val
                                   <Style>
                                     <FontFamily>Times New Roman</FontFamily>
                                     <FontSize>8pt</FontSize>
+                                    <Color>=Iif(FIelds!I04.Value is nothing,"Black","Blue")</Color>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -3975,6 +4305,7 @@ Iif((Fields!R.Value - (Fields!S.Value*17))&gt;=0,(Fields!R.Value - (Fields!S.Val
                                   <Style>
                                     <FontFamily>Times New Roman</FontFamily>
                                     <FontSize>8pt</FontSize>
+                                    <Color>=Iif(FIelds!I04.Value is nothing,"Black","Blue")</Color>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -4010,6 +4341,7 @@ Iif((Fields!R.Value - (Fields!S.Value*17))&gt;=0,(Fields!R.Value - (Fields!S.Val
                                   <Style>
                                     <FontFamily>Times New Roman</FontFamily>
                                     <FontSize>8pt</FontSize>
+                                    <Color>=Iif(FIelds!I04.Value is nothing,"Black","Blue")</Color>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -4250,6 +4582,74 @@ Iif((Fields!R.Value - (Fields!S.Value*17))&gt;=0,(Fields!R.Value - (Fields!S.Val
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
+                        <Textbox Name="Textbox220">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value />
+                                  <Style>
+                                    <FontFamily>Times New Roman</FontFamily>
+                                    <FontSize>8pt</FontSize>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox220</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <BackgroundColor>LightGrey</BackgroundColor>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox210">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value />
+                                  <Style>
+                                    <FontFamily>Times New Roman</FontFamily>
+                                    <FontSize>8pt</FontSize>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox210</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <BackgroundColor>LightGrey</BackgroundColor>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
                         <Textbox Name="Textbox346">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
@@ -4429,8 +4829,10 @@ Iif((Fields!R.Value - (Fields!S.Value*17))&gt;=0,(Fields!R.Value - (Fields!S.Val
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Sum(Iif((Fields!R.Value - (Fields!S.Value*1))&gt;=0,Fields!S.Value,
-Iif((Fields!R.Value - (Fields!S.Value*0))&gt;=0,(Fields!R.Value - (Fields!S.Value*0)),CDec(0))))</Value>
+                                  <Value>
+                                    =Sum(Iif((Fields!R.Value - (Fields!S.Value*1))&gt;=0,Fields!S.Value,
+                                    Iif((Fields!R.Value - (Fields!S.Value*0))&gt;=0,(Fields!R.Value - (Fields!S.Value*0)),CDec(0))))
+                                  </Value>
                                   <Style>
                                     <FontFamily>Times New Roman</FontFamily>
                                     <FontSize>8pt</FontSize>
@@ -4466,8 +4868,10 @@ Iif((Fields!R.Value - (Fields!S.Value*0))&gt;=0,(Fields!R.Value - (Fields!S.Valu
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Sum(Iif((Fields!R.Value - (Fields!S.Value*2))&gt;=0,Fields!S.Value,
-Iif((Fields!R.Value - (Fields!S.Value*1))&gt;=0,(Fields!R.Value - (Fields!S.Value*1)),CDec(0))))</Value>
+                                  <Value>
+                                    =Sum(Iif((Fields!R.Value - (Fields!S.Value*2))&gt;=0,Fields!S.Value,
+                                    Iif((Fields!R.Value - (Fields!S.Value*1))&gt;=0,(Fields!R.Value - (Fields!S.Value*1)),CDec(0))))
+                                  </Value>
                                   <Style>
                                     <FontFamily>Times New Roman</FontFamily>
                                     <FontSize>8pt</FontSize>
@@ -4503,8 +4907,10 @@ Iif((Fields!R.Value - (Fields!S.Value*1))&gt;=0,(Fields!R.Value - (Fields!S.Valu
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Sum(Iif((Fields!R.Value - (Fields!S.Value*3))&gt;=0,Fields!S.Value,
-Iif((Fields!R.Value - (Fields!S.Value*2))&gt;=0,(Fields!R.Value - (Fields!S.Value*2)),CDec(0))))</Value>
+                                  <Value>
+                                    =Sum(Iif((Fields!R.Value - (Fields!S.Value*3))&gt;=0,Fields!S.Value,
+                                    Iif((Fields!R.Value - (Fields!S.Value*2))&gt;=0,(Fields!R.Value - (Fields!S.Value*2)),CDec(0))))
+                                  </Value>
                                   <Style>
                                     <FontFamily>Times New Roman</FontFamily>
                                     <FontSize>8pt</FontSize>
@@ -4540,8 +4946,10 @@ Iif((Fields!R.Value - (Fields!S.Value*2))&gt;=0,(Fields!R.Value - (Fields!S.Valu
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Sum(Iif((Fields!R.Value - (Fields!S.Value*4))&gt;=0,Fields!S.Value,
-Iif((Fields!R.Value - (Fields!S.Value*3))&gt;=0,(Fields!R.Value - (Fields!S.Value*3)),CDec(0))))</Value>
+                                  <Value>
+                                    =Sum(Iif((Fields!R.Value - (Fields!S.Value*4))&gt;=0,Fields!S.Value,
+                                    Iif((Fields!R.Value - (Fields!S.Value*3))&gt;=0,(Fields!R.Value - (Fields!S.Value*3)),CDec(0))))
+                                  </Value>
                                   <Style>
                                     <FontFamily>Times New Roman</FontFamily>
                                     <FontSize>8pt</FontSize>
@@ -4577,8 +4985,10 @@ Iif((Fields!R.Value - (Fields!S.Value*3))&gt;=0,(Fields!R.Value - (Fields!S.Valu
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Sum(Iif((Fields!R.Value - (Fields!S.Value*5))&gt;=0,Fields!S.Value,
-Iif((Fields!R.Value - (Fields!S.Value*4))&gt;=0,(Fields!R.Value - (Fields!S.Value*4)),CDec(0))))</Value>
+                                  <Value>
+                                    =Sum(Iif((Fields!R.Value - (Fields!S.Value*5))&gt;=0,Fields!S.Value,
+                                    Iif((Fields!R.Value - (Fields!S.Value*4))&gt;=0,(Fields!R.Value - (Fields!S.Value*4)),CDec(0))))
+                                  </Value>
                                   <Style>
                                     <FontFamily>Times New Roman</FontFamily>
                                     <FontSize>8pt</FontSize>
@@ -4614,8 +5024,10 @@ Iif((Fields!R.Value - (Fields!S.Value*4))&gt;=0,(Fields!R.Value - (Fields!S.Valu
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Sum(Iif((Fields!R.Value - (Fields!S.Value*6))&gt;=0,Fields!S.Value,
-Iif((Fields!R.Value - (Fields!S.Value*5))&gt;=0,(Fields!R.Value - (Fields!S.Value*5)),CDec(0))))</Value>
+                                  <Value>
+                                    =Sum(Iif((Fields!R.Value - (Fields!S.Value*6))&gt;=0,Fields!S.Value,
+                                    Iif((Fields!R.Value - (Fields!S.Value*5))&gt;=0,(Fields!R.Value - (Fields!S.Value*5)),CDec(0))))
+                                  </Value>
                                   <Style>
                                     <FontFamily>Times New Roman</FontFamily>
                                     <FontSize>8pt</FontSize>
@@ -4651,8 +5063,10 @@ Iif((Fields!R.Value - (Fields!S.Value*5))&gt;=0,(Fields!R.Value - (Fields!S.Valu
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Sum(Iif((Fields!R.Value - (Fields!S.Value*7))&gt;=0,Fields!S.Value,
-Iif((Fields!R.Value - (Fields!S.Value*6))&gt;=0,(Fields!R.Value - (Fields!S.Value*6)),CDec(0))))</Value>
+                                  <Value>
+                                    =Sum(Iif((Fields!R.Value - (Fields!S.Value*7))&gt;=0,Fields!S.Value,
+                                    Iif((Fields!R.Value - (Fields!S.Value*6))&gt;=0,(Fields!R.Value - (Fields!S.Value*6)),CDec(0))))
+                                  </Value>
                                   <Style>
                                     <FontFamily>Times New Roman</FontFamily>
                                     <FontSize>8pt</FontSize>
@@ -4688,8 +5102,10 @@ Iif((Fields!R.Value - (Fields!S.Value*6))&gt;=0,(Fields!R.Value - (Fields!S.Valu
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Sum(Iif((Fields!R.Value - (Fields!S.Value*8))&gt;=0,Fields!S.Value,
-Iif((Fields!R.Value - (Fields!S.Value*7))&gt;=0,(Fields!R.Value - (Fields!S.Value*7)),CDec(0))))</Value>
+                                  <Value>
+                                    =Sum(Iif((Fields!R.Value - (Fields!S.Value*8))&gt;=0,Fields!S.Value,
+                                    Iif((Fields!R.Value - (Fields!S.Value*7))&gt;=0,(Fields!R.Value - (Fields!S.Value*7)),CDec(0))))
+                                  </Value>
                                   <Style>
                                     <FontFamily>Times New Roman</FontFamily>
                                     <FontSize>8pt</FontSize>
@@ -4725,8 +5141,10 @@ Iif((Fields!R.Value - (Fields!S.Value*7))&gt;=0,(Fields!R.Value - (Fields!S.Valu
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Sum(Iif((Fields!R.Value - (Fields!S.Value*9))&gt;=0,Fields!S.Value,
-Iif((Fields!R.Value - (Fields!S.Value*8))&gt;=0,(Fields!R.Value - (Fields!S.Value*8)),CDec(0))))</Value>
+                                  <Value>
+                                    =Sum(Iif((Fields!R.Value - (Fields!S.Value*9))&gt;=0,Fields!S.Value,
+                                    Iif((Fields!R.Value - (Fields!S.Value*8))&gt;=0,(Fields!R.Value - (Fields!S.Value*8)),CDec(0))))
+                                  </Value>
                                   <Style>
                                     <FontFamily>Times New Roman</FontFamily>
                                     <FontSize>8pt</FontSize>
@@ -4762,8 +5180,10 @@ Iif((Fields!R.Value - (Fields!S.Value*8))&gt;=0,(Fields!R.Value - (Fields!S.Valu
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Sum(Iif((Fields!R.Value - (Fields!S.Value*10))&gt;=0,Fields!S.Value,
-Iif((Fields!R.Value - (Fields!S.Value*9))&gt;=0,(Fields!R.Value - (Fields!S.Value*9)),CDec(0))))</Value>
+                                  <Value>
+                                    =Sum(Iif((Fields!R.Value - (Fields!S.Value*10))&gt;=0,Fields!S.Value,
+                                    Iif((Fields!R.Value - (Fields!S.Value*9))&gt;=0,(Fields!R.Value - (Fields!S.Value*9)),CDec(0))))
+                                  </Value>
                                   <Style>
                                     <FontFamily>Times New Roman</FontFamily>
                                     <FontSize>8pt</FontSize>
@@ -4799,8 +5219,10 @@ Iif((Fields!R.Value - (Fields!S.Value*9))&gt;=0,(Fields!R.Value - (Fields!S.Valu
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Sum(Iif((Fields!R.Value - (Fields!S.Value*11))&gt;=0,Fields!S.Value,
-Iif((Fields!R.Value - (Fields!S.Value*10))&gt;=0,(Fields!R.Value - (Fields!S.Value*10)),CDec(0))))</Value>
+                                  <Value>
+                                    =Sum(Iif((Fields!R.Value - (Fields!S.Value*11))&gt;=0,Fields!S.Value,
+                                    Iif((Fields!R.Value - (Fields!S.Value*10))&gt;=0,(Fields!R.Value - (Fields!S.Value*10)),CDec(0))))
+                                  </Value>
                                   <Style>
                                     <FontFamily>Times New Roman</FontFamily>
                                     <FontSize>8pt</FontSize>
@@ -4836,8 +5258,10 @@ Iif((Fields!R.Value - (Fields!S.Value*10))&gt;=0,(Fields!R.Value - (Fields!S.Val
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Sum(Iif((Fields!R.Value - (Fields!S.Value*12))&gt;=0,Fields!S.Value,
-Iif((Fields!R.Value - (Fields!S.Value*11))&gt;=0,(Fields!R.Value - (Fields!S.Value*11)),CDec(0))))</Value>
+                                  <Value>
+                                    =Sum(Iif((Fields!R.Value - (Fields!S.Value*12))&gt;=0,Fields!S.Value,
+                                    Iif((Fields!R.Value - (Fields!S.Value*11))&gt;=0,(Fields!R.Value - (Fields!S.Value*11)),CDec(0))))
+                                  </Value>
                                   <Style>
                                     <FontFamily>Times New Roman</FontFamily>
                                     <FontSize>8pt</FontSize>
@@ -4873,8 +5297,10 @@ Iif((Fields!R.Value - (Fields!S.Value*11))&gt;=0,(Fields!R.Value - (Fields!S.Val
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Sum(Iif((Fields!R.Value - (Fields!S.Value*13))&gt;=0,Fields!S.Value,
-Iif((Fields!R.Value - (Fields!S.Value*12))&gt;=0,(Fields!R.Value - (Fields!S.Value*12)),CDec(0))))</Value>
+                                  <Value>
+                                    =Sum(Iif((Fields!R.Value - (Fields!S.Value*13))&gt;=0,Fields!S.Value,
+                                    Iif((Fields!R.Value - (Fields!S.Value*12))&gt;=0,(Fields!R.Value - (Fields!S.Value*12)),CDec(0))))
+                                  </Value>
                                   <Style>
                                     <FontFamily>Times New Roman</FontFamily>
                                     <FontSize>8pt</FontSize>
@@ -4910,8 +5336,10 @@ Iif((Fields!R.Value - (Fields!S.Value*12))&gt;=0,(Fields!R.Value - (Fields!S.Val
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Sum(Iif((Fields!R.Value - (Fields!S.Value*14))&gt;=0,Fields!S.Value,
-Iif((Fields!R.Value - (Fields!S.Value*13))&gt;=0,(Fields!R.Value - (Fields!S.Value*13)),CDec(0))))</Value>
+                                  <Value>
+                                    =Sum(Iif((Fields!R.Value - (Fields!S.Value*14))&gt;=0,Fields!S.Value,
+                                    Iif((Fields!R.Value - (Fields!S.Value*13))&gt;=0,(Fields!R.Value - (Fields!S.Value*13)),CDec(0))))
+                                  </Value>
                                   <Style>
                                     <FontFamily>Times New Roman</FontFamily>
                                     <FontSize>8pt</FontSize>
@@ -4947,8 +5375,10 @@ Iif((Fields!R.Value - (Fields!S.Value*13))&gt;=0,(Fields!R.Value - (Fields!S.Val
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Sum(Iif((Fields!R.Value - (Fields!S.Value*15))&gt;=0,Fields!S.Value,
-Iif((Fields!R.Value - (Fields!S.Value*14))&gt;=0,(Fields!R.Value - (Fields!S.Value*14)),CDec(0))))</Value>
+                                  <Value>
+                                    =Sum(Iif((Fields!R.Value - (Fields!S.Value*15))&gt;=0,Fields!S.Value,
+                                    Iif((Fields!R.Value - (Fields!S.Value*14))&gt;=0,(Fields!R.Value - (Fields!S.Value*14)),CDec(0))))
+                                  </Value>
                                   <Style>
                                     <FontFamily>Times New Roman</FontFamily>
                                     <FontSize>8pt</FontSize>
@@ -4984,8 +5414,10 @@ Iif((Fields!R.Value - (Fields!S.Value*14))&gt;=0,(Fields!R.Value - (Fields!S.Val
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Sum(Iif((Fields!R.Value - (Fields!S.Value*16))&gt;=0,Fields!S.Value,
-Iif((Fields!R.Value - (Fields!S.Value*15))&gt;=0,(Fields!R.Value - (Fields!S.Value*15)),CDec(0))))</Value>
+                                  <Value>
+                                    =Sum(Iif((Fields!R.Value - (Fields!S.Value*16))&gt;=0,Fields!S.Value,
+                                    Iif((Fields!R.Value - (Fields!S.Value*15))&gt;=0,(Fields!R.Value - (Fields!S.Value*15)),CDec(0))))
+                                  </Value>
                                   <Style>
                                     <FontFamily>Times New Roman</FontFamily>
                                     <FontSize>8pt</FontSize>
@@ -5021,8 +5453,10 @@ Iif((Fields!R.Value - (Fields!S.Value*15))&gt;=0,(Fields!R.Value - (Fields!S.Val
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Sum(Iif((Fields!R.Value - (Fields!S.Value*17))&gt;=0,Fields!S.Value,
-Iif((Fields!R.Value - (Fields!S.Value*16))&gt;=0,(Fields!R.Value - (Fields!S.Value*16)),CDec(0))))</Value>
+                                  <Value>
+                                    =Sum(Iif((Fields!R.Value - (Fields!S.Value*17))&gt;=0,Fields!S.Value,
+                                    Iif((Fields!R.Value - (Fields!S.Value*16))&gt;=0,(Fields!R.Value - (Fields!S.Value*16)),CDec(0))))
+                                  </Value>
                                   <Style>
                                     <FontFamily>Times New Roman</FontFamily>
                                     <FontSize>8pt</FontSize>
@@ -5058,8 +5492,10 @@ Iif((Fields!R.Value - (Fields!S.Value*16))&gt;=0,(Fields!R.Value - (Fields!S.Val
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Sum(Iif((Fields!R.Value - (Fields!S.Value*18))&gt;=0,Fields!S.Value,
-Iif((Fields!R.Value - (Fields!S.Value*17))&gt;=0,(Fields!R.Value - (Fields!S.Value*17)),CDec(0))))</Value>
+                                  <Value>
+                                    =Sum(Iif((Fields!R.Value - (Fields!S.Value*18))&gt;=0,Fields!S.Value,
+                                    Iif((Fields!R.Value - (Fields!S.Value*17))&gt;=0,(Fields!R.Value - (Fields!S.Value*17)),CDec(0))))
+                                  </Value>
                                   <Style>
                                     <FontFamily>Times New Roman</FontFamily>
                                     <FontSize>8pt</FontSize>
@@ -5293,6 +5729,1347 @@ Iif((Fields!R.Value - (Fields!S.Value*17))&gt;=0,(Fields!R.Value - (Fields!S.Val
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>Textbox192</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <BackgroundColor>LightGrey</BackgroundColor>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                  </TablixCells>
+                </TablixRow>
+                <TablixRow>
+                  <Height>0.6cm</Height>
+                  <TablixCells>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox203">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>="Total Nuevos Ingresos : " &amp; Cstr(Sum(Iif(Fields!I04.Value is nothing,0,1)))</Value>
+                                  <Style>
+                                    <FontFamily>Times New Roman</FontFamily>
+                                    <FontSize>8pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                    <Color>Blue</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox203</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <BackgroundColor>LightGrey</BackgroundColor>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <ColSpan>3</ColSpan>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell />
+                    <TablixCell />
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox222">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value />
+                                  <Style>
+                                    <FontFamily>Times New Roman</FontFamily>
+                                    <FontSize>8pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox222</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <BackgroundColor>LightGrey</BackgroundColor>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox223">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value />
+                                  <Style>
+                                    <FontFamily>Times New Roman</FontFamily>
+                                    <FontSize>8pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox223</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <BackgroundColor>LightGrey</BackgroundColor>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox224">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Sum(Iif(Fields!I04.Value is nothing,CDec(0),Fields!H.Value))</Value>
+                                  <Style>
+                                    <FontFamily>Times New Roman</FontFamily>
+                                    <FontSize>8pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                    <Format>#,0.00;(#,0.00)</Format>
+                                    <Color>Blue</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox224</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <BackgroundColor>LightGrey</BackgroundColor>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox225">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value />
+                                  <Style>
+                                    <FontFamily>Times New Roman</FontFamily>
+                                    <FontSize>8pt</FontSize>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox225</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <BackgroundColor>LightGrey</BackgroundColor>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox226">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value />
+                                  <Style>
+                                    <FontFamily>Times New Roman</FontFamily>
+                                    <FontSize>8pt</FontSize>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox226</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <BackgroundColor>LightGrey</BackgroundColor>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox227">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value />
+                                  <Style>
+                                    <FontFamily>Times New Roman</FontFamily>
+                                    <FontSize>8pt</FontSize>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox227</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <BackgroundColor>LightGrey</BackgroundColor>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox228">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value />
+                                  <Style>
+                                    <FontFamily>Times New Roman</FontFamily>
+                                    <FontSize>8pt</FontSize>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox228</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <BackgroundColor>LightGrey</BackgroundColor>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox229">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value />
+                                  <Style>
+                                    <FontFamily>Times New Roman</FontFamily>
+                                    <FontSize>8pt</FontSize>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox229</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <BackgroundColor>LightGrey</BackgroundColor>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox230">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Sum(Iif(Fields!I04.Value is nothing,CDec(0),Fields!L.Value))</Value>
+                                  <Style>
+                                    <FontFamily>Times New Roman</FontFamily>
+                                    <FontSize>8pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                    <Format>#,0.00;(#,0.00)</Format>
+                                    <Color>Blue</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox230</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <BackgroundColor>LightGrey</BackgroundColor>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <rd:Selected>true</rd:Selected>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox231">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value />
+                                  <Style>
+                                    <FontFamily>Times New Roman</FontFamily>
+                                    <FontSize>8pt</FontSize>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox231</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <BackgroundColor>LightGrey</BackgroundColor>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox232">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value />
+                                  <Style>
+                                    <FontFamily>Times New Roman</FontFamily>
+                                    <FontSize>8pt</FontSize>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox232</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <BackgroundColor>LightGrey</BackgroundColor>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox233">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value />
+                                  <Style>
+                                    <FontFamily>Times New Roman</FontFamily>
+                                    <FontSize>8pt</FontSize>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox233</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <BackgroundColor>LightGrey</BackgroundColor>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox234">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value />
+                                  <Style>
+                                    <FontFamily>Times New Roman</FontFamily>
+                                    <FontSize>8pt</FontSize>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox234</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <BackgroundColor>LightGrey</BackgroundColor>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox235">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value />
+                                  <Style>
+                                    <FontFamily>Times New Roman</FontFamily>
+                                    <FontSize>8pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox235</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <BackgroundColor>LightGrey</BackgroundColor>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox236">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value />
+                                  <Style>
+                                    <FontFamily>Times New Roman</FontFamily>
+                                    <FontSize>8pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox236</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <BackgroundColor>LightGrey</BackgroundColor>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox237">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value />
+                                  <Style>
+                                    <FontFamily>Times New Roman</FontFamily>
+                                    <FontSize>8pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox237</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <BackgroundColor>LightGrey</BackgroundColor>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox238">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value />
+                                  <Style>
+                                    <FontFamily>Times New Roman</FontFamily>
+                                    <FontSize>8pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox238</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <BackgroundColor>LightGrey</BackgroundColor>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox239">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value />
+                                  <Style>
+                                    <FontFamily>Times New Roman</FontFamily>
+                                    <FontSize>8pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox239</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <BackgroundColor>LightGrey</BackgroundColor>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox240">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value />
+                                  <Style>
+                                    <FontFamily>Times New Roman</FontFamily>
+                                    <FontSize>8pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox240</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <BackgroundColor>LightGrey</BackgroundColor>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox241">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value />
+                                  <Style>
+                                    <FontFamily>Times New Roman</FontFamily>
+                                    <FontSize>8pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox241</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <BackgroundColor>LightGrey</BackgroundColor>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox242">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value />
+                                  <Style>
+                                    <FontFamily>Times New Roman</FontFamily>
+                                    <FontSize>8pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox242</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <BackgroundColor>LightGrey</BackgroundColor>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox243">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value />
+                                  <Style>
+                                    <FontFamily>Times New Roman</FontFamily>
+                                    <FontSize>8pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox243</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <BackgroundColor>LightGrey</BackgroundColor>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox244">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value />
+                                  <Style>
+                                    <FontFamily>Times New Roman</FontFamily>
+                                    <FontSize>8pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox244</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <BackgroundColor>LightGrey</BackgroundColor>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox245">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value />
+                                  <Style>
+                                    <FontFamily>Times New Roman</FontFamily>
+                                    <FontSize>8pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox245</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <BackgroundColor>LightGrey</BackgroundColor>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox246">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value />
+                                  <Style>
+                                    <FontFamily>Times New Roman</FontFamily>
+                                    <FontSize>8pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox246</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <BackgroundColor>LightGrey</BackgroundColor>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox247">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value />
+                                  <Style>
+                                    <FontFamily>Times New Roman</FontFamily>
+                                    <FontSize>8pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox247</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <BackgroundColor>LightGrey</BackgroundColor>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox248">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value />
+                                  <Style>
+                                    <FontFamily>Times New Roman</FontFamily>
+                                    <FontSize>8pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox248</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <BackgroundColor>LightGrey</BackgroundColor>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox249">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value />
+                                  <Style>
+                                    <FontFamily>Times New Roman</FontFamily>
+                                    <FontSize>8pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox249</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <BackgroundColor>LightGrey</BackgroundColor>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox250">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value />
+                                  <Style>
+                                    <FontFamily>Times New Roman</FontFamily>
+                                    <FontSize>8pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox250</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <BackgroundColor>LightGrey</BackgroundColor>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox251">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value />
+                                  <Style>
+                                    <FontFamily>Times New Roman</FontFamily>
+                                    <FontSize>8pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox251</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <BackgroundColor>LightGrey</BackgroundColor>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox252">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value />
+                                  <Style>
+                                    <FontFamily>Times New Roman</FontFamily>
+                                    <FontSize>8pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox252</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <BackgroundColor>LightGrey</BackgroundColor>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox253">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value />
+                                  <Style>
+                                    <FontFamily>Times New Roman</FontFamily>
+                                    <FontSize>8pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox253</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <BackgroundColor>LightGrey</BackgroundColor>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox254">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value />
+                                  <Style>
+                                    <FontFamily>Times New Roman</FontFamily>
+                                    <FontSize>8pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox254</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <BackgroundColor>LightGrey</BackgroundColor>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox255">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value />
+                                  <Style>
+                                    <FontFamily>Times New Roman</FontFamily>
+                                    <FontSize>8pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox255</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <BackgroundColor>LightGrey</BackgroundColor>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox256">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value />
+                                  <Style>
+                                    <FontFamily>Times New Roman</FontFamily>
+                                    <FontSize>8pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox256</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <BackgroundColor>LightGrey</BackgroundColor>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox257">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value />
+                                  <Style>
+                                    <FontFamily>Times New Roman</FontFamily>
+                                    <FontSize>8pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox257</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <BackgroundColor>LightGrey</BackgroundColor>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox258">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value />
+                                  <Style>
+                                    <FontFamily>Times New Roman</FontFamily>
+                                    <FontSize>8pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox258</rd:DefaultName>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
@@ -5597,6 +7374,76 @@ Iif((Fields!R.Value - (Fields!S.Value*17))&gt;=0,(Fields!R.Value - (Fields!S.Val
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
+                        <Textbox Name="Textbox204">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value />
+                                  <Style>
+                                    <FontFamily>Times New Roman</FontFamily>
+                                    <FontSize>8pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox204</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <BackgroundColor>LightGrey</BackgroundColor>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox211">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value />
+                                  <Style>
+                                    <FontFamily>Times New Roman</FontFamily>
+                                    <FontSize>8pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox211</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <BackgroundColor>LightGrey</BackgroundColor>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
                         <Textbox Name="Textbox103">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
@@ -5780,8 +7627,10 @@ Iif((Fields!R.Value - (Fields!S.Value*17))&gt;=0,(Fields!R.Value - (Fields!S.Val
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Sum(Iif((Fields!R.Value - (Fields!S.Value*1))&gt;=0,Fields!S.Value,
-Iif((Fields!R.Value - (Fields!S.Value*0))&gt;=0,(Fields!R.Value - (Fields!S.Value*0)),CDec(0))))</Value>
+                                  <Value>
+                                    =Sum(Iif((Fields!R.Value - (Fields!S.Value*1))&gt;=0,Fields!S.Value,
+                                    Iif((Fields!R.Value - (Fields!S.Value*0))&gt;=0,(Fields!R.Value - (Fields!S.Value*0)),CDec(0))))
+                                  </Value>
                                   <Style>
                                     <FontFamily>Times New Roman</FontFamily>
                                     <FontSize>8pt</FontSize>
@@ -5817,8 +7666,10 @@ Iif((Fields!R.Value - (Fields!S.Value*0))&gt;=0,(Fields!R.Value - (Fields!S.Valu
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Sum(Iif((Fields!R.Value - (Fields!S.Value*2))&gt;=0,Fields!S.Value,
-Iif((Fields!R.Value - (Fields!S.Value*1))&gt;=0,(Fields!R.Value - (Fields!S.Value*1)),CDec(0))))</Value>
+                                  <Value>
+                                    =Sum(Iif((Fields!R.Value - (Fields!S.Value*2))&gt;=0,Fields!S.Value,
+                                    Iif((Fields!R.Value - (Fields!S.Value*1))&gt;=0,(Fields!R.Value - (Fields!S.Value*1)),CDec(0))))
+                                  </Value>
                                   <Style>
                                     <FontFamily>Times New Roman</FontFamily>
                                     <FontSize>8pt</FontSize>
@@ -5854,8 +7705,10 @@ Iif((Fields!R.Value - (Fields!S.Value*1))&gt;=0,(Fields!R.Value - (Fields!S.Valu
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Sum(Iif((Fields!R.Value - (Fields!S.Value*3))&gt;=0,Fields!S.Value,
-Iif((Fields!R.Value - (Fields!S.Value*2))&gt;=0,(Fields!R.Value - (Fields!S.Value*2)),CDec(0))))</Value>
+                                  <Value>
+                                    =Sum(Iif((Fields!R.Value - (Fields!S.Value*3))&gt;=0,Fields!S.Value,
+                                    Iif((Fields!R.Value - (Fields!S.Value*2))&gt;=0,(Fields!R.Value - (Fields!S.Value*2)),CDec(0))))
+                                  </Value>
                                   <Style>
                                     <FontFamily>Times New Roman</FontFamily>
                                     <FontSize>8pt</FontSize>
@@ -5891,8 +7744,10 @@ Iif((Fields!R.Value - (Fields!S.Value*2))&gt;=0,(Fields!R.Value - (Fields!S.Valu
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Sum(Iif((Fields!R.Value - (Fields!S.Value*4))&gt;=0,Fields!S.Value,
-Iif((Fields!R.Value - (Fields!S.Value*3))&gt;=0,(Fields!R.Value - (Fields!S.Value*3)),CDec(0))))</Value>
+                                  <Value>
+                                    =Sum(Iif((Fields!R.Value - (Fields!S.Value*4))&gt;=0,Fields!S.Value,
+                                    Iif((Fields!R.Value - (Fields!S.Value*3))&gt;=0,(Fields!R.Value - (Fields!S.Value*3)),CDec(0))))
+                                  </Value>
                                   <Style>
                                     <FontFamily>Times New Roman</FontFamily>
                                     <FontSize>8pt</FontSize>
@@ -5928,8 +7783,10 @@ Iif((Fields!R.Value - (Fields!S.Value*3))&gt;=0,(Fields!R.Value - (Fields!S.Valu
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Sum(Iif((Fields!R.Value - (Fields!S.Value*5))&gt;=0,Fields!S.Value,
-Iif((Fields!R.Value - (Fields!S.Value*4))&gt;=0,(Fields!R.Value - (Fields!S.Value*4)),CDec(0))))</Value>
+                                  <Value>
+                                    =Sum(Iif((Fields!R.Value - (Fields!S.Value*5))&gt;=0,Fields!S.Value,
+                                    Iif((Fields!R.Value - (Fields!S.Value*4))&gt;=0,(Fields!R.Value - (Fields!S.Value*4)),CDec(0))))
+                                  </Value>
                                   <Style>
                                     <FontFamily>Times New Roman</FontFamily>
                                     <FontSize>8pt</FontSize>
@@ -5965,8 +7822,10 @@ Iif((Fields!R.Value - (Fields!S.Value*4))&gt;=0,(Fields!R.Value - (Fields!S.Valu
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Sum(Iif((Fields!R.Value - (Fields!S.Value*6))&gt;=0,Fields!S.Value,
-Iif((Fields!R.Value - (Fields!S.Value*5))&gt;=0,(Fields!R.Value - (Fields!S.Value*5)),CDec(0))))</Value>
+                                  <Value>
+                                    =Sum(Iif((Fields!R.Value - (Fields!S.Value*6))&gt;=0,Fields!S.Value,
+                                    Iif((Fields!R.Value - (Fields!S.Value*5))&gt;=0,(Fields!R.Value - (Fields!S.Value*5)),CDec(0))))
+                                  </Value>
                                   <Style>
                                     <FontFamily>Times New Roman</FontFamily>
                                     <FontSize>8pt</FontSize>
@@ -6002,8 +7861,10 @@ Iif((Fields!R.Value - (Fields!S.Value*5))&gt;=0,(Fields!R.Value - (Fields!S.Valu
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Sum(Iif((Fields!R.Value - (Fields!S.Value*7))&gt;=0,Fields!S.Value,
-Iif((Fields!R.Value - (Fields!S.Value*6))&gt;=0,(Fields!R.Value - (Fields!S.Value*6)),CDec(0))))</Value>
+                                  <Value>
+                                    =Sum(Iif((Fields!R.Value - (Fields!S.Value*7))&gt;=0,Fields!S.Value,
+                                    Iif((Fields!R.Value - (Fields!S.Value*6))&gt;=0,(Fields!R.Value - (Fields!S.Value*6)),CDec(0))))
+                                  </Value>
                                   <Style>
                                     <FontFamily>Times New Roman</FontFamily>
                                     <FontSize>8pt</FontSize>
@@ -6039,8 +7900,10 @@ Iif((Fields!R.Value - (Fields!S.Value*6))&gt;=0,(Fields!R.Value - (Fields!S.Valu
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Sum(Iif((Fields!R.Value - (Fields!S.Value*8))&gt;=0,Fields!S.Value,
-Iif((Fields!R.Value - (Fields!S.Value*7))&gt;=0,(Fields!R.Value - (Fields!S.Value*7)),CDec(0))))</Value>
+                                  <Value>
+                                    =Sum(Iif((Fields!R.Value - (Fields!S.Value*8))&gt;=0,Fields!S.Value,
+                                    Iif((Fields!R.Value - (Fields!S.Value*7))&gt;=0,(Fields!R.Value - (Fields!S.Value*7)),CDec(0))))
+                                  </Value>
                                   <Style>
                                     <FontFamily>Times New Roman</FontFamily>
                                     <FontSize>8pt</FontSize>
@@ -6076,8 +7939,10 @@ Iif((Fields!R.Value - (Fields!S.Value*7))&gt;=0,(Fields!R.Value - (Fields!S.Valu
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Sum(Iif((Fields!R.Value - (Fields!S.Value*9))&gt;=0,Fields!S.Value,
-Iif((Fields!R.Value - (Fields!S.Value*8))&gt;=0,(Fields!R.Value - (Fields!S.Value*8)),CDec(0))))</Value>
+                                  <Value>
+                                    =Sum(Iif((Fields!R.Value - (Fields!S.Value*9))&gt;=0,Fields!S.Value,
+                                    Iif((Fields!R.Value - (Fields!S.Value*8))&gt;=0,(Fields!R.Value - (Fields!S.Value*8)),CDec(0))))
+                                  </Value>
                                   <Style>
                                     <FontFamily>Times New Roman</FontFamily>
                                     <FontSize>8pt</FontSize>
@@ -6113,8 +7978,10 @@ Iif((Fields!R.Value - (Fields!S.Value*8))&gt;=0,(Fields!R.Value - (Fields!S.Valu
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Sum(Iif((Fields!R.Value - (Fields!S.Value*10))&gt;=0,Fields!S.Value,
-Iif((Fields!R.Value - (Fields!S.Value*9))&gt;=0,(Fields!R.Value - (Fields!S.Value*9)),CDec(0))))</Value>
+                                  <Value>
+                                    =Sum(Iif((Fields!R.Value - (Fields!S.Value*10))&gt;=0,Fields!S.Value,
+                                    Iif((Fields!R.Value - (Fields!S.Value*9))&gt;=0,(Fields!R.Value - (Fields!S.Value*9)),CDec(0))))
+                                  </Value>
                                   <Style>
                                     <FontFamily>Times New Roman</FontFamily>
                                     <FontSize>8pt</FontSize>
@@ -6150,8 +8017,10 @@ Iif((Fields!R.Value - (Fields!S.Value*9))&gt;=0,(Fields!R.Value - (Fields!S.Valu
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Sum(Iif((Fields!R.Value - (Fields!S.Value*11))&gt;=0,Fields!S.Value,
-Iif((Fields!R.Value - (Fields!S.Value*10))&gt;=0,(Fields!R.Value - (Fields!S.Value*10)),CDec(0))))</Value>
+                                  <Value>
+                                    =Sum(Iif((Fields!R.Value - (Fields!S.Value*11))&gt;=0,Fields!S.Value,
+                                    Iif((Fields!R.Value - (Fields!S.Value*10))&gt;=0,(Fields!R.Value - (Fields!S.Value*10)),CDec(0))))
+                                  </Value>
                                   <Style>
                                     <FontFamily>Times New Roman</FontFamily>
                                     <FontSize>8pt</FontSize>
@@ -6187,8 +8056,10 @@ Iif((Fields!R.Value - (Fields!S.Value*10))&gt;=0,(Fields!R.Value - (Fields!S.Val
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Sum(Iif((Fields!R.Value - (Fields!S.Value*12))&gt;=0,Fields!S.Value,
-Iif((Fields!R.Value - (Fields!S.Value*11))&gt;=0,(Fields!R.Value - (Fields!S.Value*11)),CDec(0))))</Value>
+                                  <Value>
+                                    =Sum(Iif((Fields!R.Value - (Fields!S.Value*12))&gt;=0,Fields!S.Value,
+                                    Iif((Fields!R.Value - (Fields!S.Value*11))&gt;=0,(Fields!R.Value - (Fields!S.Value*11)),CDec(0))))
+                                  </Value>
                                   <Style>
                                     <FontFamily>Times New Roman</FontFamily>
                                     <FontSize>8pt</FontSize>
@@ -6224,8 +8095,10 @@ Iif((Fields!R.Value - (Fields!S.Value*11))&gt;=0,(Fields!R.Value - (Fields!S.Val
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Sum(Iif((Fields!R.Value - (Fields!S.Value*13))&gt;=0,Fields!S.Value,
-Iif((Fields!R.Value - (Fields!S.Value*12))&gt;=0,(Fields!R.Value - (Fields!S.Value*12)),CDec(0))))</Value>
+                                  <Value>
+                                    =Sum(Iif((Fields!R.Value - (Fields!S.Value*13))&gt;=0,Fields!S.Value,
+                                    Iif((Fields!R.Value - (Fields!S.Value*12))&gt;=0,(Fields!R.Value - (Fields!S.Value*12)),CDec(0))))
+                                  </Value>
                                   <Style>
                                     <FontFamily>Times New Roman</FontFamily>
                                     <FontSize>8pt</FontSize>
@@ -6261,8 +8134,10 @@ Iif((Fields!R.Value - (Fields!S.Value*12))&gt;=0,(Fields!R.Value - (Fields!S.Val
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Sum(Iif((Fields!R.Value - (Fields!S.Value*14))&gt;=0,Fields!S.Value,
-Iif((Fields!R.Value - (Fields!S.Value*13))&gt;=0,(Fields!R.Value - (Fields!S.Value*13)),CDec(0))))</Value>
+                                  <Value>
+                                    =Sum(Iif((Fields!R.Value - (Fields!S.Value*14))&gt;=0,Fields!S.Value,
+                                    Iif((Fields!R.Value - (Fields!S.Value*13))&gt;=0,(Fields!R.Value - (Fields!S.Value*13)),CDec(0))))
+                                  </Value>
                                   <Style>
                                     <FontFamily>Times New Roman</FontFamily>
                                     <FontSize>8pt</FontSize>
@@ -6298,8 +8173,10 @@ Iif((Fields!R.Value - (Fields!S.Value*13))&gt;=0,(Fields!R.Value - (Fields!S.Val
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Sum(Iif((Fields!R.Value - (Fields!S.Value*15))&gt;=0,Fields!S.Value,
-Iif((Fields!R.Value - (Fields!S.Value*14))&gt;=0,(Fields!R.Value - (Fields!S.Value*14)),CDec(0))))</Value>
+                                  <Value>
+                                    =Sum(Iif((Fields!R.Value - (Fields!S.Value*15))&gt;=0,Fields!S.Value,
+                                    Iif((Fields!R.Value - (Fields!S.Value*14))&gt;=0,(Fields!R.Value - (Fields!S.Value*14)),CDec(0))))
+                                  </Value>
                                   <Style>
                                     <FontFamily>Times New Roman</FontFamily>
                                     <FontSize>8pt</FontSize>
@@ -6335,8 +8212,10 @@ Iif((Fields!R.Value - (Fields!S.Value*14))&gt;=0,(Fields!R.Value - (Fields!S.Val
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Sum(Iif((Fields!R.Value - (Fields!S.Value*16))&gt;=0,Fields!S.Value,
-Iif((Fields!R.Value - (Fields!S.Value*15))&gt;=0,(Fields!R.Value - (Fields!S.Value*15)),CDec(0))))</Value>
+                                  <Value>
+                                    =Sum(Iif((Fields!R.Value - (Fields!S.Value*16))&gt;=0,Fields!S.Value,
+                                    Iif((Fields!R.Value - (Fields!S.Value*15))&gt;=0,(Fields!R.Value - (Fields!S.Value*15)),CDec(0))))
+                                  </Value>
                                   <Style>
                                     <FontFamily>Times New Roman</FontFamily>
                                     <FontSize>8pt</FontSize>
@@ -6372,8 +8251,10 @@ Iif((Fields!R.Value - (Fields!S.Value*15))&gt;=0,(Fields!R.Value - (Fields!S.Val
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Sum(Iif((Fields!R.Value - (Fields!S.Value*17))&gt;=0,Fields!S.Value,
-Iif((Fields!R.Value - (Fields!S.Value*16))&gt;=0,(Fields!R.Value - (Fields!S.Value*16)),CDec(0))))</Value>
+                                  <Value>
+                                    =Sum(Iif((Fields!R.Value - (Fields!S.Value*17))&gt;=0,Fields!S.Value,
+                                    Iif((Fields!R.Value - (Fields!S.Value*16))&gt;=0,(Fields!R.Value - (Fields!S.Value*16)),CDec(0))))
+                                  </Value>
                                   <Style>
                                     <FontFamily>Times New Roman</FontFamily>
                                     <FontSize>8pt</FontSize>
@@ -6409,8 +8290,10 @@ Iif((Fields!R.Value - (Fields!S.Value*16))&gt;=0,(Fields!R.Value - (Fields!S.Val
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Sum(Iif((Fields!R.Value - (Fields!S.Value*18))&gt;=0,Fields!S.Value,
-Iif((Fields!R.Value - (Fields!S.Value*17))&gt;=0,(Fields!R.Value - (Fields!S.Value*17)),CDec(0))))</Value>
+                                  <Value>
+                                    =Sum(Iif((Fields!R.Value - (Fields!S.Value*18))&gt;=0,Fields!S.Value,
+                                    Iif((Fields!R.Value - (Fields!S.Value*17))&gt;=0,(Fields!R.Value - (Fields!S.Value*17)),CDec(0))))
+                                  </Value>
                                   <Style>
                                     <FontFamily>Times New Roman</FontFamily>
                                     <FontSize>8pt</FontSize>
@@ -6948,6 +8831,76 @@ Iif((Fields!R.Value - (Fields!S.Value*17))&gt;=0,(Fields!R.Value - (Fields!S.Val
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
+                        <Textbox Name="Textbox205">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value />
+                                  <Style>
+                                    <FontFamily>Times New Roman</FontFamily>
+                                    <FontSize>8pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox205</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <BackgroundColor>LightGrey</BackgroundColor>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox212">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value />
+                                  <Style>
+                                    <FontFamily>Times New Roman</FontFamily>
+                                    <FontSize>8pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox212</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <BackgroundColor>LightGrey</BackgroundColor>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
                         <Textbox Name="Textbox139">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
@@ -7131,8 +9084,10 @@ Iif((Fields!R.Value - (Fields!S.Value*17))&gt;=0,(Fields!R.Value - (Fields!S.Val
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Sum(Iif((Fields!R.Value - (Fields!S.Value*1))&gt;=0,Fields!S.Value,
-Iif((Fields!R.Value - (Fields!S.Value*0))&gt;=0,(Fields!R.Value - (Fields!S.Value*0)),CDec(0))))</Value>
+                                  <Value>
+                                    =Sum(Iif((Fields!R.Value - (Fields!S.Value*1))&gt;=0,Fields!S.Value,
+                                    Iif((Fields!R.Value - (Fields!S.Value*0))&gt;=0,(Fields!R.Value - (Fields!S.Value*0)),CDec(0))))
+                                  </Value>
                                   <Style>
                                     <FontFamily>Times New Roman</FontFamily>
                                     <FontSize>8pt</FontSize>
@@ -7168,8 +9123,10 @@ Iif((Fields!R.Value - (Fields!S.Value*0))&gt;=0,(Fields!R.Value - (Fields!S.Valu
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Sum(Iif((Fields!R.Value - (Fields!S.Value*2))&gt;=0,Fields!S.Value,
-Iif((Fields!R.Value - (Fields!S.Value*1))&gt;=0,(Fields!R.Value - (Fields!S.Value*1)),CDec(0))))</Value>
+                                  <Value>
+                                    =Sum(Iif((Fields!R.Value - (Fields!S.Value*2))&gt;=0,Fields!S.Value,
+                                    Iif((Fields!R.Value - (Fields!S.Value*1))&gt;=0,(Fields!R.Value - (Fields!S.Value*1)),CDec(0))))
+                                  </Value>
                                   <Style>
                                     <FontFamily>Times New Roman</FontFamily>
                                     <FontSize>8pt</FontSize>
@@ -7205,8 +9162,10 @@ Iif((Fields!R.Value - (Fields!S.Value*1))&gt;=0,(Fields!R.Value - (Fields!S.Valu
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Sum(Iif((Fields!R.Value - (Fields!S.Value*3))&gt;=0,Fields!S.Value,
-Iif((Fields!R.Value - (Fields!S.Value*2))&gt;=0,(Fields!R.Value - (Fields!S.Value*2)),CDec(0))))</Value>
+                                  <Value>
+                                    =Sum(Iif((Fields!R.Value - (Fields!S.Value*3))&gt;=0,Fields!S.Value,
+                                    Iif((Fields!R.Value - (Fields!S.Value*2))&gt;=0,(Fields!R.Value - (Fields!S.Value*2)),CDec(0))))
+                                  </Value>
                                   <Style>
                                     <FontFamily>Times New Roman</FontFamily>
                                     <FontSize>8pt</FontSize>
@@ -7242,8 +9201,10 @@ Iif((Fields!R.Value - (Fields!S.Value*2))&gt;=0,(Fields!R.Value - (Fields!S.Valu
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Sum(Iif((Fields!R.Value - (Fields!S.Value*4))&gt;=0,Fields!S.Value,
-Iif((Fields!R.Value - (Fields!S.Value*3))&gt;=0,(Fields!R.Value - (Fields!S.Value*3)),CDec(0))))</Value>
+                                  <Value>
+                                    =Sum(Iif((Fields!R.Value - (Fields!S.Value*4))&gt;=0,Fields!S.Value,
+                                    Iif((Fields!R.Value - (Fields!S.Value*3))&gt;=0,(Fields!R.Value - (Fields!S.Value*3)),CDec(0))))
+                                  </Value>
                                   <Style>
                                     <FontFamily>Times New Roman</FontFamily>
                                     <FontSize>8pt</FontSize>
@@ -7279,8 +9240,10 @@ Iif((Fields!R.Value - (Fields!S.Value*3))&gt;=0,(Fields!R.Value - (Fields!S.Valu
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Sum(Iif((Fields!R.Value - (Fields!S.Value*5))&gt;=0,Fields!S.Value,
-Iif((Fields!R.Value - (Fields!S.Value*4))&gt;=0,(Fields!R.Value - (Fields!S.Value*4)),CDec(0))))</Value>
+                                  <Value>
+                                    =Sum(Iif((Fields!R.Value - (Fields!S.Value*5))&gt;=0,Fields!S.Value,
+                                    Iif((Fields!R.Value - (Fields!S.Value*4))&gt;=0,(Fields!R.Value - (Fields!S.Value*4)),CDec(0))))
+                                  </Value>
                                   <Style>
                                     <FontFamily>Times New Roman</FontFamily>
                                     <FontSize>8pt</FontSize>
@@ -7316,8 +9279,10 @@ Iif((Fields!R.Value - (Fields!S.Value*4))&gt;=0,(Fields!R.Value - (Fields!S.Valu
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Sum(Iif((Fields!R.Value - (Fields!S.Value*6))&gt;=0,Fields!S.Value,
-Iif((Fields!R.Value - (Fields!S.Value*5))&gt;=0,(Fields!R.Value - (Fields!S.Value*5)),CDec(0))))</Value>
+                                  <Value>
+                                    =Sum(Iif((Fields!R.Value - (Fields!S.Value*6))&gt;=0,Fields!S.Value,
+                                    Iif((Fields!R.Value - (Fields!S.Value*5))&gt;=0,(Fields!R.Value - (Fields!S.Value*5)),CDec(0))))
+                                  </Value>
                                   <Style>
                                     <FontFamily>Times New Roman</FontFamily>
                                     <FontSize>8pt</FontSize>
@@ -7353,8 +9318,10 @@ Iif((Fields!R.Value - (Fields!S.Value*5))&gt;=0,(Fields!R.Value - (Fields!S.Valu
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Sum(Iif((Fields!R.Value - (Fields!S.Value*7))&gt;=0,Fields!S.Value,
-Iif((Fields!R.Value - (Fields!S.Value*6))&gt;=0,(Fields!R.Value - (Fields!S.Value*6)),CDec(0))))</Value>
+                                  <Value>
+                                    =Sum(Iif((Fields!R.Value - (Fields!S.Value*7))&gt;=0,Fields!S.Value,
+                                    Iif((Fields!R.Value - (Fields!S.Value*6))&gt;=0,(Fields!R.Value - (Fields!S.Value*6)),CDec(0))))
+                                  </Value>
                                   <Style>
                                     <FontFamily>Times New Roman</FontFamily>
                                     <FontSize>8pt</FontSize>
@@ -7390,8 +9357,10 @@ Iif((Fields!R.Value - (Fields!S.Value*6))&gt;=0,(Fields!R.Value - (Fields!S.Valu
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Sum(Iif((Fields!R.Value - (Fields!S.Value*8))&gt;=0,Fields!S.Value,
-Iif((Fields!R.Value - (Fields!S.Value*7))&gt;=0,(Fields!R.Value - (Fields!S.Value*7)),CDec(0))))</Value>
+                                  <Value>
+                                    =Sum(Iif((Fields!R.Value - (Fields!S.Value*8))&gt;=0,Fields!S.Value,
+                                    Iif((Fields!R.Value - (Fields!S.Value*7))&gt;=0,(Fields!R.Value - (Fields!S.Value*7)),CDec(0))))
+                                  </Value>
                                   <Style>
                                     <FontFamily>Times New Roman</FontFamily>
                                     <FontSize>8pt</FontSize>
@@ -7427,8 +9396,10 @@ Iif((Fields!R.Value - (Fields!S.Value*7))&gt;=0,(Fields!R.Value - (Fields!S.Valu
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Sum(Iif((Fields!R.Value - (Fields!S.Value*9))&gt;=0,Fields!S.Value,
-Iif((Fields!R.Value - (Fields!S.Value*8))&gt;=0,(Fields!R.Value - (Fields!S.Value*8)),CDec(0))))</Value>
+                                  <Value>
+                                    =Sum(Iif((Fields!R.Value - (Fields!S.Value*9))&gt;=0,Fields!S.Value,
+                                    Iif((Fields!R.Value - (Fields!S.Value*8))&gt;=0,(Fields!R.Value - (Fields!S.Value*8)),CDec(0))))
+                                  </Value>
                                   <Style>
                                     <FontFamily>Times New Roman</FontFamily>
                                     <FontSize>8pt</FontSize>
@@ -7464,8 +9435,10 @@ Iif((Fields!R.Value - (Fields!S.Value*8))&gt;=0,(Fields!R.Value - (Fields!S.Valu
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Sum(Iif((Fields!R.Value - (Fields!S.Value*10))&gt;=0,Fields!S.Value,
-Iif((Fields!R.Value - (Fields!S.Value*9))&gt;=0,(Fields!R.Value - (Fields!S.Value*9)),CDec(0))))</Value>
+                                  <Value>
+                                    =Sum(Iif((Fields!R.Value - (Fields!S.Value*10))&gt;=0,Fields!S.Value,
+                                    Iif((Fields!R.Value - (Fields!S.Value*9))&gt;=0,(Fields!R.Value - (Fields!S.Value*9)),CDec(0))))
+                                  </Value>
                                   <Style>
                                     <FontFamily>Times New Roman</FontFamily>
                                     <FontSize>8pt</FontSize>
@@ -7501,8 +9474,10 @@ Iif((Fields!R.Value - (Fields!S.Value*9))&gt;=0,(Fields!R.Value - (Fields!S.Valu
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Sum(Iif((Fields!R.Value - (Fields!S.Value*11))&gt;=0,Fields!S.Value,
-Iif((Fields!R.Value - (Fields!S.Value*10))&gt;=0,(Fields!R.Value - (Fields!S.Value*10)),CDec(0))))</Value>
+                                  <Value>
+                                    =Sum(Iif((Fields!R.Value - (Fields!S.Value*11))&gt;=0,Fields!S.Value,
+                                    Iif((Fields!R.Value - (Fields!S.Value*10))&gt;=0,(Fields!R.Value - (Fields!S.Value*10)),CDec(0))))
+                                  </Value>
                                   <Style>
                                     <FontFamily>Times New Roman</FontFamily>
                                     <FontSize>8pt</FontSize>
@@ -7538,8 +9513,10 @@ Iif((Fields!R.Value - (Fields!S.Value*10))&gt;=0,(Fields!R.Value - (Fields!S.Val
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Sum(Iif((Fields!R.Value - (Fields!S.Value*12))&gt;=0,Fields!S.Value,
-Iif((Fields!R.Value - (Fields!S.Value*11))&gt;=0,(Fields!R.Value - (Fields!S.Value*11)),CDec(0))))</Value>
+                                  <Value>
+                                    =Sum(Iif((Fields!R.Value - (Fields!S.Value*12))&gt;=0,Fields!S.Value,
+                                    Iif((Fields!R.Value - (Fields!S.Value*11))&gt;=0,(Fields!R.Value - (Fields!S.Value*11)),CDec(0))))
+                                  </Value>
                                   <Style>
                                     <FontFamily>Times New Roman</FontFamily>
                                     <FontSize>8pt</FontSize>
@@ -7575,8 +9552,10 @@ Iif((Fields!R.Value - (Fields!S.Value*11))&gt;=0,(Fields!R.Value - (Fields!S.Val
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Sum(Iif((Fields!R.Value - (Fields!S.Value*13))&gt;=0,Fields!S.Value,
-Iif((Fields!R.Value - (Fields!S.Value*12))&gt;=0,(Fields!R.Value - (Fields!S.Value*12)),CDec(0))))</Value>
+                                  <Value>
+                                    =Sum(Iif((Fields!R.Value - (Fields!S.Value*13))&gt;=0,Fields!S.Value,
+                                    Iif((Fields!R.Value - (Fields!S.Value*12))&gt;=0,(Fields!R.Value - (Fields!S.Value*12)),CDec(0))))
+                                  </Value>
                                   <Style>
                                     <FontFamily>Times New Roman</FontFamily>
                                     <FontSize>8pt</FontSize>
@@ -7612,8 +9591,10 @@ Iif((Fields!R.Value - (Fields!S.Value*12))&gt;=0,(Fields!R.Value - (Fields!S.Val
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Sum(Iif((Fields!R.Value - (Fields!S.Value*14))&gt;=0,Fields!S.Value,
-Iif((Fields!R.Value - (Fields!S.Value*13))&gt;=0,(Fields!R.Value - (Fields!S.Value*13)),CDec(0))))</Value>
+                                  <Value>
+                                    =Sum(Iif((Fields!R.Value - (Fields!S.Value*14))&gt;=0,Fields!S.Value,
+                                    Iif((Fields!R.Value - (Fields!S.Value*13))&gt;=0,(Fields!R.Value - (Fields!S.Value*13)),CDec(0))))
+                                  </Value>
                                   <Style>
                                     <FontFamily>Times New Roman</FontFamily>
                                     <FontSize>8pt</FontSize>
@@ -7649,8 +9630,10 @@ Iif((Fields!R.Value - (Fields!S.Value*13))&gt;=0,(Fields!R.Value - (Fields!S.Val
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Sum(Iif((Fields!R.Value - (Fields!S.Value*15))&gt;=0,Fields!S.Value,
-Iif((Fields!R.Value - (Fields!S.Value*14))&gt;=0,(Fields!R.Value - (Fields!S.Value*14)),CDec(0))))</Value>
+                                  <Value>
+                                    =Sum(Iif((Fields!R.Value - (Fields!S.Value*15))&gt;=0,Fields!S.Value,
+                                    Iif((Fields!R.Value - (Fields!S.Value*14))&gt;=0,(Fields!R.Value - (Fields!S.Value*14)),CDec(0))))
+                                  </Value>
                                   <Style>
                                     <FontFamily>Times New Roman</FontFamily>
                                     <FontSize>8pt</FontSize>
@@ -7686,8 +9669,10 @@ Iif((Fields!R.Value - (Fields!S.Value*14))&gt;=0,(Fields!R.Value - (Fields!S.Val
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Sum(Iif((Fields!R.Value - (Fields!S.Value*16))&gt;=0,Fields!S.Value,
-Iif((Fields!R.Value - (Fields!S.Value*15))&gt;=0,(Fields!R.Value - (Fields!S.Value*15)),CDec(0))))</Value>
+                                  <Value>
+                                    =Sum(Iif((Fields!R.Value - (Fields!S.Value*16))&gt;=0,Fields!S.Value,
+                                    Iif((Fields!R.Value - (Fields!S.Value*15))&gt;=0,(Fields!R.Value - (Fields!S.Value*15)),CDec(0))))
+                                  </Value>
                                   <Style>
                                     <FontFamily>Times New Roman</FontFamily>
                                     <FontSize>8pt</FontSize>
@@ -7723,8 +9708,10 @@ Iif((Fields!R.Value - (Fields!S.Value*15))&gt;=0,(Fields!R.Value - (Fields!S.Val
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Sum(Iif((Fields!R.Value - (Fields!S.Value*17))&gt;=0,Fields!S.Value,
-Iif((Fields!R.Value - (Fields!S.Value*16))&gt;=0,(Fields!R.Value - (Fields!S.Value*16)),CDec(0))))</Value>
+                                  <Value>
+                                    =Sum(Iif((Fields!R.Value - (Fields!S.Value*17))&gt;=0,Fields!S.Value,
+                                    Iif((Fields!R.Value - (Fields!S.Value*16))&gt;=0,(Fields!R.Value - (Fields!S.Value*16)),CDec(0))))
+                                  </Value>
                                   <Style>
                                     <FontFamily>Times New Roman</FontFamily>
                                     <FontSize>8pt</FontSize>
@@ -7760,8 +9747,10 @@ Iif((Fields!R.Value - (Fields!S.Value*16))&gt;=0,(Fields!R.Value - (Fields!S.Val
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Sum(Iif((Fields!R.Value - (Fields!S.Value*18))&gt;=0,Fields!S.Value,
-Iif((Fields!R.Value - (Fields!S.Value*17))&gt;=0,(Fields!R.Value - (Fields!S.Value*17)),CDec(0))))</Value>
+                                  <Value>
+                                    =Sum(Iif((Fields!R.Value - (Fields!S.Value*18))&gt;=0,Fields!S.Value,
+                                    Iif((Fields!R.Value - (Fields!S.Value*17))&gt;=0,(Fields!R.Value - (Fields!S.Value*17)),CDec(0))))
+                                  </Value>
                                   <Style>
                                     <FontFamily>Times New Roman</FontFamily>
                                     <FontSize>8pt</FontSize>
@@ -8315,6 +10304,76 @@ Iif((Fields!R.Value - (Fields!S.Value*17))&gt;=0,(Fields!R.Value - (Fields!S.Val
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>Textbox91</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <BackgroundColor>White</BackgroundColor>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox206">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value />
+                                  <Style>
+                                    <FontFamily>Times New Roman</FontFamily>
+                                    <FontSize>8pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox206</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <BackgroundColor>White</BackgroundColor>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox215">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value />
+                                  <Style>
+                                    <FontFamily>Times New Roman</FontFamily>
+                                    <FontSize>8pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox215</rd:DefaultName>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
@@ -9364,6 +11423,8 @@ Iif((Fields!R.Value - (Fields!S.Value*17))&gt;=0,(Fields!R.Value - (Fields!S.Val
                 <TablixMember />
                 <TablixMember />
                 <TablixMember />
+                <TablixMember />
+                <TablixMember />
                 <TablixMember>
                   <Visibility>
                     <Hidden>=Iif(CInt(Parameters!Meses.Value)&gt;0,false,true)</Hidden>
@@ -9856,9 +11917,20 @@ Iif((Fields!R.Value - (Fields!S.Value*17))&gt;=0,(Fields!R.Value - (Fields!S.Val
                           <TablixMembers>
                             <TablixMember>
                               <Group Name="Detalles" />
+                              <SortExpressions>
+                                <SortExpression>
+                                  <Value>=Fields!K.Value</Value>
+                                </SortExpression>
+                                <SortExpression>
+                                  <Value>=Fields!J.Value</Value>
+                                </SortExpression>
+                              </SortExpressions>
                               <TablixMembers>
                                 <TablixMember />
                               </TablixMembers>
+                            </TablixMember>
+                            <TablixMember>
+                              <KeepWithGroup>Before</KeepWithGroup>
                             </TablixMember>
                             <TablixMember>
                               <KeepWithGroup>Before</KeepWithGroup>
@@ -10032,8 +12104,8 @@ Iif((Fields!R.Value - (Fields!S.Value*17))&gt;=0,(Fields!R.Value - (Fields!S.Val
             <DataSetName>DataSet1</DataSetName>
             <Top>0.31433cm</Top>
             <Left>0.02145cm</Left>
-            <Height>4.75cm</Height>
-            <Width>69.94931cm</Width>
+            <Height>5.35cm</Height>
+            <Width>74.21499cm</Width>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -10041,10 +12113,10 @@ Iif((Fields!R.Value - (Fields!S.Value*17))&gt;=0,(Fields!R.Value - (Fields!S.Val
             </Style>
           </Tablix>
         </ReportItems>
-        <Height>1.99383in</Height>
+        <Height>2.23005in</Height>
         <Style />
       </Body>
-      <Width>27.54754in</Width>
+      <Width>29.51605in</Width>
       <Page>
         <PageHeader>
           <Height>3.09577cm</Height>
@@ -10657,6 +12729,7 @@ Iif((Fields!R.Value - (Fields!S.Value*17))&gt;=0,(Fields!R.Value - (Fields!S.Val
         <ColumnSpacing>0.13cm</ColumnSpacing>
         <Style />
       </Page>
+    
   <ReportParameters>
     <ReportParameter Name="Title">
       <DataType>String</DataType>
@@ -10703,6 +12776,7 @@ Iif((Fields!R.Value - (Fields!S.Value*17))&gt;=0,(Fields!R.Value - (Fields!S.Val
       <Prompt>ReportParameter1</Prompt>
     </ReportParameter>
   </ReportParameters>
+  
   <Language>es-PE</Language>
   <rd:ReportUnitType>Cm</rd:ReportUnitType>
   <rd:ReportID>81254554-36e6-4029-9f14-abfeebc28264</rd:ReportID>
