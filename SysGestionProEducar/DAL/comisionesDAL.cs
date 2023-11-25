@@ -5611,7 +5611,7 @@ namespace DAL
 
         public DataTable RptContratosPendientesGenerarComisionSoloVendedor(string codPrograma, string codVendedor, DateTime fechaAproba, DateTime fechaAprobIni, DateTime fechaAprobFin)
         {
-            const string sentencia = "dsp_RptContratosPendientesGenerarComisionSoloVendedor";
+            const string sentencia = "dsp_RptContratosPendientesGenerarComisionSoloVendedorRuben";
             try
             {
                 using (SqlConnection cn = new SqlConnection(conexion.con))

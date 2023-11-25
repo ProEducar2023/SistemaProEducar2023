@@ -44,6 +44,8 @@ namespace Presentacion.MOD_COMISIONES.Reportes.Formulario
             CargarPeriodoGeneradoDevolucion();
             CargarPeriodoGeneradoOtrosIngresosEgresos();
             CargarVendedor();
+            dtpComisionar1.Value = new DateTime(2019,1 ,1);
+            dtFechaAprobacion1.Value = new DateTime(2019, 1, 1);
         }
 
         private void StartControsl()

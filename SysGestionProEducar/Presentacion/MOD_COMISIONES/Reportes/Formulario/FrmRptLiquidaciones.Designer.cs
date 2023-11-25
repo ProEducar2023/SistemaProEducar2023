@@ -99,7 +99,6 @@ namespace Presentacion.MOD_COMISIONES.Reportes.Formulario
             this.label12 = new System.Windows.Forms.Label();
             this.grpVentasHistoricas = new System.Windows.Forms.GroupBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.grpLiquidacion.SuspendLayout();
@@ -110,14 +109,13 @@ namespace Presentacion.MOD_COMISIONES.Reportes.Formulario
             this.groupBox4.SuspendLayout();
             this.grpConsolidado.SuspendLayout();
             this.grpVentasHistoricas.SuspendLayout();
-            this.groupBox5.SuspendLayout();
             this.SuspendLayout();
             // 
             // rdbLiquidacion
             // 
             this.rdbLiquidacion.AutoSize = true;
             this.rdbLiquidacion.Checked = true;
-            this.rdbLiquidacion.Location = new System.Drawing.Point(23, 14);
+            this.rdbLiquidacion.Location = new System.Drawing.Point(23, 24);
             this.rdbLiquidacion.Name = "rdbLiquidacion";
             this.rdbLiquidacion.Size = new System.Drawing.Size(134, 17);
             this.rdbLiquidacion.TabIndex = 50;
@@ -129,7 +127,7 @@ namespace Presentacion.MOD_COMISIONES.Reportes.Formulario
             // rdbDetalleComision
             // 
             this.rdbDetalleComision.AutoSize = true;
-            this.rdbDetalleComision.Location = new System.Drawing.Point(23, 32);
+            this.rdbDetalleComision.Location = new System.Drawing.Point(23, 48);
             this.rdbDetalleComision.Name = "rdbDetalleComision";
             this.rdbDetalleComision.Size = new System.Drawing.Size(141, 17);
             this.rdbDetalleComision.TabIndex = 51;
@@ -508,7 +506,7 @@ namespace Presentacion.MOD_COMISIONES.Reportes.Formulario
             // rdbDevolucionDetalle
             // 
             this.rdbDevolucionDetalle.AutoSize = true;
-            this.rdbDevolucionDetalle.Location = new System.Drawing.Point(23, 50);
+            this.rdbDevolucionDetalle.Location = new System.Drawing.Point(23, 72);
             this.rdbDevolucionDetalle.Name = "rdbDevolucionDetalle";
             this.rdbDevolucionDetalle.Size = new System.Drawing.Size(221, 17);
             this.rdbDevolucionDetalle.TabIndex = 56;
@@ -519,7 +517,7 @@ namespace Presentacion.MOD_COMISIONES.Reportes.Formulario
             // rdbOtrosCargosAbonos
             // 
             this.rdbOtrosCargosAbonos.AutoSize = true;
-            this.rdbOtrosCargosAbonos.Location = new System.Drawing.Point(23, 68);
+            this.rdbOtrosCargosAbonos.Location = new System.Drawing.Point(23, 96);
             this.rdbOtrosCargosAbonos.Name = "rdbOtrosCargosAbonos";
             this.rdbOtrosCargosAbonos.Size = new System.Drawing.Size(187, 17);
             this.rdbOtrosCargosAbonos.TabIndex = 58;
@@ -530,7 +528,7 @@ namespace Presentacion.MOD_COMISIONES.Reportes.Formulario
             // rdbPorComisionarDetalle
             // 
             this.rdbPorComisionarDetalle.AutoSize = true;
-            this.rdbPorComisionarDetalle.Location = new System.Drawing.Point(23, 86);
+            this.rdbPorComisionarDetalle.Location = new System.Drawing.Point(299, 24);
             this.rdbPorComisionarDetalle.Name = "rdbPorComisionarDetalle";
             this.rdbPorComisionarDetalle.Size = new System.Drawing.Size(142, 17);
             this.rdbPorComisionarDetalle.TabIndex = 59;
@@ -540,6 +538,7 @@ namespace Presentacion.MOD_COMISIONES.Reportes.Formulario
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.radioButton1);
             this.groupBox1.Controls.Add(this.radioButton2);
             this.groupBox1.Controls.Add(this.rdbConsolidado);
             this.groupBox1.Controls.Add(this.rdbPorComisionarDetalle);
@@ -549,7 +548,7 @@ namespace Presentacion.MOD_COMISIONES.Reportes.Formulario
             this.groupBox1.Controls.Add(this.rdbLiquidacion);
             this.groupBox1.Location = new System.Drawing.Point(9, 7);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(268, 142);
+            this.groupBox1.Size = new System.Drawing.Size(558, 142);
             this.groupBox1.TabIndex = 60;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Reporte de Comisiones";
@@ -557,7 +556,7 @@ namespace Presentacion.MOD_COMISIONES.Reportes.Formulario
             // radioButton2
             // 
             this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(23, 122);
+            this.radioButton2.Location = new System.Drawing.Point(299, 72);
             this.radioButton2.Name = "radioButton2";
             this.radioButton2.Size = new System.Drawing.Size(201, 17);
             this.radioButton2.TabIndex = 61;
@@ -567,7 +566,7 @@ namespace Presentacion.MOD_COMISIONES.Reportes.Formulario
             // rdbConsolidado
             // 
             this.rdbConsolidado.AutoSize = true;
-            this.rdbConsolidado.Location = new System.Drawing.Point(23, 104);
+            this.rdbConsolidado.Location = new System.Drawing.Point(299, 48);
             this.rdbConsolidado.Name = "rdbConsolidado";
             this.rdbConsolidado.Size = new System.Drawing.Size(169, 17);
             this.rdbConsolidado.TabIndex = 60;
@@ -578,7 +577,7 @@ namespace Presentacion.MOD_COMISIONES.Reportes.Formulario
             // radioButton1
             // 
             this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(23, 23);
+            this.radioButton1.Location = new System.Drawing.Point(299, 96);
             this.radioButton1.Name = "radioButton1";
             this.radioButton1.Size = new System.Drawing.Size(134, 17);
             this.radioButton1.TabIndex = 61;
@@ -831,22 +830,11 @@ namespace Presentacion.MOD_COMISIONES.Reportes.Formulario
             this.groupBox3.TabIndex = 93;
             this.groupBox3.TabStop = false;
             // 
-            // groupBox5
-            // 
-            this.groupBox5.Controls.Add(this.radioButton1);
-            this.groupBox5.Location = new System.Drawing.Point(283, 7);
-            this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(284, 142);
-            this.groupBox5.TabIndex = 94;
-            this.groupBox5.TabStop = false;
-            this.groupBox5.Text = "Otros Reportes";
-            // 
             // FrmRptLiquidaciones
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(582, 374);
-            this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.grpDetalleComision);
             this.Controls.Add(this.grpVentasHistoricas);
             this.Controls.Add(this.grpComisionarDet);
@@ -881,8 +869,6 @@ namespace Presentacion.MOD_COMISIONES.Reportes.Formulario
             this.grpConsolidado.PerformLayout();
             this.grpVentasHistoricas.ResumeLayout(false);
             this.grpVentasHistoricas.PerformLayout();
-            this.groupBox5.ResumeLayout(false);
-            this.groupBox5.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -959,6 +945,5 @@ namespace Presentacion.MOD_COMISIONES.Reportes.Formulario
         private System.Windows.Forms.DateTimePicker dtpComisionar1;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.GroupBox groupBox5;
     }
 }
