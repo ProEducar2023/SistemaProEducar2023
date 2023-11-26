@@ -5,8 +5,8 @@ namespace DAL
     {
         public static string _sql;
         public static string _sqlGestion;
-        private static string user = "sa";// raton
-        private static string password = "odr";// main
+        private static string user = "sa";// raton  //sa
+        private static string password = "odr";// main //odr
         //public static string con
         //{
         //    //get { return @"server=WIND8; Database=BD_GCO03; User Id=miguel; Password=main"; }

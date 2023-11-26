@@ -5611,7 +5611,7 @@ namespace DAL
 
         public DataTable RptContratosPendientesGenerarComisionSoloVendedor(string codPrograma, string codVendedor, DateTime fechaAproba, DateTime fechaAprobIni, DateTime fechaAprobFin)
         {
-            const string sentencia = "dsp_RptContratosPendientesGenerarComisionSoloVendedor";
+            const string sentencia = "dsp_RptContratosPendientesGenerarComisionSoloVendedorRuben";
             try
             {
                 using (SqlConnection cn = new SqlConnection(conexion.con))
@@ -5706,6 +5706,38 @@ namespace DAL
                     _ = cmd.Parameters.AddWithValue("@FECHA_APROB", fechaAproba);
                     _ = cmd.Parameters.AddWithValue("@fechaAprobIni", fechaAprobIni);
                     _ = cmd.Parameters.AddWithValue("@fechaAprobFin", fechaAprobFin);
+
+                    cn.Open();
+                    DataTable dt = new DataTable();
+                    using (SqlDataReader dr = cmd.ExecuteReader())
+                    {
+                        dt.Load(dr, LoadOption.PreserveChanges);
+                    }
+                    return dt;
+                }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        public DataTable RptHitoricoDevoluciones(DateTime fechaContratoIni, DateTime fechaContratoFin, DateTime fechaDevolucion, string codPer)
+        {
+            const string sentencia = "dsp_DevolucionHistoricoComisiones";
+            try
+            {
+                using (SqlConnection cn = new SqlConnection(conexion.con))
+                {
+                    SqlCommand cmd = new SqlCommand(sentencia, cn)
+                    {
+                        CommandType = CommandType.StoredProcedure,
+                    };
+
+                    _ = cmd.Parameters.AddWithValue("@FECHA_CONTRATO_INI", fechaContratoIni);
+                    _ = cmd.Parameters.AddWithValue("@FECHA_CONTRATO_FIN", fechaContratoFin);
+                    _ = cmd.Parameters.AddWithValue("@FECHA_DEVOLUCION", fechaDevolucion);
+                    _ = cmd.Parameters.AddWithValue("@COD_PER", codPer);
 
                     cn.Open();
                     DataTable dt = new DataTable();

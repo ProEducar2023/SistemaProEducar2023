@@ -13,6 +13,7 @@ using static Presentacion.HELPERS.GenericUtil;
 using static Presentacion.HELPERS.Constantes;
 using Microsoft.Reporting.WinForms;
 using System.Globalization;
+using Microsoft.ReportingServices.Interfaces;
 
 namespace Presentacion.MOD_COMISIONES.Reportes.Formulario
 {
@@ -44,6 +45,8 @@ namespace Presentacion.MOD_COMISIONES.Reportes.Formulario
             CargarPeriodoGeneradoDevolucion();
             CargarPeriodoGeneradoOtrosIngresosEgresos();
             CargarVendedor();
+            dtpComisionar1.Value = new DateTime(2019, 1, 1);
+            dtFechaAprobacion1.Value = new DateTime(2019, 1, 1);
         }
 
         private void StartControsl()
@@ -118,6 +121,10 @@ namespace Presentacion.MOD_COMISIONES.Reportes.Formulario
                 cboVendedor.DataSource = lista;
                 cboVendedor.ValueMember = "COD_PER";
                 cboVendedor.DisplayMember = "DESC_PER";
+
+                cboPersona9.DataSource = lista;
+                cboPersona9.ValueMember = "COD_PER";
+                cboPersona9.DisplayMember = "DESC_PER";
             }
         }
         private void CargarNivelVenta()
@@ -197,6 +204,8 @@ namespace Presentacion.MOD_COMISIONES.Reportes.Formulario
                 GenerarReporteConsolidado();
             else if (radioButton1.Checked)
                 GenerarReporteHistoricoComisiones();
+            else if (rdbHistoricoDevoluciones.Checked)
+                GenerarReporteHistoricoDevoluciones();
         }
 
         private async void GenerarReporteHistoricoComisiones()
@@ -223,7 +232,7 @@ namespace Presentacion.MOD_COMISIONES.Reportes.Formulario
 
 
                 Task<DataTable> task1 = Task.Run(() => BLComision.RPTHISTORICOCOMISIONESAPROBADAS(fechaAprobIni, fechaAprobFin, codVendedor, tipobusfecha, fechaActper, fechaActmes));
-                
+
                 DataTable tblData = await task1;
                 //DataTable dt = await ObtenerDevolucionDetalle();
                 const string data_set_name = "DataSet1";
@@ -231,8 +240,8 @@ namespace Presentacion.MOD_COMISIONES.Reportes.Formulario
                 string periodoText = string.Concat("Fecha " + (rbFecAprob.Checked ? "Aprobación" : "Registro") + " : ", fechaAprobIni.ToString("dd/MM/yyyy"), " - ", fechaAprobFin.ToString("dd/MM/yyyy"));
                 string titulo = string.Concat("REPORTE HISTORICO DE COMISIONES - APROBADAS", "\n", periodoText + "\n" + "Actualizado al : " + dtFechaActualizado.Value.ToString("dd/MM/yyyy"));
 
-                string lblVendedor = string.Concat("PROGRAMA : Curso de Inglés" , "\nVENDEDOR   : ", cboVendedor.Text);
-                object[] parameters = { titulo, lblVendedor, codVendedor=="" ? "Todos" : codVendedor };
+                string lblVendedor = string.Concat("PROGRAMA : Curso de Inglés", "\nVENDEDOR   : ", cboVendedor.Text);
+                object[] parameters = { titulo, lblVendedor, codVendedor == "" ? "Todos" : codVendedor };
                 frmLoading.CloseLoadingForm();
                 ReportViewer rpt = null;
                 Form frm = CreateReportForm(ref rpt, reporte, data_set_name, tblData, parameters);
@@ -253,8 +262,8 @@ namespace Presentacion.MOD_COMISIONES.Reportes.Formulario
             FrmLoading frmLoading = null;
             try
             {
-                
-               if (!ValidarPorComisionarDetalle())
+
+                if (!ValidarPorComisionarDetalle())
                     return;
 
                 frmLoading = frmLoading.StartLoadingForm(this);
@@ -262,32 +271,33 @@ namespace Presentacion.MOD_COMISIONES.Reportes.Formulario
                 DataTable dt2;
                 DateTime fechaAprobIni = dtpComisionar1.Value;
                 DateTime fechaAprobFin = dtpComisionar2.Value;
-                if (cboNivelVenta5.SelectedValue.ToString() == "02") {
+                if (cboNivelVenta5.SelectedValue.ToString() == "02")
+                {
                     dt = await ObtenerDatosXComisionarDetalle2();
                 }
                 else
                 {
 
-                 dt = await ObtenerDatosXComisionarDetalle();
-                 dt2 = await ObtenerDatosXComisionarDetalle2();
-                if (dt != null)
-                    
-                    dt.Merge(dt2);
-                else dt = dt2;
+                    dt = await ObtenerDatosXComisionarDetalle();
+                    dt2 = await ObtenerDatosXComisionarDetalle2();
+                    if (dt != null)
+
+                        dt.Merge(dt2);
+                    else dt = dt2;
 
                 }
-               
+
                 frmLoading.CloseLoadingForm();
 
                 string reporte = ObtenerModeloReporteXComisionarDetalle();
                 const string data_set_name = "DataSet1";
-                
+
 
 
                 string periodoText = string.Concat("Fecha Registro : ", fechaAprobIni.ToString("MMMM - yyyy"), " al ", fechaAprobFin.ToString("MMMM - yyyy"));
                 string titulo = string.Concat("REPORTE DE CONTRATOS POR COMISIONAR - POR ", cboNivelVenta5.Text, "\n", periodoText + "\n");
 
-                
+
                 //string titulo = string.Concat("REPORTE DE COMISIONES POR GENERAR POR ");
 
 
@@ -296,7 +306,7 @@ namespace Presentacion.MOD_COMISIONES.Reportes.Formulario
                 object[] parameters = cboNivelVenta5.SelectedValue.ToString() == COD_NIVEL_VENDEDOR
                     ? new object[] { titulo, fechaText }
                     : new object[] { titulo, fechaText, cboNivelVenta5.Text };
-                
+
                 Form frm = CreateReportForm(reporte, data_set_name, dt, parameters);
                 frm.Show();
             }
@@ -554,7 +564,7 @@ namespace Presentacion.MOD_COMISIONES.Reportes.Formulario
             }
         }
 
-   
+
 
         private async Task<DataTable> ObtenerComionesDetalle()
         {
@@ -610,7 +620,7 @@ namespace Presentacion.MOD_COMISIONES.Reportes.Formulario
                 string reporte = ObtenerRutaReporteTareaje("RptDevolucionesDetalle", Modulo.MOD_COMISIONES);
                 string titulo = string.Concat("DETALLE DE DEVOLUCIÓN DE MERCADERÍA Y DESCUENTO DE COMISIÓN - POR ", cboNivelVenta3.Text);
                 string periodoText = string.Concat("Periodo: ", Convert.ToInt32(feMesPer).NombreMes(), " - ", feAñoPer);
-                string vendedorText = string.Concat($"{ cboNivelVenta3.Text }: ", cboPersona3.Text);
+                string vendedorText = string.Concat($"{cboNivelVenta3.Text}: ", cboPersona3.Text);
                 object[] parameters = { titulo, periodoText, vendedorText };
                 frmLoading.CloseLoadingForm();
                 Form frm = CreateReportForm(reporte, data_set_name, dt, parameters);
@@ -678,9 +688,9 @@ namespace Presentacion.MOD_COMISIONES.Reportes.Formulario
             DateTime fechaini1;
             DateTime fechafin1;
 
-           
+
             fechaini1 = Convert.ToDateTime(dtFechaAprobacion1.Value, new CultureInfo("es-ES"));
-         
+
             fechafin1 = Convert.ToDateTime(dtFechaAprobacion2.Value, new CultureInfo("es-ES"));
 
 
@@ -715,7 +725,7 @@ namespace Presentacion.MOD_COMISIONES.Reportes.Formulario
             fechafin1 = Convert.ToDateTime(dtpComisionar2.Value, new CultureInfo("es-ES"));
 
             contratohasta = Convert.ToDateTime(dtFechaContrato5.Value, new CultureInfo("es-ES"));
-            
+
             //var difrango = dtFechaAprobacion1.Value - dtFechaAprobacion2.Value;(difrango.TotalDays < 0)
             //int difrango = DateTime.Compare( dtFechaAprobacion2.Value, dtFechaAprobacion1.Value);
             //if (cboVendedor.SelectedValue == null)
@@ -1145,7 +1155,7 @@ namespace Presentacion.MOD_COMISIONES.Reportes.Formulario
             return true;
         }
 
-       
+
 
         /// <summary>
         /// Obtiene contratos que no estan aprobados por nivel venta(supervisor, director de ventas, director nacional). 
@@ -1166,9 +1176,9 @@ namespace Presentacion.MOD_COMISIONES.Reportes.Formulario
             {
                 switch (codNivelVenta)
                 {
-                    case COD_NIVEL_VENDEDOR: 
+                    case COD_NIVEL_VENDEDOR:
                         return BLComision.RptContratosXGenerarYGeneradosAdelantoComisionSoloVenedor(codPrograma, codPer, fechaContrato, fechaAprobIni, fechaAprobFin);
-                       
+
                     case DIRECTOR:
                         return BLComision.RptContratosXGenerarYGeneradosAdelantoComisionDirector(codPrograma, codPer, codNivelVenta, fechaContrato, fechaAprobIni, fechaAprobFin);
 
@@ -1225,7 +1235,7 @@ namespace Presentacion.MOD_COMISIONES.Reportes.Formulario
                 DateTime fechaAprobFin = dtpComisionar2.Value;
 
 
-                parameters = new object[] { codPrograma, codPer, fechaContrato, codNivelVenta, fechaAprobIni , fechaAprobFin };
+                parameters = new object[] { codPrograma, codPer, fechaContrato, codNivelVenta, fechaAprobIni, fechaAprobFin };
             }
             return parameters;
         }
@@ -1396,6 +1406,39 @@ namespace Presentacion.MOD_COMISIONES.Reportes.Formulario
                 if (dtPeriodoGenerado != null && dtPeriodoGenerado.Rows.Count > 0)
                     return dtPeriodoGenerado.Select("ID = " + Convert.ToInt32(cboPeriodoGen6.SelectedValue)).FirstOrDefault();
                 return null;
+            }
+        }
+
+        private async void GenerarReporteHistoricoDevoluciones()
+        {
+            FrmLoading frmLoading = null;
+            try
+            {
+                frmLoading = frmLoading.StartLoadingForm(this);
+                DateTime fechaContratoIni = dtFechaContratoIni.Value;
+                DateTime fechaContratoFin = dtFechaContratoFin.Value;
+                DateTime fechaDevolucion = dtFechaDevolucion9.Value;
+                string codPer = cboPersona9.SelectedValue.ToString();
+
+                DataTable dt = await Task.Run(() => BLComision.RptHitoricoDevoluciones(fechaContratoIni, fechaContratoFin, fechaDevolucion, codPer));
+
+                const string titulo = "REPORTE DE DEVOLUCIONES - POR VENDEDOR";
+                //> string vendedorText = string.Concat("Vendedor: ", cboPersona9.Text);
+                string periodoContratoText = string.Concat("Fecha Contrato: ", fechaContratoIni.ToShortDateString(), "-", fechaContratoFin.ToShortDateString());
+                string periodoDevolucionText = string.Concat("Fecha Devolución al: ", fechaDevolucion.ToShortDateString());
+                object[] parameters = { titulo, periodoContratoText, periodoDevolucionText };
+
+                //> Crea formulario y muestra el reporte
+                string reporte = ObtenerRutaReporteTareaje("RptComisionesDetalle", Modulo.MOD_COMISIONES);
+                const string data_set_name = "DataSet1";
+                frmLoading.CloseLoadingForm();
+                Form frm = CreateReportForm(reporte, data_set_name, dt, parameters);
+                frm.Show();
+            }
+            catch(Exception ex)
+            {
+                ex.PrintException();
+                frmLoading.CloseLoadingForm();
             }
         }
 

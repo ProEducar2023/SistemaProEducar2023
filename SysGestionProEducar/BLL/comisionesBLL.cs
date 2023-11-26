@@ -1871,5 +1871,10 @@ namespace BLL
         {
             return comDAL.RptContratosPendientesGenerarComisionSuperiorDirector(codPrograma, codPer, codNivelVenta, fechaAproba, fechaAprobIni, fechaAprobFin);
         }
+
+        public DataTable RptHitoricoDevoluciones(DateTime fechaContratoIni, DateTime fechaContratoFin, DateTime fechaDevolucion, string codPer)
+        {
+            return comDAL.RptHitoricoDevoluciones(fechaContratoIni, fechaContratoFin, fechaDevolucion, codPer);
+        }
     }
 }
