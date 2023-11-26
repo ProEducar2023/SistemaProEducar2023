@@ -1129,6 +1129,7 @@
                                   <Value>=Fields!B.Value</Value>
                                   <Style>
                                     <FontSize>7pt</FontSize>
+                                    <Format>d</Format>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -1163,6 +1164,7 @@
                                   <Value>=Fields!C.Value</Value>
                                   <Style>
                                     <FontSize>7pt</FontSize>
+                                    <Format>d</Format>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -1197,11 +1199,12 @@
                                   <Value>=Fields!D.Value</Value>
                                   <Style>
                                     <FontSize>7pt</FontSize>
+                                    <Format>#,0.00;(#,0.00)</Format>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style>
-                                <TextAlign>Center</TextAlign>
+                                <TextAlign>Right</TextAlign>
                               </Style>
                             </Paragraph>
                           </Paragraphs>
@@ -1265,6 +1268,7 @@
                                   <Value>=Fields!F.Value</Value>
                                   <Style>
                                     <FontSize>7pt</FontSize>
+                                    <Format>d</Format>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -1333,6 +1337,7 @@
                                   <Value>=Fields!I.Value</Value>
                                   <Style>
                                     <FontSize>7pt</FontSize>
+                                    <Format>d</Format>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -1503,11 +1508,12 @@
                                   <Value>=Fields!N.Value</Value>
                                   <Style>
                                     <FontSize>7pt</FontSize>
+                                    <Format>#,0.00;(#,0.00)</Format>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style>
-                                <TextAlign>Center</TextAlign>
+                                <TextAlign>Right</TextAlign>
                               </Style>
                             </Paragraph>
                           </Paragraphs>
@@ -1537,11 +1543,12 @@
                                   <Value>=Fields!Ñ.Value</Value>
                                   <Style>
                                     <FontSize>7pt</FontSize>
+                                    <Format>#,0.00;(#,0.00)</Format>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style>
-                                <TextAlign>Center</TextAlign>
+                                <TextAlign>Right</TextAlign>
                               </Style>
                             </Paragraph>
                           </Paragraphs>
@@ -1604,11 +1611,12 @@
                                   <Value>=Fields!P.Value</Value>
                                   <Style>
                                     <FontSize>7pt</FontSize>
+                                    <Format>#,0.00;(#,0.00)</Format>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style>
-                                <TextAlign>Center</TextAlign>
+                                <TextAlign>Right</TextAlign>
                               </Style>
                             </Paragraph>
                           </Paragraphs>
@@ -1769,9 +1777,10 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value />
+                                  <Value>=Sum(Fields!D.Value)</Value>
                                   <Style>
                                     <FontSize>7pt</FontSize>
+                                    <Format>#,0.00;(#,0.00)</Format>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -2078,6 +2087,7 @@
                                   <Value>=Sum(Fields!N.Value)</Value>
                                   <Style>
                                     <FontSize>7pt</FontSize>
+                                    <Format>#,0.00;(#,0.00)</Format>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -2112,6 +2122,7 @@
                                   <Value>=Sum(Fields!Ñ.Value)</Value>
                                   <Style>
                                     <FontSize>7pt</FontSize>
+                                    <Format>#,0.00;(#,0.00)</Format>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -2136,14 +2147,14 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Textbox58">
+                        <Textbox Name="Textbox2">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Sum(Fields!O.Value)</Value>
+                                  <Value />
                                   <Style>
                                     <FontSize>7pt</FontSize>
                                   </Style>
@@ -2154,7 +2165,7 @@
                               </Style>
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>Textbox55</rd:DefaultName>
+                          <rd:DefaultName>Textbox2</rd:DefaultName>
                           <Style>
                             <Border>
                               <Style>Solid</Style>
@@ -2180,6 +2191,7 @@
                                   <Value>=Sum(Fields!P.Value)</Value>
                                   <Style>
                                     <FontSize>7pt</FontSize>
+                                    <Format>#,0.00;(#,0.00)</Format>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -2374,7 +2386,7 @@
             <DataSetName>DataSet1</DataSetName>
             <Top>0.84349cm</Top>
             <Height>2.63812cm</Height>
-            <Width>39.36171cm</Width>
+            <Width>39.36174cm</Width>
             <Style>
               <Border>
                 <Style>None</Style>

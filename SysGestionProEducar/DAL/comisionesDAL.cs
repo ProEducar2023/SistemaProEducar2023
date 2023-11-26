@@ -5732,6 +5732,7 @@ namespace DAL
                     SqlCommand cmd = new SqlCommand(sentencia, cn)
                     {
                         CommandType = CommandType.StoredProcedure,
+                        CommandTimeout = TIME_OUT_4
                     };
 
                     _ = cmd.Parameters.AddWithValue("@FECHA_CONTRATO_INI", fechaContratoIni);

@@ -45,8 +45,6 @@ namespace Presentacion.MOD_COMISIONES.Reportes.Formulario
             CargarPeriodoGeneradoDevolucion();
             CargarPeriodoGeneradoOtrosIngresosEgresos();
             CargarVendedor();
-            dtpComisionar1.Value = new DateTime(2019, 1, 1);
-            dtFechaAprobacion1.Value = new DateTime(2019, 1, 1);
         }
 
         private void StartControsl()
@@ -68,7 +66,15 @@ namespace Presentacion.MOD_COMISIONES.Reportes.Formulario
             cboPersona5.DropDownStyle = ComboBoxStyle.DropDownList;
             cboNivelVenta5.DropDownStyle = ComboBoxStyle.DropDownList;
             cboVendedor.DropDownStyle = ComboBoxStyle.DropDownList;
+            cboPersona9.DropDownStyle = ComboBoxStyle.DropDownList;
             btnImprimir.StyleButtonFlat();
+
+            gbHistorialDevoluciones.Visible = false;
+
+            dtpComisionar1.Value = new DateTime(2019, 1, 1);
+            dtFechaAprobacion1.Value = new DateTime(2019, 1, 1);
+
+            dtFechaContratoIni.Value = new DateTime(2019, 1, 1);
         }
 
         private void CargarPeriodoGenerado()
@@ -202,7 +208,7 @@ namespace Presentacion.MOD_COMISIONES.Reportes.Formulario
                 GenerarReporteXComisionarDetalle();
             else if (rdbConsolidado.Checked)
                 GenerarReporteConsolidado();
-            else if (radioButton1.Checked)
+            else if (rdbHistoricoComisiones.Checked)
                 GenerarReporteHistoricoComisiones();
             else if (rdbHistoricoDevoluciones.Checked)
                 GenerarReporteHistoricoDevoluciones();
@@ -1278,6 +1284,7 @@ namespace Presentacion.MOD_COMISIONES.Reportes.Formulario
             grpOtrosCargos.Visible = false;
             grpComisionarDet.Visible = false;
             grpVentasHistoricas.Visible = false;
+            gbHistorialDevoluciones.Visible = false;
         }
 
         private void rdbDetalleComision_CheckedChanged(object sender, EventArgs e)
@@ -1289,6 +1296,7 @@ namespace Presentacion.MOD_COMISIONES.Reportes.Formulario
             grpOtrosCargos.Visible = false;
             grpComisionarDet.Visible = false;
             grpVentasHistoricas.Visible = false;
+            gbHistorialDevoluciones.Visible = false;
         }
 
         private void rdbOtrosCargosAbonos_CheckedChanged(object sender, EventArgs e)
@@ -1300,6 +1308,7 @@ namespace Presentacion.MOD_COMISIONES.Reportes.Formulario
             grpOtrosCargos.Visible = true;
             grpComisionarDet.Visible = false;
             grpVentasHistoricas.Visible = false;
+            gbHistorialDevoluciones.Visible = false;
         }
 
         private DataRow PeriodoSeleccionado
@@ -1312,7 +1321,7 @@ namespace Presentacion.MOD_COMISIONES.Reportes.Formulario
             }
         }
 
-        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        private void RadioButton1_CheckedChanged(object sender, EventArgs e)
         {
             grpLiquidacion.Visible = false;
             grpDetalleComision.Visible = false;
@@ -1320,6 +1329,7 @@ namespace Presentacion.MOD_COMISIONES.Reportes.Formulario
             grpConsolidado.Visible = false;
             grpOtrosCargos.Visible = false;
             grpComisionarDet.Visible = false;
+            gbHistorialDevoluciones .Visible = false;
             grpVentasHistoricas.Visible = true;
         }
 
@@ -1333,7 +1343,7 @@ namespace Presentacion.MOD_COMISIONES.Reportes.Formulario
             }
         }
 
-        private void radioButton2_CheckedChanged(object sender, EventArgs e)
+        private void RadioButton2_CheckedChanged(object sender, EventArgs e)
         {
             grpLiquidacion.Visible = false;
             grpDetalleComision.Visible = false;
@@ -1341,10 +1351,11 @@ namespace Presentacion.MOD_COMISIONES.Reportes.Formulario
             grpConsolidado.Visible = false;
             grpOtrosCargos.Visible = false;
             grpComisionarDet.Visible = false;
+            gbHistorialDevoluciones.Visible = false;
             grpVentasHistoricas.Visible = true;
         }
 
-        private void rdbPorComisionarDetalle_CheckedChanged(object sender, EventArgs e)
+        private void RdbPorComisionarDetalle_CheckedChanged(object sender, EventArgs e)
         {
             grpLiquidacion.Visible = false;
             grpDetalleComision.Visible = false;
@@ -1353,6 +1364,7 @@ namespace Presentacion.MOD_COMISIONES.Reportes.Formulario
             grpOtrosCargos.Visible = false;
             grpComisionarDet.Visible = true;
             grpVentasHistoricas.Visible = false;
+            gbHistorialDevoluciones.Visible = false;
         }
 
         private void RdbDevolucionDetalle_CheckedChanged(object sender, EventArgs e)
@@ -1364,11 +1376,11 @@ namespace Presentacion.MOD_COMISIONES.Reportes.Formulario
             grpOtrosCargos.Visible = false;
             grpComisionarDet.Visible = false;
             grpVentasHistoricas.Visible = false;
+            gbHistorialDevoluciones.Visible = false;
         }
 
         private void RdbComisionesHist_CheckedChanged(object sender, EventArgs e)
         {
-
             //tabControl1.SelectedTab = tpVentasAprobadas;
             grpLiquidacion.Visible = false;
             grpDetalleComision.Visible = false;
@@ -1376,7 +1388,20 @@ namespace Presentacion.MOD_COMISIONES.Reportes.Formulario
             grpConsolidado.Visible = false;
             grpOtrosCargos.Visible = false;
             grpComisionarDet.Visible = false;
+            gbHistorialDevoluciones.Visible = false;
             grpVentasHistoricas.Visible = true;
+        }
+
+        private void RdbHistoricoDevoluciones_Click(object sender, EventArgs e)
+        {
+            grpLiquidacion.Visible = false;
+            grpDetalleComision.Visible = false;
+            grpDetalleDevolucion.Visible = true;
+            grpConsolidado.Visible = false;
+            grpOtrosCargos.Visible = false;
+            grpComisionarDet.Visible = false;
+            grpVentasHistoricas.Visible = false;
+            gbHistorialDevoluciones.Visible = true;
         }
 
         private void tpLiquidacion_Click(object sender, EventArgs e)
@@ -1424,18 +1449,18 @@ namespace Presentacion.MOD_COMISIONES.Reportes.Formulario
 
                 const string titulo = "REPORTE DE DEVOLUCIONES - POR VENDEDOR";
                 //> string vendedorText = string.Concat("Vendedor: ", cboPersona9.Text);
-                string periodoContratoText = string.Concat("Fecha Contrato: ", fechaContratoIni.ToShortDateString(), "-", fechaContratoFin.ToShortDateString());
+                string periodoContratoText = string.Concat("Fecha Contrato: ", fechaContratoIni.ToShortDateString(), " - ", fechaContratoFin.ToShortDateString());
                 string periodoDevolucionText = string.Concat("Fecha Devolución al: ", fechaDevolucion.ToShortDateString());
                 object[] parameters = { titulo, periodoContratoText, periodoDevolucionText };
 
                 //> Crea formulario y muestra el reporte
-                string reporte = ObtenerRutaReporteTareaje("RptComisionesDetalle", Modulo.MOD_COMISIONES);
+                string reporte = ObtenerRutaReporteTareaje("RptHistoriocoDevolucionComision", Modulo.MOD_COMISIONES);
                 const string data_set_name = "DataSet1";
                 frmLoading.CloseLoadingForm();
                 Form frm = CreateReportForm(reporte, data_set_name, dt, parameters);
                 frm.Show();
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 ex.PrintException();
                 frmLoading.CloseLoadingForm();
