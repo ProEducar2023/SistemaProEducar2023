@@ -1098,7 +1098,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!AC.Value</Value>
+                                  <Value>=IIF(Fields!S.Value = 1, Fields!AC.Value, Nothing)</Value>
                                   <Style>
                                     <FontSize>7pt</FontSize>
                                   </Style>
@@ -1132,7 +1132,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!A.Value</Value>
+                                  <Value>=IIF(Fields!S.Value = 1, Fields!A.Value, Nothing)</Value>
                                   <Style>
                                     <FontSize>7pt</FontSize>
                                   </Style>
@@ -1166,7 +1166,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!B.Value</Value>
+                                  <Value>=IIF(Fields!S.Value = 1, Fields!B.Value, Nothing)</Value>
                                   <Style>
                                     <FontSize>7pt</FontSize>
                                     <Format>d</Format>
@@ -1201,7 +1201,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!C.Value</Value>
+                                  <Value>=IIF(Fields!S.Value = 1, Fields!C.Value, Nothing)</Value>
                                   <Style>
                                     <FontSize>7pt</FontSize>
                                     <Format>d</Format>
@@ -1236,7 +1236,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!D.Value</Value>
+                                  <Value>=IIF(Fields!S.Value = 1, Fields!D.Value, Nothing)</Value>
                                   <Style>
                                     <FontSize>7pt</FontSize>
                                     <Format>#,0.00;(#,0.00)</Format>
@@ -1271,7 +1271,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!E.Value</Value>
+                                  <Value>=IIF(Fields!S.Value = 1, Fields!E.Value, Nothing)</Value>
                                   <Style>
                                     <FontSize>7pt</FontSize>
                                   </Style>
@@ -1294,6 +1294,7 @@
                             <PaddingBottom>2pt</PaddingBottom>
                           </Style>
                         </Textbox>
+                        <rd:Selected>true</rd:Selected>
                       </CellContents>
                     </TablixCell>
                     <TablixCell>
@@ -1743,7 +1744,6 @@
                           </Style>
                         </Textbox>
                         <ColSpan>3</ColSpan>
-                        <rd:Selected>true</rd:Selected>
                       </CellContents>
                     </TablixCell>
                     <TablixCell />
@@ -1791,7 +1791,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Sum(Fields!D.Value)</Value>
+                                  <Value>=Sum(IIF(Fields!S.Value = 1, Fields!D.Value, Nothing))</Value>
                                   <Style>
                                     <FontSize>7pt</FontSize>
                                     <Format>#,0.00;(#,0.00)</Format>
@@ -2328,6 +2328,9 @@
                       </Textbox>
                     </CellContents>
                   </TablixHeader>
+                  <TablixMembers>
+                    <TablixMember />
+                  </TablixMembers>
                   <KeepWithGroup>After</KeepWithGroup>
                   <RepeatOnNewPage>true</RepeatOnNewPage>
                 </TablixMember>
@@ -2423,16 +2426,28 @@
                   </TablixHeader>
                   <TablixMembers>
                     <TablixMember>
-                      <Group Name="Detalles" />
+                      <Group Name="A">
+                        <GroupExpressions>
+                          <GroupExpression>=Fields!A.Value</GroupExpression>
+                        </GroupExpressions>
+                      </Group>
                       <SortExpressions>
                         <SortExpression>
-                          <Value>=Fields!A.Value</Value>
+                          <Value>=Fields!R.Value</Value>
                         </SortExpression>
                       </SortExpressions>
+                      <TablixMembers>
+                        <TablixMember>
+                          <Group Name="Detalles" />
+                          <SortExpressions>
+                            <SortExpression>
+                              <Value>=Fields!A.Value</Value>
+                            </SortExpression>
+                          </SortExpressions>
+                        </TablixMember>
+                      </TablixMembers>
                     </TablixMember>
-                    <TablixMember>
-                      <KeepWithGroup>Before</KeepWithGroup>
-                    </TablixMember>
+                    <TablixMember />
                   </TablixMembers>
                 </TablixMember>
               </TablixMembers>
@@ -2463,7 +2478,7 @@
         <Height>1.4611in</Height>
         <Style />
       </Body>
-      <Width>16.481in</Width>
+      <Width>16.26224in</Width>
       <Page>
         <PageHeader>
           <Height>2.19604cm</Height>
