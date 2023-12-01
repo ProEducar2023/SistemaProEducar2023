@@ -769,11 +769,11 @@ namespace SysSeguimiento
                 {
                     foreach (DataGridViewRow row in dgvImporteListado.Rows)
                     {
-                        if (!Convert.ToBoolean(row.Cells["ST_LISTADO"].Value) && !Convert.ToBoolean(row.Cells["ST_NO_PROCESADO"].Value))
-                        {
-                            _ = MessageBox.Show("Debe seleccionar la opción de: Se recibió el listado o No se ha procesado", "MESSAGE", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                            return false;
-                        }
+                        //if (!Convert.ToBoolean(row.Cells["ST_LISTADO"].Value) && !Convert.ToBoolean(row.Cells["ST_NO_PROCESADO"].Value))
+                        //{
+                        //    _ = MessageBox.Show("Debe seleccionar la opción de: Se recibió el listado o No se ha procesado", "MESSAGE", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        //    return false;
+                        //}
 
                         if (Convert.ToBoolean(row.Cells["ST_LISTADO"].Value) && string.IsNullOrEmpty(row.Cells["FECHA_LISTADO"].Value?.ToString()))
                         {
@@ -794,12 +794,12 @@ namespace SysSeguimiento
                     DataTable dt = BLSeguimiento.ObtenerPlanillasXGrupo(se);
                     foreach (DataRow row in dt.Rows)
                     {
-                        if (!Convert.ToBoolean(string.IsNullOrEmpty(row["ST_LISTADO"]?.ToString()) ? false : row["ST_LISTADO"])
-                            && !Convert.ToBoolean(string.IsNullOrEmpty(row["ST_NO_PROCESO"]?.ToString()) ? false : row["ST_NO_PROCESO"]))
-                        {
-                            _ = MessageBox.Show("Debe seleccionar la opción de: Se recibió el listado o No se ha procesado", "MESSAGE", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                            return false;
-                        }
+                        //if (!Convert.ToBoolean(string.IsNullOrEmpty(row["ST_LISTADO"]?.ToString()) ? false : row["ST_LISTADO"])
+                        //    && !Convert.ToBoolean(string.IsNullOrEmpty(row["ST_NO_PROCESO"]?.ToString()) ? false : row["ST_NO_PROCESO"]))
+                        //{
+                        //    _ = MessageBox.Show("Debe seleccionar la opción de: Se recibió el listado o No se ha procesado", "MESSAGE", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        //    return false;
+                        //}
 
                         if (!string.IsNullOrEmpty(row["ST_LISTADO"]?.ToString()) && Convert.ToBoolean(row["ST_LISTADO"]) && string.IsNullOrEmpty(row["FEC_RETOR_PLAN"]?.ToString()))
                         {

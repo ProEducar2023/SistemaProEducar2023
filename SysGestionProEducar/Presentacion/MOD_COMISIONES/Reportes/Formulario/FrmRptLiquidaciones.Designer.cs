@@ -75,9 +75,10 @@ namespace Presentacion.MOD_COMISIONES.Reportes.Formulario
             this.rdbOtrosCargosAbonos = new System.Windows.Forms.RadioButton();
             this.rdbPorComisionarDetalle = new System.Windows.Forms.RadioButton();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.rdbHistoricoDevoluciones = new System.Windows.Forms.RadioButton();
+            this.rdbHistoricoComisiones = new System.Windows.Forms.RadioButton();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.rdbConsolidado = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.grpLiquidacion = new System.Windows.Forms.GroupBox();
             this.grpDetalleComision = new System.Windows.Forms.GroupBox();
             this.grpDetalleDevolucion = new System.Windows.Forms.GroupBox();
@@ -98,7 +99,27 @@ namespace Presentacion.MOD_COMISIONES.Reportes.Formulario
             this.cboPersona6 = new System.Windows.Forms.ComboBox();
             this.label12 = new System.Windows.Forms.Label();
             this.grpVentasHistoricas = new System.Windows.Forms.GroupBox();
+<<<<<<< HEAD
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+=======
+            this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label24 = new System.Windows.Forms.Label();
+            this.label25 = new System.Windows.Forms.Label();
+            this.label26 = new System.Windows.Forms.Label();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.gbHistorialDevoluciones = new System.Windows.Forms.GroupBox();
+            this.dtFechaDevolucion9 = new System.Windows.Forms.DateTimePicker();
+            this.label30 = new System.Windows.Forms.Label();
+            this.label27 = new System.Windows.Forms.Label();
+            this.dtFechaContratoFin = new System.Windows.Forms.DateTimePicker();
+            this.dtFechaContratoIni = new System.Windows.Forms.DateTimePicker();
+            this.label28 = new System.Windows.Forms.Label();
+            this.label29 = new System.Windows.Forms.Label();
+            this.cboPersona9 = new System.Windows.Forms.ComboBox();
+>>>>>>> 96d264a38f6e362e6bced3f47bf0782c7136072e
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.grpLiquidacion.SuspendLayout();
@@ -109,6 +130,11 @@ namespace Presentacion.MOD_COMISIONES.Reportes.Formulario
             this.groupBox4.SuspendLayout();
             this.grpConsolidado.SuspendLayout();
             this.grpVentasHistoricas.SuspendLayout();
+<<<<<<< HEAD
+=======
+            this.groupBox5.SuspendLayout();
+            this.gbHistorialDevoluciones.SuspendLayout();
+>>>>>>> 96d264a38f6e362e6bced3f47bf0782c7136072e
             this.SuspendLayout();
             // 
             // rdbLiquidacion
@@ -534,11 +560,16 @@ namespace Presentacion.MOD_COMISIONES.Reportes.Formulario
             this.rdbPorComisionarDetalle.TabIndex = 59;
             this.rdbPorComisionarDetalle.Text = "5. Ventas por Comisionar";
             this.rdbPorComisionarDetalle.UseVisualStyleBackColor = true;
-            this.rdbPorComisionarDetalle.CheckedChanged += new System.EventHandler(this.rdbPorComisionarDetalle_CheckedChanged);
+            this.rdbPorComisionarDetalle.CheckedChanged += new System.EventHandler(this.RdbPorComisionarDetalle_CheckedChanged);
             // 
             // groupBox1
             // 
+<<<<<<< HEAD
             this.groupBox1.Controls.Add(this.radioButton1);
+=======
+            this.groupBox1.Controls.Add(this.rdbHistoricoDevoluciones);
+            this.groupBox1.Controls.Add(this.rdbHistoricoComisiones);
+>>>>>>> 96d264a38f6e362e6bced3f47bf0782c7136072e
             this.groupBox1.Controls.Add(this.radioButton2);
             this.groupBox1.Controls.Add(this.rdbConsolidado);
             this.groupBox1.Controls.Add(this.rdbPorComisionarDetalle);
@@ -552,6 +583,28 @@ namespace Presentacion.MOD_COMISIONES.Reportes.Formulario
             this.groupBox1.TabIndex = 60;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Reporte de Comisiones";
+            // 
+            // rdbHistoricoDevoluciones
+            // 
+            this.rdbHistoricoDevoluciones.AutoSize = true;
+            this.rdbHistoricoDevoluciones.Location = new System.Drawing.Point(299, 119);
+            this.rdbHistoricoDevoluciones.Name = "rdbHistoricoDevoluciones";
+            this.rdbHistoricoDevoluciones.Size = new System.Drawing.Size(159, 17);
+            this.rdbHistoricoDevoluciones.TabIndex = 62;
+            this.rdbHistoricoDevoluciones.Text = "9. Histórico de devoluciones";
+            this.rdbHistoricoDevoluciones.UseVisualStyleBackColor = true;
+            this.rdbHistoricoDevoluciones.Click += new System.EventHandler(this.RdbHistoricoDevoluciones_Click);
+            // 
+            // rdbHistoricoComisiones
+            // 
+            this.rdbHistoricoComisiones.AutoSize = true;
+            this.rdbHistoricoComisiones.Location = new System.Drawing.Point(299, 96);
+            this.rdbHistoricoComisiones.Name = "rdbHistoricoComisiones";
+            this.rdbHistoricoComisiones.Size = new System.Drawing.Size(134, 17);
+            this.rdbHistoricoComisiones.TabIndex = 61;
+            this.rdbHistoricoComisiones.Text = "8. Histórico Comisiones";
+            this.rdbHistoricoComisiones.UseVisualStyleBackColor = true;
+            this.rdbHistoricoComisiones.CheckedChanged += new System.EventHandler(this.RadioButton1_CheckedChanged);
             // 
             // radioButton2
             // 
@@ -574,6 +627,7 @@ namespace Presentacion.MOD_COMISIONES.Reportes.Formulario
             this.rdbConsolidado.UseVisualStyleBackColor = true;
             this.rdbConsolidado.CheckedChanged += new System.EventHandler(this.rdbConsolidado_CheckedChanged);
             // 
+<<<<<<< HEAD
             // radioButton1
             // 
             this.radioButton1.AutoSize = true;
@@ -585,6 +639,8 @@ namespace Presentacion.MOD_COMISIONES.Reportes.Formulario
             this.radioButton1.UseVisualStyleBackColor = true;
             this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
             // 
+=======
+>>>>>>> 96d264a38f6e362e6bced3f47bf0782c7136072e
             // grpLiquidacion
             // 
             this.grpLiquidacion.BackColor = System.Drawing.SystemColors.ButtonHighlight;
@@ -808,6 +864,7 @@ namespace Presentacion.MOD_COMISIONES.Reportes.Formulario
             // grpVentasHistoricas
             // 
             this.grpVentasHistoricas.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.grpVentasHistoricas.Controls.Add(this.groupBox5);
             this.grpVentasHistoricas.Controls.Add(this.dtFechaActualizado);
             this.grpVentasHistoricas.Controls.Add(this.label19);
             this.grpVentasHistoricas.Controls.Add(this.label21);
@@ -821,6 +878,74 @@ namespace Presentacion.MOD_COMISIONES.Reportes.Formulario
             this.grpVentasHistoricas.Text = "Ventas Históricas";
             this.grpVentasHistoricas.Visible = false;
             // 
+            // groupBox5
+            // 
+            this.groupBox5.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.groupBox5.Controls.Add(this.comboBox1);
+            this.groupBox5.Controls.Add(this.label24);
+            this.groupBox5.Controls.Add(this.label25);
+            this.groupBox5.Controls.Add(this.label26);
+            this.groupBox5.Controls.Add(this.comboBox2);
+            this.groupBox5.Controls.Add(this.comboBox3);
+            this.groupBox5.Location = new System.Drawing.Point(0, 1);
+            this.groupBox5.Name = "groupBox5";
+            this.groupBox5.Size = new System.Drawing.Size(558, 144);
+            this.groupBox5.TabIndex = 94;
+            this.groupBox5.TabStop = false;
+            this.groupBox5.Text = "Detalle Comisión";
+            this.groupBox5.Visible = false;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(220, 36);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(220, 21);
+            this.comboBox1.TabIndex = 75;
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Location = new System.Drawing.Point(137, 39);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(77, 13);
+            this.label24.TabIndex = 74;
+            this.label24.Text = "Nivel de Venta";
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Location = new System.Drawing.Point(112, 66);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(101, 13);
+            this.label25.TabIndex = 70;
+            this.label25.Text = "Nombre de Persona";
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Location = new System.Drawing.Point(168, 93);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(45, 13);
+            this.label26.TabIndex = 73;
+            this.label26.Text = "Período";
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Location = new System.Drawing.Point(220, 63);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(220, 21);
+            this.comboBox2.TabIndex = 71;
+            // 
+            // comboBox3
+            // 
+            this.comboBox3.FormattingEnabled = true;
+            this.comboBox3.Location = new System.Drawing.Point(220, 90);
+            this.comboBox3.Name = "comboBox3";
+            this.comboBox3.Size = new System.Drawing.Size(220, 21);
+            this.comboBox3.TabIndex = 72;
+            // 
             // groupBox3
             // 
             this.groupBox3.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
@@ -830,11 +955,108 @@ namespace Presentacion.MOD_COMISIONES.Reportes.Formulario
             this.groupBox3.TabIndex = 93;
             this.groupBox3.TabStop = false;
             // 
+<<<<<<< HEAD
+=======
+            // gbHistorialDevoluciones
+            // 
+            this.gbHistorialDevoluciones.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.gbHistorialDevoluciones.Controls.Add(this.dtFechaDevolucion9);
+            this.gbHistorialDevoluciones.Controls.Add(this.label30);
+            this.gbHistorialDevoluciones.Controls.Add(this.label27);
+            this.gbHistorialDevoluciones.Controls.Add(this.dtFechaContratoFin);
+            this.gbHistorialDevoluciones.Controls.Add(this.dtFechaContratoIni);
+            this.gbHistorialDevoluciones.Controls.Add(this.label28);
+            this.gbHistorialDevoluciones.Controls.Add(this.label29);
+            this.gbHistorialDevoluciones.Controls.Add(this.cboPersona9);
+            this.gbHistorialDevoluciones.Location = new System.Drawing.Point(9, 161);
+            this.gbHistorialDevoluciones.Name = "gbHistorialDevoluciones";
+            this.gbHistorialDevoluciones.Size = new System.Drawing.Size(558, 144);
+            this.gbHistorialDevoluciones.TabIndex = 94;
+            this.gbHistorialDevoluciones.TabStop = false;
+            this.gbHistorialDevoluciones.Text = "Historial Devoluciones";
+            this.gbHistorialDevoluciones.Visible = false;
+            // 
+            // dtFechaDevolucion9
+            // 
+            this.dtFechaDevolucion9.CustomFormat = "dd/MM/yyyy";
+            this.dtFechaDevolucion9.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtFechaDevolucion9.Location = new System.Drawing.Point(221, 89);
+            this.dtFechaDevolucion9.Name = "dtFechaDevolucion9";
+            this.dtFechaDevolucion9.Size = new System.Drawing.Size(107, 20);
+            this.dtFechaDevolucion9.TabIndex = 78;
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.Location = new System.Drawing.Point(107, 89);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(105, 13);
+            this.label30.TabIndex = 77;
+            this.label30.Text = "Fecha Devolución al";
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Location = new System.Drawing.Point(333, 65);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(10, 13);
+            this.label27.TabIndex = 76;
+            this.label27.Text = "-";
+            // 
+            // dtFechaContratoFin
+            // 
+            this.dtFechaContratoFin.CustomFormat = "dd/MM/yyyy";
+            this.dtFechaContratoFin.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtFechaContratoFin.Location = new System.Drawing.Point(349, 62);
+            this.dtFechaContratoFin.Name = "dtFechaContratoFin";
+            this.dtFechaContratoFin.Size = new System.Drawing.Size(107, 20);
+            this.dtFechaContratoFin.TabIndex = 75;
+            // 
+            // dtFechaContratoIni
+            // 
+            this.dtFechaContratoIni.CustomFormat = "dd/MM/yyyy";
+            this.dtFechaContratoIni.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtFechaContratoIni.Location = new System.Drawing.Point(221, 61);
+            this.dtFechaContratoIni.Name = "dtFechaContratoIni";
+            this.dtFechaContratoIni.Size = new System.Drawing.Size(107, 20);
+            this.dtFechaContratoIni.TabIndex = 74;
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.Location = new System.Drawing.Point(112, 35);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(101, 13);
+            this.label28.TabIndex = 70;
+            this.label28.Text = "Nombre de Persona";
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Location = new System.Drawing.Point(138, 64);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(74, 13);
+            this.label29.TabIndex = 73;
+            this.label29.Text = "Fecha Cotrato";
+            // 
+            // cboPersona9
+            // 
+            this.cboPersona9.FormattingEnabled = true;
+            this.cboPersona9.Location = new System.Drawing.Point(220, 32);
+            this.cboPersona9.Name = "cboPersona9";
+            this.cboPersona9.Size = new System.Drawing.Size(220, 21);
+            this.cboPersona9.TabIndex = 71;
+            // 
+>>>>>>> 96d264a38f6e362e6bced3f47bf0782c7136072e
             // FrmRptLiquidaciones
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(582, 374);
+<<<<<<< HEAD
+=======
+            this.Controls.Add(this.gbHistorialDevoluciones);
+>>>>>>> 96d264a38f6e362e6bced3f47bf0782c7136072e
             this.Controls.Add(this.grpDetalleComision);
             this.Controls.Add(this.grpVentasHistoricas);
             this.Controls.Add(this.grpComisionarDet);
@@ -869,6 +1091,13 @@ namespace Presentacion.MOD_COMISIONES.Reportes.Formulario
             this.grpConsolidado.PerformLayout();
             this.grpVentasHistoricas.ResumeLayout(false);
             this.grpVentasHistoricas.PerformLayout();
+<<<<<<< HEAD
+=======
+            this.groupBox5.ResumeLayout(false);
+            this.groupBox5.PerformLayout();
+            this.gbHistorialDevoluciones.ResumeLayout(false);
+            this.gbHistorialDevoluciones.PerformLayout();
+>>>>>>> 96d264a38f6e362e6bced3f47bf0782c7136072e
             this.ResumeLayout(false);
 
         }
@@ -938,12 +1167,32 @@ namespace Presentacion.MOD_COMISIONES.Reportes.Formulario
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.GroupBox grpVentasHistoricas;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.RadioButton rdbHistoricoComisiones;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.DateTimePicker dtpComisionar2;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.DateTimePicker dtpComisionar1;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.RadioButton radioButton2;
+<<<<<<< HEAD
+=======
+        private System.Windows.Forms.RadioButton rdbHistoricoDevoluciones;
+        private System.Windows.Forms.GroupBox groupBox5;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.GroupBox gbHistorialDevoluciones;
+        private System.Windows.Forms.DateTimePicker dtFechaDevolucion9;
+        private System.Windows.Forms.Label label30;
+        private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.DateTimePicker dtFechaContratoFin;
+        private System.Windows.Forms.DateTimePicker dtFechaContratoIni;
+        private System.Windows.Forms.Label label28;
+        private System.Windows.Forms.Label label29;
+        private System.Windows.Forms.ComboBox cboPersona9;
+>>>>>>> 96d264a38f6e362e6bced3f47bf0782c7136072e
     }
 }

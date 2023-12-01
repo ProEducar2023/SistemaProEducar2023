@@ -63,9 +63,6 @@
     <SignManifests>false</SignManifests>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Dapper">
-      <HintPath>..\..\..\..\Reportes\SysGestionAES\packages\Dapper.1.42\lib\net45\Dapper.dll</HintPath>
-    </Reference>
     <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\..\..\..\Reportes\SysGestionAES\packages\Microsoft.ReportViewer.Common.10.0.40219.1\lib\Microsoft.ReportViewer.Common.dll</HintPath>
     </Reference>
@@ -121,7 +118,6 @@
     </Reference>
     <Reference Include="System.Web.Services" />
     <Reference Include="System.Xml.Linq" />
-    <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
@@ -2895,6 +2891,7 @@
     <EmbeddedResource Include="MOD_COMISIONES\Reportes\Formulario\FrmRptLiquidaciones.resx">
       <DependentUpon>FrmRptLiquidaciones.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="MOD_COMISIONES\Reportes\ReportViewer\RptHistoriocoDevolucionComision.rdlc" />
     <EmbeddedResource Include="MOD_COMISIONES\Reportes\ReportViewer\rptHistoricoComisiones.rdlc" />
     <EmbeddedResource Include="MOD_COMISIONES\Reportes\ReportViewer\rptHistoricoComisiones11.rdlc" />
     <EmbeddedResource Include="MOD_COMISIONES\Reportes\ReportViewer\RptPorComisionarDetalle.rdlc" />
