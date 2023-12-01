@@ -44,6 +44,8 @@ namespace Presentacion.MOD_COMISIONES.Reportes.Formulario
             CargarPeriodoGeneradoDevolucion();
             CargarPeriodoGeneradoOtrosIngresosEgresos();
             CargarVendedor();
+            dtpComisionar1.Value = new DateTime(2019,1 ,1);
+            dtFechaAprobacion1.Value = new DateTime(2019, 1, 1);
         }
 
         private void StartControsl()
@@ -267,13 +269,12 @@ namespace Presentacion.MOD_COMISIONES.Reportes.Formulario
                 }
                 else
                 {
-
-                 dt = await ObtenerDatosXComisionarDetalle();
-                 dt2 = await ObtenerDatosXComisionarDetalle2();
-                if (dt != null)
-                    
-                    dt.Merge(dt2);
-                else dt = dt2;
+                    dt = await ObtenerDatosXComisionarDetalle();
+                    dt2 = await ObtenerDatosXComisionarDetalle2();
+                    if (dt != null)
+                        dt.Merge(dt2);
+                    else
+                        dt = dt2;
 
                 }
                

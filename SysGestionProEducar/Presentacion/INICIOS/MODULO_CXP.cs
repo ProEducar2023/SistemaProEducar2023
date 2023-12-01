@@ -244,6 +244,11 @@ namespace Presentacion.MOD_VTA
             frmLiqu.Show();
         }
 
+        private void porComisionarDetalleToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void resumenToolStripMenuItem1_Click(object sender, EventArgs e)
         {
 

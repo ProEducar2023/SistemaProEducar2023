@@ -219,6 +219,7 @@
             this.porComisionarDetalleToolStripMenuItem.Size = new System.Drawing.Size(243, 22);
             this.porComisionarDetalleToolStripMenuItem.Text = "Por Comisionar - Detalle";
             this.porComisionarDetalleToolStripMenuItem.Visible = false;
+            this.porComisionarDetalleToolStripMenuItem.Click += new System.EventHandler(this.porComisionarDetalleToolStripMenuItem_Click);
             // 
             // CuentaCorrienteToolStripMenuItem
             // 
